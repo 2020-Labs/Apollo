@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
+
 resp = requests.get('http://httpbin.org/get')
 print(resp.status_code)
 print(resp.text)

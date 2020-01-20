@@ -1,6 +1,8 @@
-# RTC KPI
----
 
+# RTC KPI
+***
+
+## 配置文件和输出报告格式模板
 > config file template:
 
 ```
@@ -38,3 +40,13 @@
     },
 }
 ```
+
+## 功能模块的责任
+- config: 解析配置文件
+- HtmlLoader： 加载html文件（从本地或网络获取)
+- Parser: 解析html并提取数据进行统计
+- Printer: 输出统计结果，格式：文本/Markdown
+- RtcMain: 程序入口
+
+
+

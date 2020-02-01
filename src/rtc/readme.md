@@ -10,24 +10,63 @@
 
 ## 功能模块的责任
 - config  - 解析配置文件
-- htmlloader： 加载html内容，来源：从本地、网络
-- parser: 解析html并提取数据进行统计
+- htmlloader： 加载html内容，来源：从本地/网络 , `注`: 可扩展请求网络
+- spider: 解析html并提取数据
+- data: 对提取的数据进行统计
 - db: 统计数据的加载和持久化
 - report_output: 输出统计结果，格式：文本/Markdown ， `注`：文本格式输出同时会输出在日志文件
-- RtcMain: 程序入口 ， 
+- run.py: 程序入口 ， 选项参数
 
 ## 启动流程
 
+YoudaoNote UML:
+```
+sequenceDiagram
+run.py->>run.py: 检查选项参数
+run.py->>config.py: 读取配置项
+run.py->>spider:do
+spider-->>spider: 加载本地html文件
+spider->>spider: 提取有效数据
+spider->>data: 统计
+data->>db: 读取基础数据
+data-->>data: 统计数据
+data-->>spider: 统计结果返回
+spider->>db: 保存
+spider->>report: 输出统计报告
+```
 
+
+Markdown UML:
 ```sequence
 run.py->>run.py: 检查选项参数
 run.py->>config.py: 读取配置项
 run.py->>spider:do
+spider-->>spider: 加载本地html文件
+spider->>spider: 提取有效数据
+spider->>data: 统计
+data->>db: 读取基础数据
+data-->>data: 统计数据
+data-->>spider: 统计结果返回
+spider->>db: 保存
+spider->>report: 输出统计报告
 ```
 
 ## 配置文件和输出报告格式模板
+> 配置项：
 
-> 配置文件：
+ - MEMBERS:
+ - VERSION:
+ - REPORT_TITLE:
+ - REPORT_FMT:
+ - REPORT_FILE:
+ - RTC_CONFIGS: 
+   - URL:
+   - ELEMENT_ID:
+ - RTC_CONFIGS_OUT: 
+   - URL:
+   - ELEMENT_ID:
+
+> 配置文件模块：
 ```json
 {
     "version":"2",
@@ -47,6 +86,14 @@ run.py->>spider:do
         }
     ]
 }
+```
+
+
+> 启动选项参数
+```
+  -c <xxx.config>
+  or
+  --config=<xxx.config>
 ```
 
 

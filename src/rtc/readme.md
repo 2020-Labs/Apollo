@@ -16,7 +16,15 @@
 - report_output: 输出统计结果，格式：文本/Markdown ， `注`：文本格式输出同时会输出在日志文件
 - RtcMain: 程序入口 ， 
 
+## 启动流程
 
+
+```
+sequenceDiagram
+run.py->>run.py: 检查选项参数
+run.py->>config.py: 读取配置项
+run.py->>spider:do
+```
 
 ## 配置文件和输出报告格式模板
 

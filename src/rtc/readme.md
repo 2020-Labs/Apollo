@@ -19,8 +19,7 @@
 ## 启动流程
 
 
-```
-sequenceDiagram
+```sequence
 run.py->>run.py: 检查选项参数
 run.py->>config.py: 读取配置项
 run.py->>spider:do

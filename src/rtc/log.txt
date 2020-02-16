@@ -1,0 +1,5 @@
+DEBUG:root:this is a message
+2020-02-16 09:58:55,811  log.py : DEBUG  this is a message
+2020-02-16 10:01:24,014  log.py : DEBUG  this is a message
+2020-02-16 10:02:39,434  log.py : DEBUG  this is a message
+2020-02-16 10:04:03,655  log.py : DEBUG  this is a message

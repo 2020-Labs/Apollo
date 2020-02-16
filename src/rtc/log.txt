@@ -17,3 +17,1437 @@
 2020-02-16 10:37:36,404  rtckpi.py <module>: : DEBUG  check done.
 2020-02-16 10:37:55,956  log.py initial: : DEBUG  this is a message
 2020-02-16 10:37:55,956  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 10:39:42,833  log.py initial: : DEBUG  this is a message
+2020-02-16 10:39:42,833  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 10:41:43,354  log.py initial: : DEBUG  this is a message
+2020-02-16 10:41:43,354  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:30:59,216  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:32:10,526  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:32:10,526  config.py read_config: : ERROR  json decode error
+2020-02-16 13:33:25,724  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:33:25,724  config.py read_config: : ERROR  json decode error
+2020-02-16 13:35:27,836  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:35:27,836  config.py read_config: : ERROR  json decode error
+2020-02-16 13:35:50,888  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:35:50,888  config.py read_config: : ERROR  json decode error
+2020-02-16 13:36:29,349  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:36:29,349  config.py read_config: : ERROR  json decode error
+2020-02-16 13:36:48,335  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:36:48,335  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}}
+2020-02-16 13:37:29,052  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:37:29,053  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}}
+2020-02-16 13:38:19,937  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:38:19,937  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}}
+2020-02-16 13:38:48,026  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:38:48,027  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}}
+2020-02-16 13:38:48,027  rtckpi.py <module>: : DEBUG  []
+2020-02-16 13:39:05,469  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:39:05,470  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}}
+2020-02-16 13:39:05,473  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 13:45:22,117  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:45:22,117  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}}
+2020-02-16 13:45:22,117  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 13:45:22,117  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 13:47:30,394  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:47:30,394  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}}
+2020-02-16 13:47:42,670  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:47:42,671  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}}
+2020-02-16 13:47:42,672  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}]
+2020-02-16 13:47:42,672  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 13:48:21,230  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:48:21,231  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 13:48:21,231  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 13:48:21,231  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 13:48:58,547  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:48:58,548  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 13:48:58,548  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 13:48:58,548  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 13:48:58,548  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 13:48:58,548  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 13:50:00,535  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:50:00,535  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 13:50:00,535  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 13:50:00,536  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 13:50:00,536  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 13:50:00,536  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 13:50:22,320  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:50:22,321  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 13:50:22,321  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 13:50:22,321  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 13:50:22,321  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 13:50:22,321  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 13:53:30,987  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:53:30,987  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 13:53:30,987  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 13:53:30,987  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 13:53:30,987  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 13:53:30,987  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 13:56:05,981  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:56:05,981  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 13:56:05,981  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 13:56:05,982  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 13:56:05,982  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 13:56:05,982  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 13:56:22,532  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 13:56:22,532  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 13:56:22,533  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 13:56:22,533  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 13:56:22,533  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 13:56:22,533  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 14:13:52,041  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:13:52,041  config.py read_config: : ERROR  json decode error
+2020-02-16 14:13:52,042  rtckpi.py <module>: : DEBUG  []
+2020-02-16 14:15:31,579  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:15:31,580  config.py read_config: : ERROR  json decode error
+2020-02-16 14:15:31,581  rtckpi.py <module>: : DEBUG  []
+2020-02-16 14:16:12,495  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:16:12,495  config.py read_config: : ERROR  json decode error
+2020-02-16 14:16:12,498  rtckpi.py <module>: : DEBUG  []
+2020-02-16 14:16:34,839  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:16:34,841  config.py read_config: : ERROR  json decode error
+2020-02-16 14:16:34,842  rtckpi.py <module>: : DEBUG  []
+2020-02-16 14:17:13,085  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:17:13,087  config.py read_config: : ERROR  json decode error
+2020-02-16 14:17:13,093  rtckpi.py <module>: : DEBUG  []
+2020-02-16 14:19:05,295  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:19:05,299  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 14:19:05,300  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 14:19:05,301  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 14:19:05,301  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 14:19:05,302  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 14:20:59,965  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:20:59,966  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 14:20:59,966  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 14:20:59,966  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 14:20:59,966  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 14:20:59,966  rtckpi.py <module>: : DEBUG  ['A', 'B', 'C']
+2020-02-16 14:44:08,121  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:44:08,122  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 14:44:08,122  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 14:44:08,122  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 14:44:08,122  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 14:45:31,858  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:45:31,859  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 14:45:31,859  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 14:45:31,859  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 14:45:31,859  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 14:46:02,386  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:46:02,387  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 14:46:02,388  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 14:46:02,388  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 14:46:02,388  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 14:47:04,293  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:47:04,293  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 14:47:04,293  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 14:47:04,293  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 14:47:04,293  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 14:47:04,293  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 9}
+2020-02-16 14:47:04,293  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 9}
+2020-02-16 14:47:04,293  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 9}
+2020-02-16 14:50:16,552  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:50:16,553  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 14:50:16,553  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 14:50:16,553  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 14:50:16,553  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 14:50:16,553  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 43}
+2020-02-16 14:50:16,553  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 56}
+2020-02-16 14:50:16,553  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 38}
+2020-02-16 14:50:16,553  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 9}
+2020-02-16 14:50:16,553  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 9}
+2020-02-16 14:50:16,553  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 9}
+2020-02-16 14:50:36,620  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 14:50:36,621  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 14:50:36,621  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 14:50:36,621  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 14:50:36,621  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 14:50:36,621  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 30}
+2020-02-16 14:50:36,621  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 64}
+2020-02-16 14:50:36,621  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 67}
+2020-02-16 14:50:36,621  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 6}
+2020-02-16 14:50:36,621  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 21}
+2020-02-16 14:50:36,621  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 13}
+2020-02-16 15:12:02,176  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:12:02,177  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:12:02,177  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:12:02,177  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:12:02,177  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:12:16,020  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:12:16,020  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:12:16,020  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:12:16,020  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:12:16,020  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:12:16,021  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 39}
+2020-02-16 15:12:16,021  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 42}
+2020-02-16 15:12:16,021  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 80}
+2020-02-16 15:12:16,021  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 7}
+2020-02-16 15:12:16,021  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 7}
+2020-02-16 15:12:16,021  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 9}
+2020-02-16 15:12:38,889  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:12:38,889  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:12:38,889  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:12:38,889  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:12:38,889  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:12:38,890  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 61}
+2020-02-16 15:12:38,890  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 67}
+2020-02-16 15:12:38,890  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 39}
+2020-02-16 15:12:38,890  rtckpi.py <module>: : DEBUG  {'A': {'fix': 61}, 'B': {'fix': 67}, 'C': {'fix': 39}}
+2020-02-16 15:12:38,890  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 17}
+2020-02-16 15:12:38,890  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 17}
+2020-02-16 15:12:38,890  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 12}
+2020-02-16 15:13:38,721  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:13:38,722  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:13:38,722  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:13:38,722  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:13:38,722  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:13:38,722  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 56}
+2020-02-16 15:13:38,723  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 49}
+2020-02-16 15:13:38,723  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 38}
+2020-02-16 15:13:38,723  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 7}
+2020-02-16 15:13:38,723  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 11}
+2020-02-16 15:13:38,723  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 4}
+2020-02-16 15:13:38,723  rtckpi.py <module>: : DEBUG  {'A': {'fix': 56}, 'B': {'fix': 49}, 'C': {'fix': 38}}
+2020-02-16 15:15:56,999  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:15:56,999  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:15:56,999  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:15:56,999  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:15:56,999  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:15:57,000  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 32}
+2020-02-16 15:15:57,000  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 34}
+2020-02-16 15:15:57,000  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 31}
+2020-02-16 15:15:57,000  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 7}
+2020-02-16 15:15:57,000  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 29}
+2020-02-16 15:15:57,000  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 15}
+2020-02-16 15:15:57,000  rtckpi.py <module>: : DEBUG  {'A': {'fix': 0, 'out': 0}, 'B': {'fix': 0, 'out': 0}, 'C': {'fix': 0, 'out': 0}}
+2020-02-16 15:17:00,255  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:17:00,255  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:17:00,255  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:17:00,255  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:17:00,255  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:17:00,255  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 74}
+2020-02-16 15:17:00,255  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 61}
+2020-02-16 15:17:00,255  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 64}
+2020-02-16 15:17:00,256  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 16}
+2020-02-16 15:17:00,256  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 11}
+2020-02-16 15:17:00,256  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 4}
+2020-02-16 15:17:00,256  rtckpi.py <module>: : DEBUG  {'A': {'fix': 74, 'out': 0}, 'B': {'fix': 61, 'out': 0}, 'C': {'fix': 64, 'out': 0}}
+2020-02-16 15:18:45,554  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:18:45,554  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:18:45,554  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:18:45,554  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:18:45,554  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:18:45,554  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 33}
+2020-02-16 15:18:45,554  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 30}
+2020-02-16 15:18:45,554  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 70}
+2020-02-16 15:18:45,554  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 24}
+2020-02-16 15:19:15,929  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:19:15,929  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:19:15,929  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:19:15,929  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:19:15,929  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:19:15,930  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 58}
+2020-02-16 15:19:15,930  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 63}
+2020-02-16 15:19:15,930  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 47}
+2020-02-16 15:19:15,930  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 30}
+2020-02-16 15:21:32,178  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:21:32,179  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:21:32,179  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:21:32,179  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:21:32,179  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:21:32,179  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 46}
+2020-02-16 15:21:32,179  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 43}
+2020-02-16 15:21:32,179  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 52}
+2020-02-16 15:21:32,179  rtckpi.py <module>: : DEBUG  {'A': {'fix': 46, 'out': 0}, 'B': {'fix': 43, 'out': 0}, 'C': {'fix': 52, 'out': 0}}
+2020-02-16 15:21:32,179  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 20}
+2020-02-16 15:21:59,064  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:21:59,065  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:21:59,065  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:21:59,065  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:21:59,065  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:21:59,066  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 66}
+2020-02-16 15:21:59,066  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 56}
+2020-02-16 15:21:59,066  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 80}
+2020-02-16 15:21:59,066  rtckpi.py <module>: : DEBUG  {'A': {'fix': 66, 'out': 0}, 'B': {'fix': 56, 'out': 0}, 'C': {'fix': 80, 'out': 0}}
+2020-02-16 15:21:59,066  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 27}
+2020-02-16 15:21:59,066  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 3}
+2020-02-16 15:21:59,066  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 30}
+2020-02-16 15:22:16,906  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:22:16,907  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:22:16,907  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:22:16,907  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:22:16,907  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:22:16,907  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 30}
+2020-02-16 15:22:16,907  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 76}
+2020-02-16 15:22:16,907  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 69}
+2020-02-16 15:22:16,907  rtckpi.py <module>: : DEBUG  {'A': {'fix': 30, 'out': 0}, 'B': {'fix': 76, 'out': 0}, 'C': {'fix': 69, 'out': 0}}
+2020-02-16 15:22:16,907  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 16}
+2020-02-16 15:22:40,600  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:22:40,600  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:22:40,600  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:22:40,600  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:22:40,600  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:22:40,600  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 80}
+2020-02-16 15:22:40,600  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 80}
+2020-02-16 15:22:40,600  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 41}
+2020-02-16 15:22:40,600  rtckpi.py <module>: : DEBUG  {'A': {'fix': 80, 'out': 0}, 'B': {'fix': 80, 'out': 0}, 'C': {'fix': 41, 'out': 0}}
+2020-02-16 15:22:40,601  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 3}
+2020-02-16 15:22:40,601  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 22}
+2020-02-16 15:22:40,601  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 21}
+2020-02-16 15:22:48,313  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:22:48,314  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:22:48,314  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:22:48,314  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:22:48,315  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:22:48,315  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 40}
+2020-02-16 15:22:48,315  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 58}
+2020-02-16 15:22:48,315  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 75}
+2020-02-16 15:22:48,315  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 9}
+2020-02-16 15:22:48,315  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 28}
+2020-02-16 15:22:48,315  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 7}
+2020-02-16 15:22:48,315  rtckpi.py <module>: : DEBUG  {'A': {'fix': 40, 'out': 9}, 'B': {'fix': 58, 'out': 28}, 'C': {'fix': 75, 'out': 7}}
+2020-02-16 15:23:57,755  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:23:57,756  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:23:57,756  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:23:57,756  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:23:57,756  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:23:57,756  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 57}
+2020-02-16 15:23:57,756  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 56}
+2020-02-16 15:23:57,756  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 40}
+2020-02-16 15:23:57,756  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 15}
+2020-02-16 15:23:57,757  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 21}
+2020-02-16 15:23:57,757  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 4}
+2020-02-16 15:24:07,311  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:24:07,312  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:24:07,312  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:24:07,312  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:24:07,312  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:24:07,312  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 40}
+2020-02-16 15:24:07,312  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 33}
+2020-02-16 15:24:07,312  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 35}
+2020-02-16 15:24:07,312  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 18}
+2020-02-16 15:24:07,312  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 20}
+2020-02-16 15:24:07,312  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 12}
+2020-02-16 15:24:07,312  rtckpi.py <module>: : DEBUG  A : {'fix': 40, 'out': 18}
+2020-02-16 15:24:07,313  rtckpi.py <module>: : DEBUG  B : {'fix': 33, 'out': 20}
+2020-02-16 15:24:07,313  rtckpi.py <module>: : DEBUG  C : {'fix': 35, 'out': 12}
+2020-02-16 15:26:09,450  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:26:09,451  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:26:09,451  config.py read_config: : DEBUG  RTCS: [{'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:26:09,451  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:26:09,451  config.py read_config: : DEBUG  {'url': 'file:///', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:26:09,451  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 52}
+2020-02-16 15:26:09,451  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 69}
+2020-02-16 15:26:09,451  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 30}
+2020-02-16 15:26:09,451  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 24}
+2020-02-16 15:26:09,451  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 30}
+2020-02-16 15:26:09,451  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 15}
+2020-02-16 15:26:09,451  rtckpi.py <module>: : DEBUG  A : {'fix': 52, 'out': 24}
+2020-02-16 15:26:09,451  rtckpi.py <module>: : DEBUG  B : {'fix': 69, 'out': 30}
+2020-02-16 15:26:09,452  rtckpi.py <module>: : DEBUG  C : {'fix': 30, 'out': 15}
+2020-02-16 15:26:36,886  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:26:36,886  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:26:36,886  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:26:36,886  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:26:36,886  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:26:36,886  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 50}
+2020-02-16 15:26:36,887  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 66}
+2020-02-16 15:26:36,887  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 66}
+2020-02-16 15:26:36,887  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 6}
+2020-02-16 15:26:36,887  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 10}
+2020-02-16 15:26:36,887  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 23}
+2020-02-16 15:26:36,887  rtckpi.py <module>: : DEBUG  A : {'fix': 50, 'out': 6}
+2020-02-16 15:26:36,887  rtckpi.py <module>: : DEBUG  B : {'fix': 66, 'out': 10}
+2020-02-16 15:26:36,887  rtckpi.py <module>: : DEBUG  C : {'fix': 66, 'out': 23}
+2020-02-16 15:27:44,954  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:27:44,955  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:27:44,955  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:27:44,955  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:27:44,955  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:27:44,955  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 61}
+2020-02-16 15:27:44,956  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 68}
+2020-02-16 15:27:44,956  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 36}
+2020-02-16 15:27:44,956  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 26}
+2020-02-16 15:27:44,956  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 13}
+2020-02-16 15:27:44,956  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 29}
+2020-02-16 15:27:44,956  rtckpi.py <module>: : DEBUG  A : {'fix': 61, 'out': 26}
+2020-02-16 15:27:44,957  rtckpi.py <module>: : DEBUG  B : {'fix': 68, 'out': 13}
+2020-02-16 15:27:44,957  rtckpi.py <module>: : DEBUG  C : {'fix': 36, 'out': 29}
+2020-02-16 15:27:44,957  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 70}
+2020-02-16 15:27:44,957  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 36}
+2020-02-16 15:27:44,957  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 41}
+2020-02-16 15:27:44,957  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 13}
+2020-02-16 15:27:44,958  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 15}
+2020-02-16 15:27:44,958  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 19}
+2020-02-16 15:27:44,958  rtckpi.py <module>: : DEBUG  A : {'fix': 70, 'out': 13}
+2020-02-16 15:27:44,958  rtckpi.py <module>: : DEBUG  B : {'fix': 36, 'out': 15}
+2020-02-16 15:27:44,958  rtckpi.py <module>: : DEBUG  C : {'fix': 41, 'out': 19}
+2020-02-16 15:28:56,117  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:28:56,117  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:28:56,117  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:28:56,117  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:28:56,117  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:28:56,117  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 45}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 43}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 51}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 5}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 7}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 6}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : DEBUG  A : {'fix': 45, 'out': 5}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : DEBUG  B : {'fix': 43, 'out': 7}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : DEBUG  C : {'fix': 51, 'out': 6}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:28:56,118  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 35}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 73}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 66}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 13}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 11}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 26}
+2020-02-16 15:28:56,118  rtckpi.py <module>: : DEBUG  A : {'fix': 35, 'out': 13}
+2020-02-16 15:28:56,119  rtckpi.py <module>: : DEBUG  B : {'fix': 73, 'out': 11}
+2020-02-16 15:28:56,119  rtckpi.py <module>: : DEBUG  C : {'fix': 66, 'out': 26}
+2020-02-16 15:28:56,119  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:29:48,717  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:29:48,717  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:29:48,717  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:29:48,717  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:29:48,717  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:29:48,717  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:29:48,717  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 67}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 65}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 44}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 26}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 20}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 12}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:29:48,718  rtckpi.py <module>: : DEBUG  A : {'fix': 67, 'out': 26}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : DEBUG  B : {'fix': 65, 'out': 20}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : DEBUG  C : {'fix': 44, 'out': 12}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:29:48,718  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 43}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 75}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 38}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 8}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 26}
+2020-02-16 15:29:48,718  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 27}
+2020-02-16 15:29:48,719  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:29:48,719  rtckpi.py <module>: : DEBUG  A : {'fix': 43, 'out': 8}
+2020-02-16 15:29:48,719  rtckpi.py <module>: : DEBUG  B : {'fix': 75, 'out': 26}
+2020-02-16 15:29:48,719  rtckpi.py <module>: : DEBUG  C : {'fix': 38, 'out': 27}
+2020-02-16 15:29:48,719  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:31:33,196  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:31:33,197  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:31:33,197  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:31:33,197  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:31:33,197  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:31:33,197  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:31:33,197  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 74}
+2020-02-16 15:31:33,197  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 49}
+2020-02-16 15:31:33,197  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 70}
+2020-02-16 15:31:33,197  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 4}
+2020-02-16 15:31:33,197  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 29}
+2020-02-16 15:31:33,197  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 5}
+2020-02-16 15:31:33,197  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 63}
+2020-02-16 15:31:33,197  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 60}
+2020-02-16 15:31:33,198  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 36}
+2020-02-16 15:31:33,198  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 27}
+2020-02-16 15:31:33,198  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 12}
+2020-02-16 15:31:33,198  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 14}
+2020-02-16 15:31:33,198  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:31:33,198  rtckpi.py <module>: : DEBUG  A : {'fix': 74, 'out': 4}
+2020-02-16 15:31:33,198  rtckpi.py <module>: : DEBUG  B : {'fix': 49, 'out': 29}
+2020-02-16 15:31:33,198  rtckpi.py <module>: : DEBUG  C : {'fix': 70, 'out': 5}
+2020-02-16 15:31:33,198  rtckpi.py <module>: : DEBUG  A : {'fix': 63, 'out': 27}
+2020-02-16 15:31:33,198  rtckpi.py <module>: : DEBUG  B : {'fix': 60, 'out': 12}
+2020-02-16 15:31:33,198  rtckpi.py <module>: : DEBUG  C : {'fix': 36, 'out': 14}
+2020-02-16 15:31:33,198  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:38:36,551  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:38:36,551  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:38:36,551  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:38:36,551  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:38:36,551  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:38:36,551  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:38:36,551  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 77}
+2020-02-16 15:38:36,551  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 36}
+2020-02-16 15:38:36,551  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 34}
+2020-02-16 15:38:36,551  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 47}
+2020-02-16 15:38:36,551  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 64}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 51}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 12}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 10}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 17}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 43}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 76}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 75}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 54}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 57}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 44}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 28}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 28}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 3}
+2020-02-16 15:38:36,552  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:38:36,552  rtckpi.py <module>: : DEBUG  A : {'fix': 47, 'out': 12}
+2020-02-16 15:38:36,553  rtckpi.py <module>: : DEBUG  B : {'fix': 64, 'out': 10}
+2020-02-16 15:38:36,553  rtckpi.py <module>: : DEBUG  C : {'fix': 51, 'out': 17}
+2020-02-16 15:38:36,553  rtckpi.py <module>: : DEBUG  A : {'fix': 54, 'out': 28}
+2020-02-16 15:38:36,553  rtckpi.py <module>: : DEBUG  B : {'fix': 57, 'out': 28}
+2020-02-16 15:38:36,553  rtckpi.py <module>: : DEBUG  C : {'fix': 44, 'out': 3}
+2020-02-16 15:38:36,553  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:39:34,299  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:39:34,299  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:39:34,300  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:39:34,300  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:39:34,300  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:39:34,300  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:39:34,300  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 77}
+2020-02-16 15:39:34,300  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 73}
+2020-02-16 15:39:34,300  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 48}
+2020-02-16 15:39:34,300  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 35}
+2020-02-16 15:39:34,300  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 72}
+2020-02-16 15:39:34,300  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 49}
+2020-02-16 15:39:34,300  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 19}
+2020-02-16 15:39:34,300  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 13}
+2020-02-16 15:39:34,300  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 30}
+2020-02-16 15:39:34,300  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 79}
+2020-02-16 15:39:34,300  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 52}
+2020-02-16 15:39:34,301  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 49}
+2020-02-16 15:39:34,301  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 77}
+2020-02-16 15:39:34,301  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 80}
+2020-02-16 15:39:34,301  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 40}
+2020-02-16 15:39:34,301  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 29}
+2020-02-16 15:39:34,301  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 12}
+2020-02-16 15:39:34,301  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 9}
+2020-02-16 15:39:34,301  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:39:34,301  rtckpi.py <module>: : DEBUG  A : {'fix': 112, 'out': 19}
+2020-02-16 15:39:34,301  rtckpi.py <module>: : DEBUG  B : {'fix': 145, 'out': 13}
+2020-02-16 15:39:34,301  rtckpi.py <module>: : DEBUG  C : {'fix': 97, 'out': 30}
+2020-02-16 15:39:34,302  rtckpi.py <module>: : DEBUG  A : {'fix': 156, 'out': 29}
+2020-02-16 15:39:34,302  rtckpi.py <module>: : DEBUG  B : {'fix': 132, 'out': 12}
+2020-02-16 15:39:34,302  rtckpi.py <module>: : DEBUG  C : {'fix': 89, 'out': 9}
+2020-02-16 15:39:34,302  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:40:20,219  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:40:20,219  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:40:20,219  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:40:20,220  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:40:20,220  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:40:20,220  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:40:20,220  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 51}
+2020-02-16 15:40:20,220  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 38}
+2020-02-16 15:40:20,220  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 32}
+2020-02-16 15:40:20,220  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 33}
+2020-02-16 15:40:20,220  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 73}
+2020-02-16 15:40:20,220  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 60}
+2020-02-16 15:40:20,220  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 28}
+2020-02-16 15:40:20,220  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 26}
+2020-02-16 15:40:20,220  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 10}
+2020-02-16 15:40:20,221  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 34}
+2020-02-16 15:40:20,221  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 60}
+2020-02-16 15:40:20,221  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 74}
+2020-02-16 15:40:20,221  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 34}
+2020-02-16 15:40:20,221  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 73}
+2020-02-16 15:40:20,221  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 61}
+2020-02-16 15:40:20,221  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 19}
+2020-02-16 15:40:20,221  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 17}
+2020-02-16 15:40:20,221  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 8}
+2020-02-16 15:40:20,221  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:40:20,221  rtckpi.py <module>: : DEBUG  A : {'fix': 84, 'out': 28}
+2020-02-16 15:40:20,222  rtckpi.py <module>: : DEBUG  B : {'fix': 111, 'out': 26}
+2020-02-16 15:40:20,222  rtckpi.py <module>: : DEBUG  C : {'fix': 92, 'out': 10}
+2020-02-16 15:40:20,222  rtckpi.py <module>: : DEBUG  A : {'fix': 68, 'out': 19}
+2020-02-16 15:40:20,222  rtckpi.py <module>: : DEBUG  B : {'fix': 133, 'out': 17}
+2020-02-16 15:40:20,222  rtckpi.py <module>: : DEBUG  C : {'fix': 135, 'out': 8}
+2020-02-16 15:40:20,222  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:41:24,806  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:41:24,806  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:41:24,806  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:41:24,806  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:41:24,806  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:41:24,806  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:41:24,806  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:41:24,806  rtckpi.py <module>: : INFO  id:['table1', 'table2']
+2020-02-16 15:41:24,807  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 65}
+2020-02-16 15:41:24,807  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 65}
+2020-02-16 15:41:24,807  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 38}
+2020-02-16 15:41:24,807  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:41:24,807  rtckpi.py <module>: : INFO  id:['table1', 'table2']
+2020-02-16 15:41:24,807  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 64}
+2020-02-16 15:41:24,807  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 72}
+2020-02-16 15:41:24,807  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 53}
+2020-02-16 15:41:24,807  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 8}
+2020-02-16 15:41:24,807  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 8}
+2020-02-16 15:41:24,807  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 27}
+2020-02-16 15:41:24,808  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:41:24,808  rtckpi.py <module>: : INFO  id:['table3', 'table4']
+2020-02-16 15:41:24,808  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 63}
+2020-02-16 15:41:24,808  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 42}
+2020-02-16 15:41:24,808  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 45}
+2020-02-16 15:41:24,808  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:41:24,809  rtckpi.py <module>: : INFO  id:['table3', 'table4']
+2020-02-16 15:41:24,809  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 44}
+2020-02-16 15:41:24,809  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 31}
+2020-02-16 15:41:24,809  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 62}
+2020-02-16 15:41:24,809  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 26}
+2020-02-16 15:41:24,809  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 11}
+2020-02-16 15:41:24,809  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 25}
+2020-02-16 15:41:24,810  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:41:24,810  rtckpi.py <module>: : DEBUG  A : {'fix': 129, 'out': 8}
+2020-02-16 15:41:24,810  rtckpi.py <module>: : DEBUG  B : {'fix': 137, 'out': 8}
+2020-02-16 15:41:24,810  rtckpi.py <module>: : DEBUG  C : {'fix': 91, 'out': 27}
+2020-02-16 15:41:24,810  rtckpi.py <module>: : DEBUG  A : {'fix': 107, 'out': 26}
+2020-02-16 15:41:24,810  rtckpi.py <module>: : DEBUG  B : {'fix': 73, 'out': 11}
+2020-02-16 15:41:24,810  rtckpi.py <module>: : DEBUG  C : {'fix': 107, 'out': 25}
+2020-02-16 15:41:24,810  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:41:47,723  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:41:47,724  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:41:47,724  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:41:47,724  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:41:47,724  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:41:47,724  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:41:47,724  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:41:47,724  rtckpi.py <module>: : INFO  id:table1
+2020-02-16 15:41:47,724  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 53}
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 56}
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 79}
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  id:table2
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 65}
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 66}
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 38}
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 26}
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 19}
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 11}
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  id:table3
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 47}
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 40}
+2020-02-16 15:41:47,725  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 37}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:41:47,726  rtckpi.py <module>: : INFO  id:table4
+2020-02-16 15:41:47,726  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 43}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 46}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 49}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 3}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 5}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 8}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:41:47,726  rtckpi.py <module>: : DEBUG  A : {'fix': 118, 'out': 26}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : DEBUG  B : {'fix': 122, 'out': 19}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : DEBUG  C : {'fix': 117, 'out': 11}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : DEBUG  A : {'fix': 90, 'out': 3}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : DEBUG  B : {'fix': 86, 'out': 5}
+2020-02-16 15:41:47,726  rtckpi.py <module>: : DEBUG  C : {'fix': 86, 'out': 8}
+2020-02-16 15:41:47,727  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:42:24,822  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:42:24,822  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:42:24,822  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:42:24,823  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:42:24,823  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:42:24,823  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:42:24,823  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:42:24,823  rtckpi.py <module>: : INFO  id:table1
+2020-02-16 15:42:24,823  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 54}
+2020-02-16 15:42:24,823  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 34}
+2020-02-16 15:42:24,823  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 73}
+2020-02-16 15:42:24,823  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:42:24,823  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:42:24,823  rtckpi.py <module>: : INFO  id:table2
+2020-02-16 15:42:24,823  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 71}
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 80}
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 56}
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 7}
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 24}
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 10}
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  id:table3
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 60}
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 48}
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 44}
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  id:table4
+2020-02-16 15:42:24,824  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 36}
+2020-02-16 15:42:24,825  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 50}
+2020-02-16 15:42:24,825  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 34}
+2020-02-16 15:42:24,825  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:42:24,825  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 11}
+2020-02-16 15:42:24,825  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 11}
+2020-02-16 15:42:24,825  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 13}
+2020-02-16 15:42:24,825  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:42:24,825  rtckpi.py <module>: : DEBUG  A : {'fix': 125, 'out': 7}
+2020-02-16 15:42:24,825  rtckpi.py <module>: : DEBUG  B : {'fix': 114, 'out': 24}
+2020-02-16 15:42:24,825  rtckpi.py <module>: : DEBUG  C : {'fix': 129, 'out': 10}
+2020-02-16 15:42:24,825  rtckpi.py <module>: : DEBUG  A : {'fix': 96, 'out': 11}
+2020-02-16 15:42:24,826  rtckpi.py <module>: : DEBUG  B : {'fix': 98, 'out': 11}
+2020-02-16 15:42:24,826  rtckpi.py <module>: : DEBUG  C : {'fix': 78, 'out': 13}
+2020-02-16 15:42:24,826  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:44:28,276  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:44:28,277  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:44:28,277  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:44:28,277  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:44:28,277  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:44:28,277  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:44:28,277  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:44:28,277  rtckpi.py <module>: : INFO  id:table1
+2020-02-16 15:44:28,277  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 67}
+2020-02-16 15:44:28,277  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 49}
+2020-02-16 15:44:28,277  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 30}
+2020-02-16 15:44:28,277  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:44:28,277  rtckpi.py <module>: : INFO  id:table2
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 68}
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 67}
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 52}
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  id:table1
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 15}
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 12}
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 12}
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  id:table3
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 56}
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 57}
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 45}
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:44:28,278  rtckpi.py <module>: : INFO  id:table4
+2020-02-16 15:44:28,279  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 70}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 49}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 55}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:44:28,279  rtckpi.py <module>: : INFO  id:table1
+2020-02-16 15:44:28,279  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 18}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 16}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 7}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:44:28,279  rtckpi.py <module>: : DEBUG  A : {'fix': 135, 'out': 15}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : DEBUG  B : {'fix': 116, 'out': 12}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : DEBUG  C : {'fix': 82, 'out': 12}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : DEBUG  A : {'fix': 126, 'out': 18}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : DEBUG  B : {'fix': 106, 'out': 16}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : DEBUG  C : {'fix': 100, 'out': 7}
+2020-02-16 15:44:28,279  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:44:54,553  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:44:54,553  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, 'rtc2': {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}}
+2020-02-16 15:44:54,553  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}, {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}]
+2020-02-16 15:44:54,554  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1', 'table2'], 'out': ['table1']}
+2020-02-16 15:44:54,554  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3', 'table4'], 'out': ['table1']}
+2020-02-16 15:44:54,554  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:44:54,554  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:44:54,554  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 15:44:54,554  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 77}
+2020-02-16 15:44:54,554  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 43}
+2020-02-16 15:44:54,554  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 72}
+2020-02-16 15:44:54,554  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:44:54,554  rtckpi.py <module>: : INFO  fix id:table2
+2020-02-16 15:44:54,554  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 58}
+2020-02-16 15:44:54,554  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 79}
+2020-02-16 15:44:54,554  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 68}
+2020-02-16 15:44:54,555  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:44:54,555  rtckpi.py <module>: : INFO  out id:table1
+2020-02-16 15:44:54,555  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 8}
+2020-02-16 15:44:54,555  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 10}
+2020-02-16 15:44:54,555  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 9}
+2020-02-16 15:44:54,555  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:44:54,555  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 15:44:54,555  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 39}
+2020-02-16 15:44:54,556  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 35}
+2020-02-16 15:44:54,556  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 37}
+2020-02-16 15:44:54,556  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:44:54,556  rtckpi.py <module>: : INFO  fix id:table4
+2020-02-16 15:44:54,556  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 43}
+2020-02-16 15:44:54,556  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 35}
+2020-02-16 15:44:54,556  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 49}
+2020-02-16 15:44:54,556  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:44:54,556  rtckpi.py <module>: : INFO  out id:table1
+2020-02-16 15:44:54,556  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 9}
+2020-02-16 15:44:54,557  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 19}
+2020-02-16 15:44:54,557  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 4}
+2020-02-16 15:44:54,557  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:44:54,557  rtckpi.py <module>: : DEBUG  A : {'fix': 135, 'out': 8}
+2020-02-16 15:44:54,557  rtckpi.py <module>: : DEBUG  B : {'fix': 122, 'out': 10}
+2020-02-16 15:44:54,557  rtckpi.py <module>: : DEBUG  C : {'fix': 140, 'out': 9}
+2020-02-16 15:44:54,557  rtckpi.py <module>: : DEBUG  A : {'fix': 82, 'out': 9}
+2020-02-16 15:44:54,557  rtckpi.py <module>: : DEBUG  B : {'fix': 70, 'out': 19}
+2020-02-16 15:44:54,557  rtckpi.py <module>: : DEBUG  C : {'fix': 86, 'out': 4}
+2020-02-16 15:44:54,557  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:46:00,442  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:46:00,442  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 15:46:00,442  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 15:46:00,442  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 15:46:00,442  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 15:46:00,443  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:46:00,443  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:46:00,443  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 15:46:00,443  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 39}
+2020-02-16 15:46:00,443  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 55}
+2020-02-16 15:46:00,443  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 77}
+2020-02-16 15:46:00,443  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:46:00,444  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 15:46:00,444  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 5}
+2020-02-16 15:46:00,444  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 16}
+2020-02-16 15:46:00,444  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 10}
+2020-02-16 15:46:00,444  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 15:46:00,444  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 14}
+2020-02-16 15:46:00,444  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 21}
+2020-02-16 15:46:00,444  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 12}
+2020-02-16 15:46:00,444  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:46:00,444  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 15:46:00,444  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 60}
+2020-02-16 15:46:00,445  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 31}
+2020-02-16 15:46:00,445  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 65}
+2020-02-16 15:46:00,445  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:46:00,445  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 15:46:00,445  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 13}
+2020-02-16 15:46:00,445  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 10}
+2020-02-16 15:46:00,445  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 10}
+2020-02-16 15:46:00,445  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 15:46:00,446  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 18}
+2020-02-16 15:46:00,446  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 27}
+2020-02-16 15:46:00,446  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 19}
+2020-02-16 15:46:00,446  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:46:00,446  rtckpi.py <module>: : DEBUG  A : {'fix': 39, 'out': 14}
+2020-02-16 15:46:00,446  rtckpi.py <module>: : DEBUG  B : {'fix': 55, 'out': 21}
+2020-02-16 15:46:00,446  rtckpi.py <module>: : DEBUG  C : {'fix': 77, 'out': 12}
+2020-02-16 15:46:00,446  rtckpi.py <module>: : DEBUG  A : {'fix': 60, 'out': 18}
+2020-02-16 15:46:00,446  rtckpi.py <module>: : DEBUG  B : {'fix': 31, 'out': 27}
+2020-02-16 15:46:00,446  rtckpi.py <module>: : DEBUG  C : {'fix': 65, 'out': 19}
+2020-02-16 15:46:00,446  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:47:24,226  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:47:24,226  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 15:47:24,226  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 15:47:24,226  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 15:47:24,227  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 15:47:24,227  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 40}
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 47}
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 44}
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 10}
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 18}
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 25}
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 11}
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 14}
+2020-02-16 15:47:24,227  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 17}
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 39}
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 78}
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 60}
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 4}
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 24}
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 15}
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 22}
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 7}
+2020-02-16 15:47:24,228  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 24}
+2020-02-16 15:47:24,228  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:47:24,229  rtckpi.py <module>: : DEBUG  A : {'fix': 40, 'out': 21}
+2020-02-16 15:47:24,229  rtckpi.py <module>: : DEBUG  B : {'fix': 47, 'out': 32}
+2020-02-16 15:47:24,229  rtckpi.py <module>: : DEBUG  C : {'fix': 44, 'out': 42}
+2020-02-16 15:47:24,229  rtckpi.py <module>: : DEBUG  A : {'fix': 39, 'out': 26}
+2020-02-16 15:47:24,229  rtckpi.py <module>: : DEBUG  B : {'fix': 78, 'out': 31}
+2020-02-16 15:47:24,229  rtckpi.py <module>: : DEBUG  C : {'fix': 60, 'out': 39}
+2020-02-16 15:47:24,229  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:52:12,780  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:52:12,781  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 15:52:12,781  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 15:52:12,781  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 15:52:12,781  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 15:52:12,782  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:52:12,782  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:52:12,782  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 15:52:12,782  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 37}
+2020-02-16 15:52:12,782  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 49}
+2020-02-16 15:52:12,782  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 65}
+2020-02-16 15:52:12,782  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:52:12,782  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 15:52:12,782  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 21}
+2020-02-16 15:52:12,783  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 28}
+2020-02-16 15:52:12,783  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 8}
+2020-02-16 15:52:12,783  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 15:52:12,783  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 11}
+2020-02-16 15:52:12,783  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 25}
+2020-02-16 15:52:12,783  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 30}
+2020-02-16 15:52:12,783  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:52:12,783  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 15:52:12,783  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 64}
+2020-02-16 15:52:12,784  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 33}
+2020-02-16 15:52:12,784  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 70}
+2020-02-16 15:52:12,784  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:52:12,784  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 15:52:12,784  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 19}
+2020-02-16 15:52:12,784  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 9}
+2020-02-16 15:52:12,784  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 7}
+2020-02-16 15:52:12,784  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 15:52:12,784  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 16}
+2020-02-16 15:52:12,784  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 4}
+2020-02-16 15:52:12,784  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 11}
+2020-02-16 15:52:12,784  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:52:12,784  rtckpi.py <module>: : DEBUG  A : {'fix': 37, 'out': 32}
+2020-02-16 15:52:12,785  rtckpi.py <module>: : DEBUG  B : {'fix': 49, 'out': 53}
+2020-02-16 15:52:12,785  rtckpi.py <module>: : DEBUG  C : {'fix': 65, 'out': 38}
+2020-02-16 15:52:12,785  rtckpi.py <module>: : DEBUG  A : {'fix': 64, 'out': 35}
+2020-02-16 15:52:12,785  rtckpi.py <module>: : DEBUG  B : {'fix': 33, 'out': 13}
+2020-02-16 15:52:12,785  rtckpi.py <module>: : DEBUG  C : {'fix': 70, 'out': 18}
+2020-02-16 15:52:12,785  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:52:30,928  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:52:30,929  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 15:52:30,929  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 15:52:30,929  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 15:52:30,929  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 15:52:30,929  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:52:30,929  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:52:30,929  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 15:52:30,929  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 69}
+2020-02-16 15:52:30,929  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 36}
+2020-02-16 15:52:30,929  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 34}
+2020-02-16 15:52:30,929  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 29}
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 30}
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 24}
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 14}
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 21}
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 28}
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 40}
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 42}
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 61}
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 15:52:30,930  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 23}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 19}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 25}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 15:52:30,931  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 3}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 10}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 17}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:52:30,931  rtckpi.py <module>: : INFO  111.html
+2020-02-16 15:52:30,931  rtckpi.py <module>: : DEBUG  A : {'fix': 69, 'out': 43}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : DEBUG  B : {'fix': 36, 'out': 51}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : DEBUG  C : {'fix': 34, 'out': 52}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : INFO  222.html
+2020-02-16 15:52:30,931  rtckpi.py <module>: : DEBUG  A : {'fix': 40, 'out': 26}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : DEBUG  B : {'fix': 42, 'out': 29}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : DEBUG  C : {'fix': 61, 'out': 42}
+2020-02-16 15:52:30,931  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:52:52,787  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:52:52,787  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 15:52:52,787  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 15:52:52,787  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 15:52:52,788  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 15:52:52,788  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 38}
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 56}
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 54}
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 30}
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 15}
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 30}
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 16}
+2020-02-16 15:52:52,788  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 16}
+2020-02-16 15:52:52,789  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 23}
+2020-02-16 15:52:52,789  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:52:52,789  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 15:52:52,789  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 42}
+2020-02-16 15:52:52,789  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 75}
+2020-02-16 15:52:52,789  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 47}
+2020-02-16 15:52:52,789  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:52:52,789  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 15:52:52,790  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 11}
+2020-02-16 15:52:52,790  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 27}
+2020-02-16 15:52:52,790  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 20}
+2020-02-16 15:52:52,790  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 15:52:52,790  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 15}
+2020-02-16 15:52:52,790  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 8}
+2020-02-16 15:52:52,790  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 25}
+2020-02-16 15:52:52,791  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:52:52,791  rtckpi.py <module>: : INFO  111.html
+2020-02-16 15:52:52,791  rtckpi.py <module>: : INFO  A : {'fix': 38, 'out': 46}
+2020-02-16 15:52:52,791  rtckpi.py <module>: : INFO  B : {'fix': 56, 'out': 31}
+2020-02-16 15:52:52,791  rtckpi.py <module>: : INFO  C : {'fix': 54, 'out': 53}
+2020-02-16 15:52:52,791  rtckpi.py <module>: : INFO  222.html
+2020-02-16 15:52:52,791  rtckpi.py <module>: : INFO  A : {'fix': 42, 'out': 26}
+2020-02-16 15:52:52,791  rtckpi.py <module>: : INFO  B : {'fix': 75, 'out': 35}
+2020-02-16 15:52:52,792  rtckpi.py <module>: : INFO  C : {'fix': 47, 'out': 45}
+2020-02-16 15:52:52,792  rtckpi.py <module>: : INFO  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:53:09,291  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 15:53:09,292  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 15:53:09,292  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 15:53:09,292  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 15:53:09,292  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 15:53:09,292  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 15:53:09,292  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 15:53:09,292  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 15:53:09,292  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 37}
+2020-02-16 15:53:09,292  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 41}
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 48}
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 26}
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 3}
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 19}
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 8}
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 4}
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 18}
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 42}
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 65}
+2020-02-16 15:53:09,293  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 66}
+2020-02-16 15:53:09,294  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 15:53:09,294  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 15:53:09,294  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 19}
+2020-02-16 15:53:09,294  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 16}
+2020-02-16 15:53:09,294  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 10}
+2020-02-16 15:53:09,294  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 15:53:09,294  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 5}
+2020-02-16 15:53:09,294  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 6}
+2020-02-16 15:53:09,294  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 9}
+2020-02-16 15:53:09,294  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 15:53:09,295  rtckpi.py <module>: : INFO  111.html
+2020-02-16 15:53:09,295  rtckpi.py <module>: : INFO    A : {'fix': 37, 'out': 34}
+2020-02-16 15:53:09,295  rtckpi.py <module>: : INFO    B : {'fix': 41, 'out': 7}
+2020-02-16 15:53:09,295  rtckpi.py <module>: : INFO    C : {'fix': 48, 'out': 37}
+2020-02-16 15:53:09,295  rtckpi.py <module>: : INFO  222.html
+2020-02-16 15:53:09,295  rtckpi.py <module>: : INFO    A : {'fix': 42, 'out': 24}
+2020-02-16 15:53:09,295  rtckpi.py <module>: : INFO    B : {'fix': 65, 'out': 22}
+2020-02-16 15:53:09,296  rtckpi.py <module>: : INFO    C : {'fix': 66, 'out': 19}
+2020-02-16 15:53:09,296  rtckpi.py <module>: : INFO  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:01:32,444  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 16:01:32,445  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 16:01:32,445  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 16:01:32,445  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 16:01:32,445  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 16:01:32,445  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:01:32,445  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 16:01:32,445  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 16:01:32,445  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 36}
+2020-02-16 16:01:32,445  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 34}
+2020-02-16 16:01:32,446  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 36}
+2020-02-16 16:01:32,446  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:01:32,446  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 16:01:32,446  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 22}
+2020-02-16 16:01:32,446  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 5}
+2020-02-16 16:01:32,446  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 18}
+2020-02-16 16:01:32,446  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 16:01:32,446  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 17}
+2020-02-16 16:01:32,446  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 24}
+2020-02-16 16:01:32,446  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 12}
+2020-02-16 16:01:32,446  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 73}
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 53}
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 57}
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 30}
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 12}
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 5}
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 30}
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 7}
+2020-02-16 16:01:32,447  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 5}
+2020-02-16 16:01:32,447  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO  111.html
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO    A : {'fix': 36, 'out': 39}
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO    B : {'fix': 34, 'out': 29}
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO    C : {'fix': 36, 'out': 30}
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO  222.html
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO    A : {'fix': 73, 'out': 60}
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO    B : {'fix': 53, 'out': 19}
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO    C : {'fix': 57, 'out': 10}
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO    A : {'fix': 218, 'out': 198}
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO    B : {'fix': 174, 'out': 96}
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO    C : {'fix': 186, 'out': 80}
+2020-02-16 16:01:32,448  rtckpi.py <module>: : INFO  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:03:52,668  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 16:03:52,669  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 16:03:52,669  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 16:03:52,669  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 16:03:52,669  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 16:03:52,669  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:03:52,669  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 16:03:52,669  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 16:03:52,669  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 68}
+2020-02-16 16:03:52,669  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 48}
+2020-02-16 16:03:52,669  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 67}
+2020-02-16 16:03:52,669  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:03:52,669  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 8}
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 20}
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 5}
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 7}
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 4}
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 10}
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 79}
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 37}
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 51}
+2020-02-16 16:03:52,670  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 28}
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 29}
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 5}
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 30}
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 29}
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 17}
+2020-02-16 16:03:52,671  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO  111.html
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO    A : {'fix': 68, 'out': 15}
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO    B : {'fix': 48, 'out': 24}
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO    C : {'fix': 67, 'out': 15}
+2020-02-16 16:03:52,671  rtckpi.py <module>: : INFO  222.html
+2020-02-16 16:03:52,672  rtckpi.py <module>: : INFO    A : {'fix': 79, 'out': 58}
+2020-02-16 16:03:52,672  rtckpi.py <module>: : INFO    B : {'fix': 37, 'out': 58}
+2020-02-16 16:03:52,672  rtckpi.py <module>: : INFO    C : {'fix': 51, 'out': 22}
+2020-02-16 16:03:52,672  rtckpi.py <module>: : INFO    A : {'fix': 147, 'out': 73}
+2020-02-16 16:03:52,672  rtckpi.py <module>: : INFO    B : {'fix': 85, 'out': 82}
+2020-02-16 16:03:52,672  rtckpi.py <module>: : INFO    C : {'fix': 118, 'out': 37}
+2020-02-16 16:03:52,672  rtckpi.py <module>: : INFO  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:04:16,488  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 16:04:16,489  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 16:04:16,489  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 16:04:16,489  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 16:04:16,489  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 16:04:16,489  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:04:16,490  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 16:04:16,490  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 16:04:16,490  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 37}
+2020-02-16 16:04:16,490  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 58}
+2020-02-16 16:04:16,490  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 44}
+2020-02-16 16:04:16,490  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:04:16,491  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 16:04:16,491  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 3}
+2020-02-16 16:04:16,491  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 14}
+2020-02-16 16:04:16,491  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 24}
+2020-02-16 16:04:16,491  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 16:04:16,491  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 30}
+2020-02-16 16:04:16,491  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 21}
+2020-02-16 16:04:16,491  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 27}
+2020-02-16 16:04:16,492  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 16:04:16,492  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 16:04:16,492  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 42}
+2020-02-16 16:04:16,492  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 50}
+2020-02-16 16:04:16,492  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 67}
+2020-02-16 16:04:16,492  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:04:16,492  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 16:04:16,492  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 29}
+2020-02-16 16:04:16,492  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 25}
+2020-02-16 16:04:16,492  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 6}
+2020-02-16 16:04:16,492  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 16:04:16,493  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 3}
+2020-02-16 16:04:16,493  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 9}
+2020-02-16 16:04:16,493  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 18}
+2020-02-16 16:04:16,493  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 16:04:16,493  rtckpi.py <module>: : INFO  111.html
+2020-02-16 16:04:16,493  rtckpi.py <module>: : INFO    A : {'fix': 37, 'out': 33}
+2020-02-16 16:04:16,493  rtckpi.py <module>: : INFO    B : {'fix': 58, 'out': 35}
+2020-02-16 16:04:16,493  rtckpi.py <module>: : INFO    C : {'fix': 44, 'out': 51}
+2020-02-16 16:04:16,493  rtckpi.py <module>: : INFO  222.html
+2020-02-16 16:04:16,493  rtckpi.py <module>: : INFO    A : {'fix': 42, 'out': 32}
+2020-02-16 16:04:16,493  rtckpi.py <module>: : INFO    B : {'fix': 50, 'out': 34}
+2020-02-16 16:04:16,493  rtckpi.py <module>: : INFO    C : {'fix': 67, 'out': 24}
+2020-02-16 16:04:16,494  rtckpi.py <module>: : INFO    A : {'fix': 79, 'out': 65}
+2020-02-16 16:04:16,494  rtckpi.py <module>: : INFO    B : {'fix': 108, 'out': 69}
+2020-02-16 16:04:16,494  rtckpi.py <module>: : INFO    C : {'fix': 111, 'out': 75}
+2020-02-16 16:04:16,494  rtckpi.py <module>: : INFO  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:04:58,231  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 16:04:58,231  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 16:04:58,231  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 16:04:58,231  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 16:04:58,231  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 16:04:58,231  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 45}
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 54}
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 71}
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 14}
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 22}
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 15}
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 28}
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 11}
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 27}
+2020-02-16 16:04:58,232  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 16:04:58,233  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 16:04:58,233  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 36}
+2020-02-16 16:04:58,233  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 56}
+2020-02-16 16:04:58,233  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 48}
+2020-02-16 16:04:58,233  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:04:58,233  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 16:04:58,233  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 27}
+2020-02-16 16:04:58,233  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 15}
+2020-02-16 16:04:58,233  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 15}
+2020-02-16 16:04:58,233  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 16:04:58,233  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 26}
+2020-02-16 16:04:58,234  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 26}
+2020-02-16 16:04:58,234  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 18}
+2020-02-16 16:04:58,234  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 16:04:58,234  rtckpi.py <module>: : INFO  111.html
+2020-02-16 16:04:58,234  rtckpi.py <module>: : INFO    A : {'fix': 45, 'out': 42}
+2020-02-16 16:04:58,234  rtckpi.py <module>: : INFO    B : {'fix': 54, 'out': 33}
+2020-02-16 16:04:58,234  rtckpi.py <module>: : INFO    C : {'fix': 71, 'out': 42}
+2020-02-16 16:04:58,235  rtckpi.py <module>: : INFO  222.html
+2020-02-16 16:04:58,235  rtckpi.py <module>: : INFO    A : {'fix': 36, 'out': 53}
+2020-02-16 16:04:58,235  rtckpi.py <module>: : INFO    B : {'fix': 56, 'out': 41}
+2020-02-16 16:04:58,235  rtckpi.py <module>: : INFO    C : {'fix': 48, 'out': 33}
+2020-02-16 16:04:58,235  rtckpi.py <module>: : INFO    A : {'fix': 81, 'out': 95}
+2020-02-16 16:04:58,235  rtckpi.py <module>: : INFO    B : {'fix': 110, 'out': 74}
+2020-02-16 16:04:58,235  rtckpi.py <module>: : INFO    C : {'fix': 119, 'out': 75}
+2020-02-16 16:04:58,235  rtckpi.py <module>: : INFO    total : 238
+2020-02-16 16:04:58,235  rtckpi.py <module>: : INFO  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:05:17,882  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 16:05:17,882  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 16:05:17,882  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 16:05:17,882  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 16:05:17,882  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 16:05:17,882  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:05:17,882  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 16:05:17,883  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 16:05:17,883  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 78}
+2020-02-16 16:05:17,883  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 31}
+2020-02-16 16:05:17,883  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 79}
+2020-02-16 16:05:17,883  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:05:17,883  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 16:05:17,883  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 12}
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 18}
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 26}
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 4}
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 14}
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 13}
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 33}
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 76}
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 78}
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 16:05:17,884  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 6}
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 10}
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 28}
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 5}
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 5}
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 19}
+2020-02-16 16:05:17,885  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO  111.html
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO    A : {'fix': 78, 'out': 16}
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO    B : {'fix': 31, 'out': 32}
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO    C : {'fix': 79, 'out': 39}
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO  222.html
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO    A : {'fix': 33, 'out': 11}
+2020-02-16 16:05:17,885  rtckpi.py <module>: : INFO    B : {'fix': 76, 'out': 15}
+2020-02-16 16:05:17,886  rtckpi.py <module>: : INFO    C : {'fix': 78, 'out': 47}
+2020-02-16 16:05:17,886  rtckpi.py <module>: : INFO    A : {'fix': 111, 'out': 27, 'total': 222}
+2020-02-16 16:05:17,886  rtckpi.py <module>: : INFO    B : {'fix': 107, 'out': 47, 'total': 214}
+2020-02-16 16:05:17,886  rtckpi.py <module>: : INFO    C : {'fix': 157, 'out': 86, 'total': 314}
+2020-02-16 16:05:17,886  rtckpi.py <module>: : INFO  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:05:37,551  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 16:05:37,551  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 16:05:37,552  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 16:05:37,552  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 16:05:37,552  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 16:05:37,552  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:05:37,552  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 16:05:37,552  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 16:05:37,552  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 48}
+2020-02-16 16:05:37,552  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 37}
+2020-02-16 16:05:37,552  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 69}
+2020-02-16 16:05:37,552  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:05:37,552  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 16:05:37,552  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 4}
+2020-02-16 16:05:37,552  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 24}
+2020-02-16 16:05:37,552  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 8}
+2020-02-16 16:05:37,552  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 20}
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 5}
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 22}
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 56}
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 39}
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 63}
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 26}
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 17}
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 28}
+2020-02-16 16:05:37,553  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 8}
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 8}
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 15}
+2020-02-16 16:05:37,554  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO  111.html
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO    A : {'fix': 48, 'out': 24}
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO    B : {'fix': 37, 'out': 29}
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO    C : {'fix': 69, 'out': 30}
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO  222.html
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO    A : {'fix': 56, 'out': 34}
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO    B : {'fix': 39, 'out': 25}
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO    C : {'fix': 63, 'out': 43}
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO    A : {'fix': 104, 'out': 58, 'total': 162}
+2020-02-16 16:05:37,554  rtckpi.py <module>: : INFO    B : {'fix': 76, 'out': 54, 'total': 130}
+2020-02-16 16:05:37,555  rtckpi.py <module>: : INFO    C : {'fix': 132, 'out': 73, 'total': 205}
+2020-02-16 16:05:37,555  rtckpi.py <module>: : INFO  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:06:10,976  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 16:06:10,977  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 16:06:10,977  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 16:06:10,977  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 16:06:10,977  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 16:06:10,977  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:06:10,977  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 16:06:10,977  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 16:06:10,977  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 35}
+2020-02-16 16:06:10,978  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 50}
+2020-02-16 16:06:10,978  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 39}
+2020-02-16 16:06:10,978  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:06:10,978  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 16:06:10,978  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 3}
+2020-02-16 16:06:10,978  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 6}
+2020-02-16 16:06:10,978  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 29}
+2020-02-16 16:06:10,978  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 16:06:10,978  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 20}
+2020-02-16 16:06:10,978  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 12}
+2020-02-16 16:06:10,978  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 8}
+2020-02-16 16:06:10,979  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 16:06:10,979  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 16:06:10,979  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 72}
+2020-02-16 16:06:10,979  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 39}
+2020-02-16 16:06:10,979  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 56}
+2020-02-16 16:06:10,979  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:06:10,979  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 16:06:10,979  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 19}
+2020-02-16 16:06:10,979  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 27}
+2020-02-16 16:06:10,979  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 11}
+2020-02-16 16:06:10,979  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 11}
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 27}
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 28}
+2020-02-16 16:06:10,980  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO  111.html
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO    A : {'fix': 35, 'out': 23}
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO    B : {'fix': 50, 'out': 18}
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO    C : {'fix': 39, 'out': 37}
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO  222.html
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO    A : {'fix': 72, 'out': 30}
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO    B : {'fix': 39, 'out': 54}
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO    C : {'fix': 56, 'out': 39}
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO    A : {'fix': 107, 'out': 53, 'total': 160}
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO    B : {'fix': 89, 'out': 72, 'total': 161}
+2020-02-16 16:06:10,980  rtckpi.py <module>: : INFO    C : {'fix': 95, 'out': 76, 'total': 171}
+2020-02-16 16:06:10,981  rtckpi.py <module>: : INFO  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:06:25,774  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 16:06:25,774  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 16:06:25,774  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 16:06:25,774  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 16:06:25,774  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 16:06:25,775  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:06:25,775  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 16:06:25,775  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 16:06:25,775  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 38}
+2020-02-16 16:06:25,775  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 52}
+2020-02-16 16:06:25,775  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 71}
+2020-02-16 16:06:25,775  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:06:25,775  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 16:06:25,775  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 12}
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 12}
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 21}
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 3}
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 14}
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 25}
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 59}
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 72}
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 59}
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 16:06:25,776  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 24}
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 15}
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 5}
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 5}
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 20}
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 30}
+2020-02-16 16:06:25,777  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO  111.html
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO    A : {'fix': 38, 'out': 15}
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO    B : {'fix': 52, 'out': 26}
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO    C : {'fix': 71, 'out': 46}
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO  222.html
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO    A : {'fix': 59, 'out': 29}
+2020-02-16 16:06:25,777  rtckpi.py <module>: : INFO    B : {'fix': 72, 'out': 35}
+2020-02-16 16:06:25,778  rtckpi.py <module>: : INFO    C : {'fix': 59, 'out': 35}
+2020-02-16 16:06:25,778  rtckpi.py <module>: : DEBUG  
+2020-02-16 16:06:25,778  rtckpi.py <module>: : INFO    A : {'fix': 97, 'out': 44, 'total': 141}
+2020-02-16 16:06:25,778  rtckpi.py <module>: : INFO    B : {'fix': 124, 'out': 61, 'total': 185}
+2020-02-16 16:06:25,778  rtckpi.py <module>: : INFO    C : {'fix': 130, 'out': 81, 'total': 211}
+2020-02-16 16:06:25,778  rtckpi.py <module>: : INFO  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:06:34,495  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 16:06:34,495  config.py read_config: : DEBUG  {'version': '2', 'members': ['A', 'B', 'C'], 'report_title': 'X团队 修复问题汇总', 'report_fmt': 'text', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-16 16:06:34,495  config.py read_config: : DEBUG  RTCS: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-16 16:06:34,495  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-16 16:06:34,495  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-16 16:06:34,496  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  url:111.html
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 59}
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 53}
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 79}
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  out id:table3
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 18}
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 27}
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 5}
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  out id:table4
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 7}
+2020-02-16 16:06:34,496  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 25}
+2020-02-16 16:06:34,497  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 28}
+2020-02-16 16:06:34,497  rtckpi.py <module>: : INFO  url:222.html
+2020-02-16 16:06:34,497  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-16 16:06:34,497  rtckpi.py <module>: : INFO  {'name': 'A', 'fix': 56}
+2020-02-16 16:06:34,497  rtckpi.py <module>: : INFO  {'name': 'B', 'fix': 52}
+2020-02-16 16:06:34,497  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 69}
+2020-02-16 16:06:34,497  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-16 16:06:34,497  rtckpi.py <module>: : INFO  out id:table5
+2020-02-16 16:06:34,497  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 21}
+2020-02-16 16:06:34,497  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 14}
+2020-02-16 16:06:34,498  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 5}
+2020-02-16 16:06:34,498  rtckpi.py <module>: : INFO  out id:table6
+2020-02-16 16:06:34,498  rtckpi.py <module>: : INFO  {'name': 'A', 'out': 29}
+2020-02-16 16:06:34,498  rtckpi.py <module>: : INFO  {'name': 'B', 'out': 16}
+2020-02-16 16:06:34,498  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 11}
+2020-02-16 16:06:34,498  rtckpi.py <module>: : DEBUG  ======================================================================================================================================================
+2020-02-16 16:06:34,498  rtckpi.py <module>: : INFO  111.html
+2020-02-16 16:06:34,498  rtckpi.py <module>: : INFO    A : {'fix': 59, 'out': 25}
+2020-02-16 16:06:34,498  rtckpi.py <module>: : INFO    B : {'fix': 53, 'out': 52}
+2020-02-16 16:06:34,498  rtckpi.py <module>: : INFO    C : {'fix': 79, 'out': 33}
+2020-02-16 16:06:34,498  rtckpi.py <module>: : INFO  222.html
+2020-02-16 16:06:34,499  rtckpi.py <module>: : INFO    A : {'fix': 56, 'out': 50}
+2020-02-16 16:06:34,499  rtckpi.py <module>: : INFO    B : {'fix': 52, 'out': 30}
+2020-02-16 16:06:34,499  rtckpi.py <module>: : INFO    C : {'fix': 69, 'out': 16}
+2020-02-16 16:06:34,499  rtckpi.py <module>: : INFO  
+2020-02-16 16:06:34,499  rtckpi.py <module>: : INFO    A : {'fix': 115, 'out': 75, 'total': 190}
+2020-02-16 16:06:34,499  rtckpi.py <module>: : INFO    B : {'fix': 105, 'out': 82, 'total': 187}
+2020-02-16 16:06:34,499  rtckpi.py <module>: : INFO    C : {'fix': 148, 'out': 49, 'total': 197}
+2020-02-16 16:06:34,499  rtckpi.py <module>: : INFO  ------------------------------------------------------------------------------------------------------------------------------------------------------

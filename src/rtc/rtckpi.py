@@ -1,4 +1,5 @@
 import getopt
+import logging
 import os
 import sys
 import log
@@ -46,5 +47,4 @@ def check_arg():
 if __name__ == '__main__':
     log.initial()
     if check_arg():
-        print(os.getcwd())
-        print('check done.')
+        logging.debug('check done.')

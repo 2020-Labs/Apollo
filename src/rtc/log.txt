@@ -1,5 +1,19 @@
-DEBUG:root:this is a message
-2020-02-16 09:58:55,811  log.py : DEBUG  this is a message
-2020-02-16 10:01:24,014  log.py : DEBUG  this is a message
-2020-02-16 10:02:39,434  log.py : DEBUG  this is a message
-2020-02-16 10:04:03,655  log.py : DEBUG  this is a message
+
+2020-02-16 10:26:29,081  log.py : DEBUG  this is a message
+2020-02-16 10:29:23,007  log.py : DEBUG  this is a message
+2020-02-16 10:29:41,819  log.py : DEBUG  this is a message
+2020-02-16 10:30:27,255  log.py : DEBUG  this is a message
+2020-02-16 10:31:36,372  log.py log initial: : DEBUG  this is a message
+2020-02-16 10:32:13,135  log.py initial: : DEBUG  this is a message
+2020-02-16 10:33:05,707  log.py initial: : DEBUG  this is a message
+2020-02-16 10:34:18,563  log.py initial: : DEBUG  this is a message
+2020-02-16 10:34:18,563  rtckpi.py <module>: : ERROR  debug
+2020-02-16 10:35:26,600  log.py initial: : DEBUG  this is a message
+2020-02-16 10:35:58,418  log.py initial: : DEBUG  this is a message
+2020-02-16 10:36:24,944  log.py initial: : DEBUG  this is a message
+2020-02-16 10:36:51,456  log.py initial: : DEBUG  this is a message
+2020-02-16 10:36:51,457  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 10:37:36,403  log.py initial: : DEBUG  this is a message
+2020-02-16 10:37:36,404  rtckpi.py <module>: : DEBUG  check done.
+2020-02-16 10:37:55,956  log.py initial: : DEBUG  this is a message
+2020-02-16 10:37:55,956  rtckpi.py <module>: : DEBUG  check done.

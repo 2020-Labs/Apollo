@@ -3,21 +3,24 @@ import random
 
 class HtmlLoader:
     def load(self,htmlfile):
-        self.content = ''
+        self.html_content = ''
+
 
 
     def parser(self):
         pass
 
-    def xx_fix(self, id):
+    def extract_fix(self, id):
+        data_list = []
         for n in config.MEMBERS:
             data = {
                     'name': n,
                     'fix': random.randint(30,80)
                 }
-            yield data
+            data_list.append(data)
+        return data_list
 
-    def xx_out(self, id):
+    def extract_out(self, id):
         for n in config.MEMBERS:
             data = {
                     'name': n,

@@ -1,5 +1,6 @@
 import copy
 import getopt
+import json
 import logging
 import os
 import sys
@@ -64,10 +65,12 @@ if __name__ == '__main__':
 
     # 汇总数据
     big_data = {}
+    big_data['date'] = config.DATE
     for cfg in config.RTCS:
         htmlloader = spider.HtmlLoader()
         htmlloader.load(cfg['url'])
         htmlloader.parser()
+
 
         data = {}
         for m in config.MEMBERS:
@@ -78,22 +81,28 @@ if __name__ == '__main__':
             big_data[m] = copy.copy(obj)
 
         logging.info('url:{0}'.format(cfg['url']))
+
+        #fix
         for id in cfg['fix']:
             logging.info('fix id:{0}'.format(id))
 
-            for fix in htmlloader.xx_fix(id):
+            for fix in htmlloader.extract_fix(id):
                 logging.info(fix)
                 obj = data[fix['name']]
                 obj['fix'] += fix['fix']
             logging.info('=' * 150)
 
+        #out
         for id in cfg['out']:
             logging.info('out id:{0}'.format(id))
-            for out in htmlloader.xx_out(id):
+            for out in htmlloader.extract_out(id):
                 logging.info(out)
                 obj = data[out['name']]
                 obj['out'] += out['out']
 
+        logging.debug('*'*100)
+        logging.debug(data)
+        logging.debug('*' * 100)
         o = {}
         o['url'] = cfg['url']
         o['result'] = data
@@ -106,7 +115,7 @@ if __name__ == '__main__':
         for k, v in rtc.get('result').items():
             logging.info('  ' + k + ' : ' + str(v))
 
-    # 计算
+    # 数据处理
     logging.info('')
     for rtc in rtc_data:
         for k, v in rtc.get('result').items():
@@ -116,4 +125,10 @@ if __name__ == '__main__':
 
     for k, v in big_data.items():
         logging.info('  ' + k + ' : ' + str(v))
+
+    logging.info(str(big_data))
+
+    logging.info(json.dumps(big_data, indent=4))
     logging.info('-' * 150)
+
+

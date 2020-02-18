@@ -15,9 +15,11 @@ RTC1_OUT_IDS = []
 
 RTCS = []
 
+DATE = ''
+
 
 def read_config(file):
-    global VERSION, MEMBERS, REPORT_TITLE, REPORT_FMT
+    global VERSION, MEMBERS, REPORT_TITLE, REPORT_FMT, DATE
     data = []
     try:
         with open(file) as f:
@@ -34,6 +36,8 @@ def read_config(file):
     REPORT_TITLE = data['report_title']
     REPORT_FMT = data['report_fmt']
 
+    #
+    DATE = '2020-2-20'
     # obj = {}
     # obj['url'] = data['rtc1']['url']
     # obj['fix'] = data['rtc1']['fix']

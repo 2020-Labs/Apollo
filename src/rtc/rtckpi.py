@@ -4,8 +4,11 @@ import json
 import logging
 import os
 import sys
+
+import db
 import log
 import config
+import report
 import spider
 
 CONFIG_FILE = ''
@@ -60,36 +63,25 @@ if __name__ == '__main__':
     if not config.read_config(CONFIG_FILE):
         sys.exit(-2)
 
-    logging.debug('-' * 150)
-    rtc_data = []
+    db.initial()
+    report.initial()
 
-    # 汇总数据
-    big_data = {}
-    big_data['date'] = config.DATE
+    logging.debug('-' * 150)
+
     for cfg in config.RTCS:
         htmlloader = spider.HtmlLoader()
         htmlloader.load(cfg['url'])
         htmlloader.parser()
-
-
-        data = {}
-        for m in config.MEMBERS:
-            obj = {}
-            obj['fix'] = 0
-            obj['out'] = 0
-            data[m] = obj
-            big_data[m] = copy.copy(obj)
 
         logging.info('url:{0}'.format(cfg['url']))
 
         #fix
         for id in cfg['fix']:
             logging.info('fix id:{0}'.format(id))
-
             for fix in htmlloader.extract_fix(id):
                 logging.info(fix)
-                obj = data[fix['name']]
-                obj['fix'] += fix['fix']
+                db.put_fix(cfg['url'], fix)
+
             logging.info('=' * 150)
 
         #out
@@ -97,38 +89,15 @@ if __name__ == '__main__':
             logging.info('out id:{0}'.format(id))
             for out in htmlloader.extract_out(id):
                 logging.info(out)
-                obj = data[out['name']]
-                obj['out'] += out['out']
+                db.put_out(cfg['url'], out)
 
-        logging.debug('*'*100)
-        logging.debug(data)
-        logging.debug('*' * 100)
-        o = {}
-        o['url'] = cfg['url']
-        o['result'] = data
-        rtc_data.append(o)
+    db.print_out()
 
-    logging.debug('=' * 150)
+    db.calc_new()
 
-    for rtc in rtc_data:
-        logging.info(rtc['url'])
-        for k, v in rtc.get('result').items():
-            logging.info('  ' + k + ' : ' + str(v))
+    db.calc_last()
 
-    # 数据处理
-    logging.info('')
-    for rtc in rtc_data:
-        for k, v in rtc.get('result').items():
-            big_data[k]['fix'] += v['fix']
-            big_data[k]['out'] += v['out']
-            big_data[k]['total'] = big_data[k]['fix'] + big_data[k]['out']
+    report.report_render()
 
-    for k, v in big_data.items():
-        logging.info('  ' + k + ' : ' + str(v))
-
-    logging.info(str(big_data))
-
-    logging.info(json.dumps(big_data, indent=4))
-    logging.info('-' * 150)
 
 

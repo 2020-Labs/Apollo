@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 
 VERSION = ''
 
@@ -9,6 +10,9 @@ REPORT_TITLE = ''
 
 REPORT_FMT = ''
 
+REPORT_FILE = ''
+
+REPORT_FULL_PATH = ''
 RTC1_URL = ''
 RTC1_FIX_IDS = []
 RTC1_OUT_IDS = []
@@ -19,7 +23,7 @@ DATE = ''
 
 
 def read_config(file):
-    global VERSION, MEMBERS, REPORT_TITLE, REPORT_FMT, DATE
+    global VERSION, MEMBERS, REPORT_TITLE, REPORT_FMT, DATE , REPORT_FILE , REPORT_FULL_PATH
     data = []
     try:
         with open(file) as f:
@@ -35,7 +39,9 @@ def read_config(file):
     MEMBERS = data['members']
     REPORT_TITLE = data['report_title']
     REPORT_FMT = data['report_fmt']
+    REPORT_FILE = data['report_file']
 
+    REPORT_FULL_PATH = os.path.join(os.path.dirname(file), REPORT_FILE)
     #
     DATE = '2020-2-20'
     # obj = {}

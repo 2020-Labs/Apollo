@@ -20,8 +20,9 @@ COLUMNS_TOTAL = 'total'
 
 DATA_FILE = os.path.join(os.getcwd(), 'db/initial.dat')
 
+
 def initial():
-    global initial_data,last_data
+    global initial_data, last_data
     with open(DATA_FILE) as f:
         data = json.load(f)
     logging.debug(data)
@@ -32,24 +33,25 @@ def initial():
     logging.debug('last: ' + str(last_data))
 
 
-def put_fix(url,data):
+def put_fix(url, data):
     logging.debug('url: {0} , data: {1}'.format(url, str(data)))
     data['url'] = url
     data_list_fix.append(data)
 
-def put_out(url,data):
+
+def put_out(url, data):
     logging.debug('url: {0} , data: {1}'.format(url, str(data)))
     data['url'] = url
     data_list_out.append(data)
 
-def print_out():
 
+def print_out():
     logging.debug(str(data_list_fix))
     logging.debug(str(data_list_out))
 
     big_data['date'] = config.DATE
     for m in config.MEMBERS:
-        #初始化结构体
+        # 初始化结构体
         obj = {}
         obj['fix'] = 0
         obj['out'] = 0
@@ -70,6 +72,7 @@ def print_out():
 
 def get_all_data():
     return big_data
+
 
 def calc_new():
     result = copy.deepcopy(big_data);
@@ -102,11 +105,13 @@ def calc_last():
 
     return result
 
+
 def get_initial_date():
     if initial_data:
         return initial_data.get('date')
 
     return None
+
 
 def get_last_date():
     if last_data:
@@ -117,6 +122,7 @@ def get_last_date():
 
 def dump_to_json(dict):
     return json.dumps(dict, indent=4)
+
 
 def save_all():
     pass

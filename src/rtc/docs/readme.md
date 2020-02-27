@@ -42,11 +42,11 @@ run.py->>config.py: 读取配置项
 run.py->>spider:run
 spider-->>spider: 加载本地html文件
 spider->>spider: 提取有效数据
-spider->>processor: 统计
-processor->>db: 读取基础数据
-processor-->>processor: 统计数据
-processor-->>spider: 统计结果返回
-spider->>db: 保存
+spider->>dbprocessor: 统计
+dbprocessor->>dbprocessor: 读取基础数据
+dbprocessor-->>dbprocessor: 统计数据
+dbprocessor-->>spider: 统计结果返回
+spider->>dbprocessor: 保存
 spider->>report: 输出统计报告
 ```
 
@@ -116,7 +116,6 @@ history.dat
 > 初始数据的格式
 
 ```json
-#初始数据和最后一次的统计数据保存在一个文件里
 "initial":
 {
     "date":"2019-10-15",
@@ -197,7 +196,7 @@ A        3         1        4
 明细：
 | 姓名 | 修复 | 分析转出 | 小计 |
 | --- | ---- | -------- | ---- |
-| A    | 87   | 3        | 90   |
+| A  | 87   | 3    | 90     |
 
 ：：：：：：：：：：：：：：：：：：：：：：：
 

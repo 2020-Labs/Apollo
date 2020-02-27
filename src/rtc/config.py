@@ -17,7 +17,7 @@ RTC1_URL = ''
 RTC1_FIX_IDS = []
 RTC1_OUT_IDS = []
 
-RTCS = []
+RTCs = []
 
 DATE = ''
 
@@ -43,33 +43,20 @@ def read_config(file):
 
     REPORT_FULL_PATH = os.path.join(os.path.dirname(file), REPORT_FILE)
     #
-    DATE = '2020-2-20'
-    # obj = {}
-    # obj['url'] = data['rtc1']['url']
-    # obj['fix'] = data['rtc1']['fix']
-    # obj['out'] = data['rtc1']['out']
-    # #logging.debug(obj)
-    # #RTCS.append(obj)
-    # obj = {}
-    # # obj['url'] = data['rtc2']['url']
-    # # obj['fix'] = data['rtc2']['fix']
-    # # obj['out'] = data['rtc2']['out']
-    #
-    # # RTCS.append(obj)
+    DATE = data['report_time']
 
-
-    for i in range(1,4):
-        key = 'rtc'+str(i)
+    for i in range(1, 4):
+        key = 'rtc' + str(i)
         if data.get(key):
             obj = {}
             obj['url'] = data.get(key)['url']
             obj['fix'] = data.get(key)['fix']
             obj['out'] = data.get(key)['out']
-            RTCS.append(obj)
+            RTCs.append(obj)
 
-    logging.debug('RTCS: ' + str(RTCS))
+    logging.debug('RTCs: ' + str(RTCs))
 
-    for obj in RTCS:
+    for obj in RTCs:
         logging.debug(obj)
 
     return True

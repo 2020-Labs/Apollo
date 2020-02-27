@@ -5,8 +5,6 @@ class HtmlLoader:
     def load(self,htmlfile):
         self.html_content = ''
 
-
-
     def parser(self):
         pass
 

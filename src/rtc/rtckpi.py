@@ -99,5 +99,7 @@ if __name__ == '__main__':
 
     report.report_render()
 
+    db.save_all()
+
 
 

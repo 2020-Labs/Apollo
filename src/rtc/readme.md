@@ -1,5 +1,5 @@
 
-# RTC Bug单统计
+# RTC Bug单统计 ==概要设计==
 
 ## 功能介绍
 - 统计各成员的修复Bug数量
@@ -11,9 +11,8 @@
 - config  - 解析配置文件
 - htmlloader： 加载html内容，来源：从本地/网络 , `注`: 可扩展请求网络
 - spider: 解析html并提取数据
-- processor: 对提取的数据进行统计
-- db: 统计数据的加载和持久化
-- report_output: 输出统计结果，格式：文本/Markdown ， `注`：文本格式输出同时会输出在日志文件
+- db-processor: 统计数据的加载和持久化, 对提取的数据进行统计
+- report: 输出统计结果，格式：文本/Markdown ， `注`：文本格式输出同时会输出在日志文件
 - run.py: 程序入口 ， 选项参数
 
 ## 部署
@@ -21,36 +20,23 @@
 ```text
 -- rtc
   |- *.py （执行脚本）
-  |- initial.dat
-  |- history.dat
-  |- log
+  |- db
+  	|- initial.dat
+  	|- history.dat
+  |- log.txt
   |- reports
   |- * （本地数据来源）
     |- rtc.config
     |- *.html
+    |- **report.txt
 ```
 
 ## 启动流程
 
-YoudaoNote UML:
-```
-sequenceDiagram
-run.py->>run.py: 检查选项参数
-run.py->>config.py: 读取配置项
-run.py->>spider:run
-spider-->>spider: 加载本地html文件
-spider->>spider: 提取有效数据
-spider->>processor: 统计
-processor->>db: 读取基础数据
-processor-->>processor: 统计数据
-processor-->>spider: 统计结果返回
-spider->>db: 保存
-spider->>report: 输出统计报告
-```
-
-
-Markdown UML:
+时序图:
 ```sequence
+#md:sequence, 
+#Youdao:sequenceDiagram
 run.py->>run.py: 检查选项参数
 run.py->>config.py: 读取配置项
 run.py->>spider:run
@@ -63,22 +49,26 @@ processor-->>spider: 统计结果返回
 spider->>db: 保存
 spider->>report: 输出统计报告
 ```
+
+
+
 
 > 启动选项参数
 ```shell
-  -c <xxx.config>
-  or
-  --config=<xxx.config>
+ppython rtckpi.py  -c <xxx.config>| --config=<xxx.config>
 ```
 
-## rtc配置
-> 配置项：
+
+
+## 配置文件
+
+> 配置项介绍：
 
  - MEMBERS: 成员名单列表
- - VERSION: 版本号
+ - VERSION: 版本号 （仅用于显示）
  - REPORT_TITLE:输出报告标题
  - REPORT_FMT: 输出报告格式，注TEXT/MD 
- - REPORT_FILE: 输出报告文件名
+ - REPORT_FILE: 输出报告文件名 
 
  - RTCs:
      - URL:
@@ -107,6 +97,7 @@ spider->>report: 输出统计报告
     ]
 }
 ```
+
 
 
 ## 统计结果存储
@@ -140,27 +131,11 @@ history.dat
 }
 ```
 
-> 输出结果数据结构：
-```json
-"last":
-{
-    "date":"2020-1-15",
-    "A":{
-        "fixed":"90",
-        "out":"1"
-    },
-    "B":{
-        "fixed":"62",
-        "out":"1"
-    }
-}
-```
-
-> 历史数据结构
+> 输出结果数据结构：历史数据结构
 ```json
 [
     {
-        "createdate":"2020-2-2 17:00:03",
+        "createtime":"2020-2-2 17:00:03",
         "delta":
         {
             "date":"2020-1-15",

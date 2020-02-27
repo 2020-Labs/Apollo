@@ -79,12 +79,11 @@ spider->>report: 输出统计报告
  - REPORT_TITLE:输出报告标题
  - REPORT_FMT: 输出报告格式，注TEXT/MD 
  - REPORT_FILE: 输出报告文件名
- - RTC_CONFIGS:  
-   - URL:  html文件名
-   - ELEMENT_ID: 修复bug的html元素的id
- - RTC_CONFIGS_OUT: 
-   - URL: html文件名
-   - ELEMENT_ID: 分析转bug的html元素的id
+
+ - RTCs:
+     - URL:
+     - FIX_IDs: 数组
+     - OUT_IDs: 数组
 
 
 > 配置文件模块：
@@ -97,13 +96,13 @@ spider->>report: 输出统计报告
     "rtc":[
         {
             "url":"file:///",
-            "element_id_1":"table1",
-            "element_id_2":"table2"
+            "fix": ["table1","table2"]
+            "out": ["table1"]
         },
         {
             "url": "http://",
-            "element_id_1":"table1",
-            "element_id_2":"table2"
+            "fix": ["table1","table2"]
+            "out": ["table1"]
         }
     ]
 }

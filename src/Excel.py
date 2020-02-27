@@ -1,8 +1,10 @@
+import json
+
 import pandas as pd
 import numpy as np
 
 
-df = pd.read_excel('/work2/oppo.xls');
+df = pd.read_excel('d:\oppo.xls');
 
 
 print(df.dtypes)
@@ -66,3 +68,24 @@ for v in new_values:
 
 data = {}
 
+print(len(new_columns))
+
+print(len(new_values))
+
+for idx in range(len(new_columns)):
+  col = new_columns[idx]
+  data[col]=[]
+  for val in new_values:
+      data[col].append(val[idx])
+
+
+
+print(json.dumps(data , indent=4))
+
+df = pd.DataFrame(data,index=range(1,len(new_values)+1))
+
+
+
+print(df)
+
+df.to_excel('d:\oppo_output.xlsx')

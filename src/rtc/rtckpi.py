@@ -68,9 +68,9 @@ if __name__ == '__main__':
 
     logging.debug('-' * 150)
 
-    for cfg in config.RTCS:
+    for cfg in config.RTCs:
         htmlloader = spider.HtmlLoader()
-        htmlloader.load(cfg['url'])
+        htmlloader.load(os.path.join(config.BASE_PATH, cfg['url']))
         htmlloader.parser()
 
         logging.info('url:{0}'.format(cfg['url']))
@@ -91,7 +91,7 @@ if __name__ == '__main__':
                 logging.info(out)
                 db.put_out(cfg['url'], out)
 
-    db.print_out()
+    db.calc_all()
 
     db.calc_new()
 

@@ -50,8 +50,20 @@ def report_render():
     thead = "{0:<10}\t{1:<10}\t{2:<10}\t{3:<10}"
     tbody = "{0:<10}\t{1:<10}\t{2:<15}\t{3:<15}"
 
+    for url, ds in db.calc_data_by_file():
+        #logging.debug('{0} , {1}'.format(url, ds))
+        output.append('')
+        output.append('=' * 100)
+        output.append('File: {0}'.format(url))
+        output.append(thead.format('姓名', '修复', '分析转出', '小计'))
+        for k, v in ds.items():
+            output.append(tbody.format(k, v[db.COLUMNS_FIX],v[db.COLUMNS_OUT], v[db.COLUMNS_TOTAL]))
+        output.append('=' * 100)
+
     data = db.calc_new()
     if data:
+        output.append('')
+        output.append('=' * 100)
         output.append('{0} ~ {1} 的新增Bug'.format(db.get_initial_date(), data[db.COLUMNS_DATE]))
         output.append(thead.format('姓名','修复','分析转出','小计'))
         for k, v in data.items():
@@ -61,6 +73,8 @@ def report_render():
 
     data = db.calc_last()
     if data:
+        output.append('')
+        output.append('=' * 100)
         output.append('')
         output.append('{0} ~ {1} 的新增Bug'.format(db.get_last_date(), data[db.COLUMNS_DATE]))
         output.append(thead.format('姓名', '修复', '分析转出', '小计'))
@@ -72,14 +86,17 @@ def report_render():
 
     data = db.get_all_data()
     output.append('')
+    output.append('=' * 100)
     output.append('全部Bug数据')
     output.append(thead.format('姓名', '修复', '分析转出', '小计'))
     for k, v in data.items():
-        if config.MEMBERS.__contains__(k):
+        #if config.MEMBERS.__contains__(k):
+        if k in config.MEMBERS:
             output.append(tbody.format(k,v[db.COLUMNS_FIX],v[db.COLUMNS_OUT], v[db.COLUMNS_TOTAL]))
+    output.append('-' * 100)
 
-    for str in output:
-        logging.debug(str)
+    for txt in output:
+        logging.debug(txt)
 
     logging.info('output to : {0}'.format(REPORT_FILE))
     with open(REPORT_FILE, mode='w',encoding='utf-8') as rf:

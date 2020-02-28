@@ -21,12 +21,13 @@ RTCs = []
 
 DATE = ''
 
+BASE_PATH = ''
 
 def read_config(file):
     global VERSION, MEMBERS, REPORT_TITLE, REPORT_FMT, DATE , REPORT_FILE , REPORT_FULL_PATH
     data = []
     try:
-        with open(file) as f:
+        with open(file, encoding='utf-8') as f:
             data = json.load(f)
         logging.debug(data)
     except Exception as e:
@@ -42,6 +43,7 @@ def read_config(file):
     REPORT_FILE = data['report_file']
 
     REPORT_FULL_PATH = os.path.join(os.path.dirname(file), REPORT_FILE)
+    BASE_PATH = os.path.dirname(file)
     #
     DATE = data['report_time']
 

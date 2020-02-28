@@ -27,7 +27,7 @@ HISTORY_FILE = os.path.join(os.getcwd(), 'db/history_db.dat')
 db_history_records = []
 db_fix = []
 db_out = []
-
+db_urls = []
 
 def initial():
     '''
@@ -69,6 +69,8 @@ def put_fix(url, data):
     logging.debug('url: {0} , data: {1}'.format(url, str(data)))
     data['url'] = url
     db_fix.append(data)
+    if url not in db_urls:
+        db_urls.append(url)
 
 
 def put_out(url, data):
@@ -81,9 +83,11 @@ def put_out(url, data):
     logging.debug('url: {0} , data: {1}'.format(url, str(data)))
     data['url'] = url
     db_out.append(data)
+    if url not in db_urls:
+        db_urls.append(url)
 
 
-def print_out():
+def calc_all():
     """
     汇总修复bug和转出bug的数据
     :return:
@@ -158,6 +162,27 @@ def calc_last():
 
     return result
 
+def calc_data_by_file():
+    logging.debug(db_urls)
+
+    for url in db_urls:
+        _all_data = {}
+        for m in config.MEMBERS:
+            # 初始化结构体
+            _all_data[m] = {'name': m, 'fix': 0, 'out': 0}
+
+
+            for r in db_fix:
+                if r['url'] == url and r['name'] == m:
+                    _all_data[m]['fix'] += r['fix']
+
+            for r in db_out:
+                if r['url'] == url and r['name'] == m:
+                    _all_data[m]['out'] += r['out']
+
+            _all_data[m]['total'] = _all_data[m]['fix'] + _all_data[m]['out']
+        logging.debug(_all_data)
+        yield url, _all_data
 
 def get_initial_date():
     if initial_data:
@@ -174,7 +199,7 @@ def get_last_date():
 
 
 def dump_to_json(dict):
-    return json.dumps(dict, indent=4)
+    return json.dumps(dict, indent=4, ensure_ascii=False)
 
 
 def save_all():

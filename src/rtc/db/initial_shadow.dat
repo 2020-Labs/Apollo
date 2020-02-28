@@ -1,21 +1,28 @@
 {
-    "initial": {},
+    "initial": {
+        "date": "2020-1-2",
+        "AAA": {
+            "fix": 135,
+            "out": 56,
+            "total": 191
+        }
+    },
     "last": {
         "date": "2020-2-29",
         "AAA": {
-            "fix": 94,
-            "out": 51,
-            "total": 145
+            "fix": 74,
+            "out": 81,
+            "total": 155
         },
         "BB": {
-            "fix": 69,
-            "out": 53,
-            "total": 122
+            "fix": 131,
+            "out": 66,
+            "total": 197
         },
         "C": {
-            "fix": 118,
-            "out": 41,
-            "total": 159
+            "fix": 116,
+            "out": 44,
+            "total": 160
         }
     }
 }

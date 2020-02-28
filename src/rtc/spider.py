@@ -1,6 +1,7 @@
 import config
 import random
 
+
 class HtmlLoader:
     def load(self,htmlfile):
         self.html_content = ''
@@ -18,10 +19,10 @@ class HtmlLoader:
             data_list.append(data)
         return data_list
 
+
     def extract_out(self, id):
         for n in config.MEMBERS:
-            data = {
+            yield {
                     'name': n,
                     'out': random.randint(3,30)
                 }
-            yield data

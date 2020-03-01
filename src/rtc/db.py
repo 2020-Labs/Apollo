@@ -13,6 +13,7 @@ initial_data = {}
 
 last_data = {}
 
+COLUMNS_NAME = 'name'
 COLUMNS_DATE = 'date'
 COLUMNS_FIX = 'fix'
 COLUMNS_OUT = 'out'
@@ -182,7 +183,7 @@ def calc_data_by_file():
 
             _all_data[m]['total'] = _all_data[m]['fix'] + _all_data[m]['out']
         logging.debug(_all_data)
-        yield url, _all_data
+        yield url, _all_data.values()
 
 def get_initial_date():
     if initial_data:

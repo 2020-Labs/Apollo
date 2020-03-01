@@ -56,8 +56,9 @@ def report_render():
         output.append('=' * 100)
         output.append('File: {0}'.format(url))
         output.append(thead.format('姓名', '修复', '分析转出', '小计'))
-        for k, v in ds.items():
-            output.append(tbody.format(k, v[db.COLUMNS_FIX],v[db.COLUMNS_OUT], v[db.COLUMNS_TOTAL]))
+
+        for v in ds:
+            output.append(tbody.format(v['name'], v[db.COLUMNS_FIX], v[db.COLUMNS_OUT], v[db.COLUMNS_TOTAL]))
         output.append('=' * 100)
 
     data = db.calc_new()

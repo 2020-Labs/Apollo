@@ -1,6 +1,4 @@
-import copy
 import getopt
-import json
 import logging
 import os
 import sys
@@ -9,7 +7,7 @@ import db
 import log
 import config
 import report
-import spider
+from spider import HtmlLoader
 
 CONFIG_FILE = ''
 
@@ -53,7 +51,7 @@ def check_arg():
     return True
 
 
-if __name__ == '__main__':
+def run():
     log.initial()
     if not check_arg():
         sys.exit(-1)
@@ -69,13 +67,12 @@ if __name__ == '__main__':
     logging.debug('-' * 150)
 
     for cfg in config.RTCs:
-        htmlloader = spider.HtmlLoader()
+        htmlloader = HtmlLoader()
         htmlloader.load(os.path.join(config.BASE_PATH, cfg['url']))
         htmlloader.parser()
 
         logging.info('url:{0}'.format(cfg['url']))
 
-        #fix
         for id in cfg['fix']:
             logging.info('fix id:{0}'.format(id))
             for fix in htmlloader.extract_fix(id):
@@ -100,6 +97,9 @@ if __name__ == '__main__':
     report.report_render()
 
     db.save_all()
+
+if __name__ == '__main__':
+    run()
 
 
 

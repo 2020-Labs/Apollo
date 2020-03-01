@@ -27857,3 +27857,1570 @@
         }
     }
 }
+2020-02-29 19:39:46,083  rtckpi.py <module>: : DEBUG  check done.
+2020-02-29 19:39:46,088  config.py read_config: : DEBUG  {'version': '2', 'members': ['AAA', 'BB', 'C'], 'report_title': '710Q项目, Network组修复问题汇总', 'report_time': '2020-2-29', 'report_fmt': 'text', 'report_file': '710Q_bugs_report.txt', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-29 19:39:46,090  config.py read_config: : DEBUG  RTCs: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-29 19:39:46,090  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-29 19:39:46,090  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-29 19:39:46,092  db.py initial: : DEBUG  {'initial': {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}, 'last': {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}
+2020-02-29 19:39:46,092  db.py initial: : DEBUG  initial: {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}
+2020-02-29 19:39:46,092  db.py initial: : DEBUG  last: {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}
+2020-02-29 19:39:46,094  db.py initial: : DEBUG  history:[{'createtime': '2020-02-27 20:24:36', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 102, 'out': 55, 'total': 157}, 'BB': {'fix': 98, 'out': 78, 'total': 176}, 'C': {'fix': 76, 'out': 77, 'total': 153}}}, {'createtime': '2020-02-27 20:24:52', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 115, 'out': 54, 'total': 169}, 'BB': {'fix': 113, 'out': 58, 'total': 171}, 'C': {'fix': 114, 'out': 84, 'total': 198}}}, {'createtime': '2020-02-27 20:34:49', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 109, 'out': 57, 'total': 166}, 'BB': {'fix': 76, 'out': 65, 'total': 141}, 'C': {'fix': 147, 'out': 77, 'total': 224}}}, {'createtime': '2020-02-27 20:35:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 144, 'out': 65, 'total': 209}, 'BB': {'fix': 98, 'out': 28, 'total': 126}, 'C': {'fix': 126, 'out': 82, 'total': 208}}}, {'createtime': '2020-02-27 20:43:30', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 98, 'out': 69, 'total': 167}, 'BB': {'fix': 129, 'out': 81, 'total': 210}, 'C': {'fix': 117, 'out': 57, 'total': 174}}}, {'createtime': '2020-02-27 20:51:09', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 141, 'out': 47, 'total': 188}, 'BB': {'fix': 111, 'out': 45, 'total': 156}, 'C': {'fix': 108, 'out': 46, 'total': 154}}}, {'createtime': '2020-02-27 20:51:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 93, 'out': 50, 'total': 143}, 'BB': {'fix': 128, 'out': 62, 'total': 190}, 'C': {'fix': 133, 'out': 78, 'total': 211}}}, {'createtime': '2020-02-27 20:51:27', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 114, 'out': 79, 'total': 193}, 'BB': {'fix': 136, 'out': 42, 'total': 178}, 'C': {'fix': 146, 'out': 69, 'total': 215}}}, {'createtime': '2020-02-27 20:55:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 105, 'out': 52, 'total': 157}, 'BB': {'fix': 115, 'out': 60, 'total': 175}, 'C': {'fix': 120, 'out': 72, 'total': 192}}}, {'createtime': '2020-02-27 20:55:53', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 147, 'out': 75, 'total': 222}, 'BB': {'fix': 140, 'out': 89, 'total': 229}, 'C': {'fix': 115, 'out': 67, 'total': 182}}}, {'createtime': '2020-02-27 20:56:23', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 130, 'out': 41, 'total': 171}, 'BB': {'fix': 142, 'out': 62, 'total': 204}, 'C': {'fix': 97, 'out': 75, 'total': 172}}}, {'createtime': '2020-02-27 20:56:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 106, 'out': 71, 'total': 177}, 'BB': {'fix': 112, 'out': 88, 'total': 200}, 'C': {'fix': 120, 'out': 59, 'total': 179}}}, {'createtime': '2020-02-27 20:57:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 110, 'out': 77, 'total': 187}, 'BB': {'fix': 128, 'out': 54, 'total': 182}, 'C': {'fix': 132, 'out': 60, 'total': 192}}}, {'createtime': '2020-02-27 20:59:33', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 72, 'out': 56, 'total': 128}, 'BB': {'fix': 110, 'out': 77, 'total': 187}, 'C': {'fix': 71, 'out': 43, 'total': 114}}}, {'createtime': '2020-02-27 21:05:14', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 94, 'out': 34, 'total': 128}, 'BB': {'fix': 129, 'out': 45, 'total': 174}, 'C': {'fix': 130, 'out': 53, 'total': 183}}}, {'createtime': '2020-02-27 21:06:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 96, 'out': 57, 'total': 153}, 'BB': {'fix': 112, 'out': 73, 'total': 185}, 'C': {'fix': 103, 'out': 55, 'total': 158}}}, {'createtime': '2020-02-27 21:08:11', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 85, 'out': 66, 'total': 151}, 'BB': {'fix': 91, 'out': 32, 'total': 123}, 'C': {'fix': 120, 'out': 55, 'total': 175}}}, {'createtime': '2020-02-27 21:15:27', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 125, 'out': 45, 'total': 170}, 'BB': {'fix': 149, 'out': 52, 'total': 201}, 'C': {'fix': 68, 'out': 50, 'total': 118}}}, {'createtime': '2020-02-27 21:18:22', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 51, 'total': 145}, 'BB': {'fix': 69, 'out': 53, 'total': 122}, 'C': {'fix': 118, 'out': 41, 'total': 159}}}, {'createtime': '2020-02-28 11:08:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 116, 'out': 68, 'total': 184}, 'BB': {'fix': 137, 'out': 20, 'total': 157}, 'C': {'fix': 93, 'out': 59, 'total': 152}}}, {'createtime': '2020-02-28 16:57:49', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 66, 'total': 201}, 'BB': {'fix': 118, 'out': 90, 'total': 208}, 'C': {'fix': 111, 'out': 42, 'total': 153}}}, {'createtime': '2020-02-28 17:17:24', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 102, 'out': 65, 'total': 167}, 'BB': {'fix': 137, 'out': 76, 'total': 213}, 'C': {'fix': 99, 'out': 74, 'total': 173}}}, {'createtime': '2020-02-28 18:06:44', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 141, 'out': 81, 'total': 222}, 'BB': {'fix': 107, 'out': 50, 'total': 157}, 'C': {'fix': 126, 'out': 35, 'total': 161}}}, {'createtime': '2020-02-28 19:31:34', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 107, 'out': 59, 'total': 166}, 'BB': {'fix': 123, 'out': 54, 'total': 177}, 'C': {'fix': 153, 'out': 98, 'total': 251}}}, {'createtime': '2020-02-28 19:33:46', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 127, 'out': 56, 'total': 183}, 'BB': {'fix': 102, 'out': 68, 'total': 170}, 'C': {'fix': 84, 'out': 74, 'total': 158}}}, {'createtime': '2020-02-28 19:36:54', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 85, 'out': 92, 'total': 177}, 'BB': {'fix': 98, 'out': 50, 'total': 148}, 'C': {'fix': 104, 'out': 49, 'total': 153}}}, {'createtime': '2020-02-28 19:53:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 124, 'out': 64, 'total': 188}, 'BB': {'fix': 111, 'out': 76, 'total': 187}, 'C': {'fix': 86, 'out': 96, 'total': 182}}}, {'createtime': '2020-02-28 19:59:16', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 81, 'out': 64, 'total': 145}, 'BB': {'fix': 103, 'out': 85, 'total': 188}, 'C': {'fix': 111, 'out': 87, 'total': 198}}}, {'createtime': '2020-02-28 20:02:15', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}, {'createtime': '2020-02-28 20:08:07', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 111, 'out': 73, 'total': 184}, 'BB': {'fix': 125, 'out': 47, 'total': 172}, 'C': {'fix': 110, 'out': 88, 'total': 198}}}, {'createtime': '2020-02-28 20:08:35', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 89, 'out': 88, 'total': 177}, 'BB': {'fix': 77, 'out': 75, 'total': 152}, 'C': {'fix': 62, 'out': 52, 'total': 114}}}, {'createtime': '2020-02-28 20:10:19', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 105, 'out': 65, 'total': 170}, 'BB': {'fix': 94, 'out': 71, 'total': 165}, 'C': {'fix': 99, 'out': 44, 'total': 143}}}, {'createtime': '2020-02-28 20:11:26', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 114, 'out': 63, 'total': 177}, 'BB': {'fix': 98, 'out': 60, 'total': 158}, 'C': {'fix': 103, 'out': 73, 'total': 176}}}, {'createtime': '2020-02-28 20:12:40', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 74, 'out': 81, 'total': 155}, 'BB': {'fix': 131, 'out': 66, 'total': 197}, 'C': {'fix': 116, 'out': 44, 'total': 160}}}]
+2020-02-29 19:39:46,101  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-29 19:39:46,101  rtckpi.py <module>: : INFO  url:111.html
+2020-02-29 19:39:46,102  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-29 19:39:46,103  rtckpi.py <module>: : INFO  {'name': 'AAA', 'fix': 51}
+2020-02-29 19:39:46,103  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'AAA', 'fix': 51}
+2020-02-29 19:39:46,104  rtckpi.py <module>: : INFO  {'name': 'BB', 'fix': 41}
+2020-02-29 19:39:46,104  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'BB', 'fix': 41}
+2020-02-29 19:39:46,105  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 41}
+2020-02-29 19:39:46,105  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'C', 'fix': 41}
+2020-02-29 19:39:46,105  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-29 19:39:46,105  rtckpi.py <module>: : INFO  out id:table3
+2020-02-29 19:39:46,106  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 27}
+2020-02-29 19:39:46,106  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 27}
+2020-02-29 19:39:46,106  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 29}
+2020-02-29 19:39:46,107  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 29}
+2020-02-29 19:39:46,107  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 27}
+2020-02-29 19:39:46,108  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 27}
+2020-02-29 19:39:46,108  rtckpi.py <module>: : INFO  out id:table4
+2020-02-29 19:39:46,108  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 16}
+2020-02-29 19:39:46,109  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 16}
+2020-02-29 19:39:46,109  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 23}
+2020-02-29 19:39:46,109  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 23}
+2020-02-29 19:39:46,110  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 22}
+2020-02-29 19:39:46,110  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 22}
+2020-02-29 19:39:46,110  rtckpi.py <module>: : INFO  url:222.html
+2020-02-29 19:39:46,111  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-29 19:39:46,111  rtckpi.py <module>: : INFO  {'name': 'AAA', 'fix': 61}
+2020-02-29 19:39:46,112  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'AAA', 'fix': 61}
+2020-02-29 19:39:46,112  rtckpi.py <module>: : INFO  {'name': 'BB', 'fix': 36}
+2020-02-29 19:39:46,112  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'BB', 'fix': 36}
+2020-02-29 19:39:46,113  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 40}
+2020-02-29 19:39:46,114  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'C', 'fix': 40}
+2020-02-29 19:39:46,114  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-29 19:39:46,114  rtckpi.py <module>: : INFO  out id:table5
+2020-02-29 19:39:46,115  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 12}
+2020-02-29 19:39:46,115  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 12}
+2020-02-29 19:39:46,115  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 20}
+2020-02-29 19:39:46,115  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 20}
+2020-02-29 19:39:46,116  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 23}
+2020-02-29 19:39:46,116  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 23}
+2020-02-29 19:39:46,116  rtckpi.py <module>: : INFO  out id:table6
+2020-02-29 19:39:46,117  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 9}
+2020-02-29 19:39:46,117  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 9}
+2020-02-29 19:39:46,117  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 4}
+2020-02-29 19:39:46,117  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 4}
+2020-02-29 19:39:46,118  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 16}
+2020-02-29 19:39:46,118  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 16}
+2020-02-29 19:39:46,118  db.py calc_all: : DEBUG  [{'name': 'AAA', 'fix': 51, 'url': '111.html'}, {'name': 'BB', 'fix': 41, 'url': '111.html'}, {'name': 'C', 'fix': 41, 'url': '111.html'}, {'name': 'AAA', 'fix': 61, 'url': '222.html'}, {'name': 'BB', 'fix': 36, 'url': '222.html'}, {'name': 'C', 'fix': 40, 'url': '222.html'}]
+2020-02-29 19:39:46,118  db.py calc_all: : DEBUG  [{'name': 'AAA', 'out': 27, 'url': '111.html'}, {'name': 'BB', 'out': 29, 'url': '111.html'}, {'name': 'C', 'out': 27, 'url': '111.html'}, {'name': 'AAA', 'out': 16, 'url': '111.html'}, {'name': 'BB', 'out': 23, 'url': '111.html'}, {'name': 'C', 'out': 22, 'url': '111.html'}, {'name': 'AAA', 'out': 12, 'url': '222.html'}, {'name': 'BB', 'out': 20, 'url': '222.html'}, {'name': 'C', 'out': 23, 'url': '222.html'}, {'name': 'AAA', 'out': 9, 'url': '222.html'}, {'name': 'BB', 'out': 4, 'url': '222.html'}, {'name': 'C', 'out': 16, 'url': '222.html'}]
+2020-02-29 19:39:46,119  db.py calc_all: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 112,
+        "out": 64,
+        "total": 176
+    },
+    "BB": {
+        "fix": 77,
+        "out": 76,
+        "total": 153
+    },
+    "C": {
+        "fix": 81,
+        "out": 88,
+        "total": 169
+    }
+}
+2020-02-29 19:39:46,120  db.py calc_new: : DEBUG  2020-2-29
+2020-02-29 19:39:46,120  db.py calc_new: : DEBUG  {'fix': 112, 'out': 64, 'total': 176}
+2020-02-29 19:39:46,120  db.py calc_new: : DEBUG  {'fix': 77, 'out': 76, 'total': 153}
+2020-02-29 19:39:46,120  db.py calc_new: : DEBUG  {'fix': 81, 'out': 88, 'total': 169}
+2020-02-29 19:39:46,121  db.py calc_new: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -23,
+        "out": 8,
+        "total": -15
+    },
+    "BB": {
+        "fix": 77,
+        "out": 76,
+        "total": 153
+    },
+    "C": {
+        "fix": 81,
+        "out": 88,
+        "total": 169
+    }
+}
+2020-02-29 19:39:46,121  db.py calc_new: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 112,
+        "out": 64,
+        "total": 176
+    },
+    "BB": {
+        "fix": 77,
+        "out": 76,
+        "total": 153
+    },
+    "C": {
+        "fix": 81,
+        "out": 88,
+        "total": 169
+    }
+}
+2020-02-29 19:39:46,122  db.py calc_last: : DEBUG  old data: {'date': '2020-2-29', 'AAA': {'fix': 112, 'out': 64, 'total': 176}, 'BB': {'fix': 77, 'out': 76, 'total': 153}, 'C': {'fix': 81, 'out': 88, 'total': 169}}
+2020-02-29 19:39:46,122  db.py calc_last: : DEBUG  2020-2-29
+2020-02-29 19:39:46,123  db.py calc_last: : DEBUG  {'fix': 112, 'out': 64, 'total': 176}
+2020-02-29 19:39:46,123  db.py calc_last: : DEBUG  {'fix': 77, 'out': 76, 'total': 153}
+2020-02-29 19:39:46,123  db.py calc_last: : DEBUG  {'fix': 81, 'out': 88, 'total': 169}
+2020-02-29 19:39:46,124  db.py calc_last: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -23,
+        "out": 8,
+        "total": -15
+    },
+    "BB": {
+        "fix": -40,
+        "out": 19,
+        "total": -21
+    },
+    "C": {
+        "fix": -15,
+        "out": 27,
+        "total": 12
+    }
+}
+2020-02-29 19:39:46,125  db.py calc_last: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 112,
+        "out": 64,
+        "total": 176
+    },
+    "BB": {
+        "fix": 77,
+        "out": 76,
+        "total": 153
+    },
+    "C": {
+        "fix": 81,
+        "out": 88,
+        "total": 169
+    }
+}
+2020-02-29 19:39:46,125  db.py calc_data_by_file: : DEBUG  ['111.html', '222.html']
+2020-02-29 19:39:46,126  db.py calc_data_by_file: : DEBUG  {'AAA': {'name': 'AAA', 'fix': 51, 'out': 43, 'total': 94}, 'BB': {'name': 'BB', 'fix': 41, 'out': 52, 'total': 93}, 'C': {'name': 'C', 'fix': 41, 'out': 49, 'total': 90}}
+2020-02-29 19:40:08,870  rtckpi.py <module>: : DEBUG  check done.
+2020-02-29 19:40:08,871  config.py read_config: : DEBUG  {'version': '2', 'members': ['AAA', 'BB', 'C'], 'report_title': '710Q项目, Network组修复问题汇总', 'report_time': '2020-2-29', 'report_fmt': 'text', 'report_file': '710Q_bugs_report.txt', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-29 19:40:08,871  config.py read_config: : DEBUG  RTCs: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-29 19:40:08,871  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-29 19:40:08,872  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-29 19:40:08,872  db.py initial: : DEBUG  {'initial': {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}, 'last': {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}
+2020-02-29 19:40:08,872  db.py initial: : DEBUG  initial: {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}
+2020-02-29 19:40:08,873  db.py initial: : DEBUG  last: {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}
+2020-02-29 19:40:08,874  db.py initial: : DEBUG  history:[{'createtime': '2020-02-27 20:24:36', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 102, 'out': 55, 'total': 157}, 'BB': {'fix': 98, 'out': 78, 'total': 176}, 'C': {'fix': 76, 'out': 77, 'total': 153}}}, {'createtime': '2020-02-27 20:24:52', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 115, 'out': 54, 'total': 169}, 'BB': {'fix': 113, 'out': 58, 'total': 171}, 'C': {'fix': 114, 'out': 84, 'total': 198}}}, {'createtime': '2020-02-27 20:34:49', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 109, 'out': 57, 'total': 166}, 'BB': {'fix': 76, 'out': 65, 'total': 141}, 'C': {'fix': 147, 'out': 77, 'total': 224}}}, {'createtime': '2020-02-27 20:35:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 144, 'out': 65, 'total': 209}, 'BB': {'fix': 98, 'out': 28, 'total': 126}, 'C': {'fix': 126, 'out': 82, 'total': 208}}}, {'createtime': '2020-02-27 20:43:30', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 98, 'out': 69, 'total': 167}, 'BB': {'fix': 129, 'out': 81, 'total': 210}, 'C': {'fix': 117, 'out': 57, 'total': 174}}}, {'createtime': '2020-02-27 20:51:09', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 141, 'out': 47, 'total': 188}, 'BB': {'fix': 111, 'out': 45, 'total': 156}, 'C': {'fix': 108, 'out': 46, 'total': 154}}}, {'createtime': '2020-02-27 20:51:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 93, 'out': 50, 'total': 143}, 'BB': {'fix': 128, 'out': 62, 'total': 190}, 'C': {'fix': 133, 'out': 78, 'total': 211}}}, {'createtime': '2020-02-27 20:51:27', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 114, 'out': 79, 'total': 193}, 'BB': {'fix': 136, 'out': 42, 'total': 178}, 'C': {'fix': 146, 'out': 69, 'total': 215}}}, {'createtime': '2020-02-27 20:55:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 105, 'out': 52, 'total': 157}, 'BB': {'fix': 115, 'out': 60, 'total': 175}, 'C': {'fix': 120, 'out': 72, 'total': 192}}}, {'createtime': '2020-02-27 20:55:53', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 147, 'out': 75, 'total': 222}, 'BB': {'fix': 140, 'out': 89, 'total': 229}, 'C': {'fix': 115, 'out': 67, 'total': 182}}}, {'createtime': '2020-02-27 20:56:23', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 130, 'out': 41, 'total': 171}, 'BB': {'fix': 142, 'out': 62, 'total': 204}, 'C': {'fix': 97, 'out': 75, 'total': 172}}}, {'createtime': '2020-02-27 20:56:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 106, 'out': 71, 'total': 177}, 'BB': {'fix': 112, 'out': 88, 'total': 200}, 'C': {'fix': 120, 'out': 59, 'total': 179}}}, {'createtime': '2020-02-27 20:57:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 110, 'out': 77, 'total': 187}, 'BB': {'fix': 128, 'out': 54, 'total': 182}, 'C': {'fix': 132, 'out': 60, 'total': 192}}}, {'createtime': '2020-02-27 20:59:33', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 72, 'out': 56, 'total': 128}, 'BB': {'fix': 110, 'out': 77, 'total': 187}, 'C': {'fix': 71, 'out': 43, 'total': 114}}}, {'createtime': '2020-02-27 21:05:14', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 94, 'out': 34, 'total': 128}, 'BB': {'fix': 129, 'out': 45, 'total': 174}, 'C': {'fix': 130, 'out': 53, 'total': 183}}}, {'createtime': '2020-02-27 21:06:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 96, 'out': 57, 'total': 153}, 'BB': {'fix': 112, 'out': 73, 'total': 185}, 'C': {'fix': 103, 'out': 55, 'total': 158}}}, {'createtime': '2020-02-27 21:08:11', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 85, 'out': 66, 'total': 151}, 'BB': {'fix': 91, 'out': 32, 'total': 123}, 'C': {'fix': 120, 'out': 55, 'total': 175}}}, {'createtime': '2020-02-27 21:15:27', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 125, 'out': 45, 'total': 170}, 'BB': {'fix': 149, 'out': 52, 'total': 201}, 'C': {'fix': 68, 'out': 50, 'total': 118}}}, {'createtime': '2020-02-27 21:18:22', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 51, 'total': 145}, 'BB': {'fix': 69, 'out': 53, 'total': 122}, 'C': {'fix': 118, 'out': 41, 'total': 159}}}, {'createtime': '2020-02-28 11:08:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 116, 'out': 68, 'total': 184}, 'BB': {'fix': 137, 'out': 20, 'total': 157}, 'C': {'fix': 93, 'out': 59, 'total': 152}}}, {'createtime': '2020-02-28 16:57:49', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 66, 'total': 201}, 'BB': {'fix': 118, 'out': 90, 'total': 208}, 'C': {'fix': 111, 'out': 42, 'total': 153}}}, {'createtime': '2020-02-28 17:17:24', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 102, 'out': 65, 'total': 167}, 'BB': {'fix': 137, 'out': 76, 'total': 213}, 'C': {'fix': 99, 'out': 74, 'total': 173}}}, {'createtime': '2020-02-28 18:06:44', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 141, 'out': 81, 'total': 222}, 'BB': {'fix': 107, 'out': 50, 'total': 157}, 'C': {'fix': 126, 'out': 35, 'total': 161}}}, {'createtime': '2020-02-28 19:31:34', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 107, 'out': 59, 'total': 166}, 'BB': {'fix': 123, 'out': 54, 'total': 177}, 'C': {'fix': 153, 'out': 98, 'total': 251}}}, {'createtime': '2020-02-28 19:33:46', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 127, 'out': 56, 'total': 183}, 'BB': {'fix': 102, 'out': 68, 'total': 170}, 'C': {'fix': 84, 'out': 74, 'total': 158}}}, {'createtime': '2020-02-28 19:36:54', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 85, 'out': 92, 'total': 177}, 'BB': {'fix': 98, 'out': 50, 'total': 148}, 'C': {'fix': 104, 'out': 49, 'total': 153}}}, {'createtime': '2020-02-28 19:53:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 124, 'out': 64, 'total': 188}, 'BB': {'fix': 111, 'out': 76, 'total': 187}, 'C': {'fix': 86, 'out': 96, 'total': 182}}}, {'createtime': '2020-02-28 19:59:16', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 81, 'out': 64, 'total': 145}, 'BB': {'fix': 103, 'out': 85, 'total': 188}, 'C': {'fix': 111, 'out': 87, 'total': 198}}}, {'createtime': '2020-02-28 20:02:15', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}, {'createtime': '2020-02-28 20:08:07', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 111, 'out': 73, 'total': 184}, 'BB': {'fix': 125, 'out': 47, 'total': 172}, 'C': {'fix': 110, 'out': 88, 'total': 198}}}, {'createtime': '2020-02-28 20:08:35', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 89, 'out': 88, 'total': 177}, 'BB': {'fix': 77, 'out': 75, 'total': 152}, 'C': {'fix': 62, 'out': 52, 'total': 114}}}, {'createtime': '2020-02-28 20:10:19', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 105, 'out': 65, 'total': 170}, 'BB': {'fix': 94, 'out': 71, 'total': 165}, 'C': {'fix': 99, 'out': 44, 'total': 143}}}, {'createtime': '2020-02-28 20:11:26', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 114, 'out': 63, 'total': 177}, 'BB': {'fix': 98, 'out': 60, 'total': 158}, 'C': {'fix': 103, 'out': 73, 'total': 176}}}, {'createtime': '2020-02-28 20:12:40', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 74, 'out': 81, 'total': 155}, 'BB': {'fix': 131, 'out': 66, 'total': 197}, 'C': {'fix': 116, 'out': 44, 'total': 160}}}]
+2020-02-29 19:40:08,875  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-29 19:40:08,875  rtckpi.py <module>: : INFO  url:111.html
+2020-02-29 19:40:08,876  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-29 19:40:08,876  rtckpi.py <module>: : INFO  {'name': 'AAA', 'fix': 35}
+2020-02-29 19:40:08,876  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'AAA', 'fix': 35}
+2020-02-29 19:40:08,877  rtckpi.py <module>: : INFO  {'name': 'BB', 'fix': 39}
+2020-02-29 19:40:08,877  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'BB', 'fix': 39}
+2020-02-29 19:40:08,877  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 52}
+2020-02-29 19:40:08,877  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'C', 'fix': 52}
+2020-02-29 19:40:08,878  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-29 19:40:08,878  rtckpi.py <module>: : INFO  out id:table3
+2020-02-29 19:40:08,878  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 16}
+2020-02-29 19:40:08,878  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 16}
+2020-02-29 19:40:08,879  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 22}
+2020-02-29 19:40:08,879  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 22}
+2020-02-29 19:40:08,879  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 23}
+2020-02-29 19:40:08,879  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 23}
+2020-02-29 19:40:08,881  rtckpi.py <module>: : INFO  out id:table4
+2020-02-29 19:40:08,882  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 17}
+2020-02-29 19:40:08,882  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 17}
+2020-02-29 19:40:08,882  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 14}
+2020-02-29 19:40:08,883  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 14}
+2020-02-29 19:40:08,883  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 12}
+2020-02-29 19:40:08,883  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 12}
+2020-02-29 19:40:08,883  rtckpi.py <module>: : INFO  url:222.html
+2020-02-29 19:40:08,884  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-29 19:40:08,884  rtckpi.py <module>: : INFO  {'name': 'AAA', 'fix': 56}
+2020-02-29 19:40:08,884  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'AAA', 'fix': 56}
+2020-02-29 19:40:08,884  rtckpi.py <module>: : INFO  {'name': 'BB', 'fix': 64}
+2020-02-29 19:40:08,885  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'BB', 'fix': 64}
+2020-02-29 19:40:08,885  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 74}
+2020-02-29 19:40:08,885  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'C', 'fix': 74}
+2020-02-29 19:40:08,885  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-29 19:40:08,886  rtckpi.py <module>: : INFO  out id:table5
+2020-02-29 19:40:08,886  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 14}
+2020-02-29 19:40:08,886  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 14}
+2020-02-29 19:40:08,886  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 22}
+2020-02-29 19:40:08,887  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 22}
+2020-02-29 19:40:08,887  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 12}
+2020-02-29 19:40:08,887  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 12}
+2020-02-29 19:40:08,887  rtckpi.py <module>: : INFO  out id:table6
+2020-02-29 19:40:08,888  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 19}
+2020-02-29 19:40:08,888  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 19}
+2020-02-29 19:40:08,889  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 3}
+2020-02-29 19:40:08,890  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 3}
+2020-02-29 19:40:08,891  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 7}
+2020-02-29 19:40:08,891  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 7}
+2020-02-29 19:40:08,891  db.py calc_all: : DEBUG  [{'name': 'AAA', 'fix': 35, 'url': '111.html'}, {'name': 'BB', 'fix': 39, 'url': '111.html'}, {'name': 'C', 'fix': 52, 'url': '111.html'}, {'name': 'AAA', 'fix': 56, 'url': '222.html'}, {'name': 'BB', 'fix': 64, 'url': '222.html'}, {'name': 'C', 'fix': 74, 'url': '222.html'}]
+2020-02-29 19:40:08,892  db.py calc_all: : DEBUG  [{'name': 'AAA', 'out': 16, 'url': '111.html'}, {'name': 'BB', 'out': 22, 'url': '111.html'}, {'name': 'C', 'out': 23, 'url': '111.html'}, {'name': 'AAA', 'out': 17, 'url': '111.html'}, {'name': 'BB', 'out': 14, 'url': '111.html'}, {'name': 'C', 'out': 12, 'url': '111.html'}, {'name': 'AAA', 'out': 14, 'url': '222.html'}, {'name': 'BB', 'out': 22, 'url': '222.html'}, {'name': 'C', 'out': 12, 'url': '222.html'}, {'name': 'AAA', 'out': 19, 'url': '222.html'}, {'name': 'BB', 'out': 3, 'url': '222.html'}, {'name': 'C', 'out': 7, 'url': '222.html'}]
+2020-02-29 19:40:08,892  db.py calc_all: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 91,
+        "out": 66,
+        "total": 157
+    },
+    "BB": {
+        "fix": 103,
+        "out": 61,
+        "total": 164
+    },
+    "C": {
+        "fix": 126,
+        "out": 54,
+        "total": 180
+    }
+}
+2020-02-29 19:40:08,893  db.py calc_new: : DEBUG  2020-2-29
+2020-02-29 19:40:08,893  db.py calc_new: : DEBUG  {'fix': 91, 'out': 66, 'total': 157}
+2020-02-29 19:40:08,894  db.py calc_new: : DEBUG  {'fix': 103, 'out': 61, 'total': 164}
+2020-02-29 19:40:08,894  db.py calc_new: : DEBUG  {'fix': 126, 'out': 54, 'total': 180}
+2020-02-29 19:40:08,895  db.py calc_new: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -44,
+        "out": 10,
+        "total": -34
+    },
+    "BB": {
+        "fix": 103,
+        "out": 61,
+        "total": 164
+    },
+    "C": {
+        "fix": 126,
+        "out": 54,
+        "total": 180
+    }
+}
+2020-02-29 19:40:08,896  db.py calc_new: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 91,
+        "out": 66,
+        "total": 157
+    },
+    "BB": {
+        "fix": 103,
+        "out": 61,
+        "total": 164
+    },
+    "C": {
+        "fix": 126,
+        "out": 54,
+        "total": 180
+    }
+}
+2020-02-29 19:40:08,896  db.py calc_last: : DEBUG  old data: {'date': '2020-2-29', 'AAA': {'fix': 91, 'out': 66, 'total': 157}, 'BB': {'fix': 103, 'out': 61, 'total': 164}, 'C': {'fix': 126, 'out': 54, 'total': 180}}
+2020-02-29 19:40:08,897  db.py calc_last: : DEBUG  2020-2-29
+2020-02-29 19:40:08,897  db.py calc_last: : DEBUG  {'fix': 91, 'out': 66, 'total': 157}
+2020-02-29 19:40:08,897  db.py calc_last: : DEBUG  {'fix': 103, 'out': 61, 'total': 164}
+2020-02-29 19:40:08,898  db.py calc_last: : DEBUG  {'fix': 126, 'out': 54, 'total': 180}
+2020-02-29 19:40:08,898  db.py calc_last: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -44,
+        "out": 10,
+        "total": -34
+    },
+    "BB": {
+        "fix": -14,
+        "out": 4,
+        "total": -10
+    },
+    "C": {
+        "fix": 30,
+        "out": -7,
+        "total": 23
+    }
+}
+2020-02-29 19:40:08,899  db.py calc_last: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 91,
+        "out": 66,
+        "total": 157
+    },
+    "BB": {
+        "fix": 103,
+        "out": 61,
+        "total": 164
+    },
+    "C": {
+        "fix": 126,
+        "out": 54,
+        "total": 180
+    }
+}
+2020-02-29 19:40:08,899  db.py calc_data_by_file: : DEBUG  ['111.html', '222.html']
+2020-02-29 19:40:08,899  db.py calc_data_by_file: : DEBUG  {'AAA': {'name': 'AAA', 'fix': 35, 'out': 33, 'total': 68}, 'BB': {'name': 'BB', 'fix': 39, 'out': 36, 'total': 75}, 'C': {'name': 'C', 'fix': 52, 'out': 35, 'total': 87}}
+2020-02-29 19:42:47,548  rtckpi.py <module>: : DEBUG  check done.
+2020-02-29 19:42:47,549  config.py read_config: : DEBUG  {'version': '2', 'members': ['AAA', 'BB', 'C'], 'report_title': '710Q项目, Network组修复问题汇总', 'report_time': '2020-2-29', 'report_fmt': 'text', 'report_file': '710Q_bugs_report.txt', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-29 19:42:47,549  config.py read_config: : DEBUG  RTCs: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-29 19:42:47,550  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-29 19:42:47,550  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-29 19:42:47,551  db.py initial: : DEBUG  {'initial': {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}, 'last': {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}
+2020-02-29 19:42:47,551  db.py initial: : DEBUG  initial: {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}
+2020-02-29 19:42:47,551  db.py initial: : DEBUG  last: {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}
+2020-02-29 19:42:47,553  db.py initial: : DEBUG  history:[{'createtime': '2020-02-27 20:24:36', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 102, 'out': 55, 'total': 157}, 'BB': {'fix': 98, 'out': 78, 'total': 176}, 'C': {'fix': 76, 'out': 77, 'total': 153}}}, {'createtime': '2020-02-27 20:24:52', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 115, 'out': 54, 'total': 169}, 'BB': {'fix': 113, 'out': 58, 'total': 171}, 'C': {'fix': 114, 'out': 84, 'total': 198}}}, {'createtime': '2020-02-27 20:34:49', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 109, 'out': 57, 'total': 166}, 'BB': {'fix': 76, 'out': 65, 'total': 141}, 'C': {'fix': 147, 'out': 77, 'total': 224}}}, {'createtime': '2020-02-27 20:35:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 144, 'out': 65, 'total': 209}, 'BB': {'fix': 98, 'out': 28, 'total': 126}, 'C': {'fix': 126, 'out': 82, 'total': 208}}}, {'createtime': '2020-02-27 20:43:30', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 98, 'out': 69, 'total': 167}, 'BB': {'fix': 129, 'out': 81, 'total': 210}, 'C': {'fix': 117, 'out': 57, 'total': 174}}}, {'createtime': '2020-02-27 20:51:09', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 141, 'out': 47, 'total': 188}, 'BB': {'fix': 111, 'out': 45, 'total': 156}, 'C': {'fix': 108, 'out': 46, 'total': 154}}}, {'createtime': '2020-02-27 20:51:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 93, 'out': 50, 'total': 143}, 'BB': {'fix': 128, 'out': 62, 'total': 190}, 'C': {'fix': 133, 'out': 78, 'total': 211}}}, {'createtime': '2020-02-27 20:51:27', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 114, 'out': 79, 'total': 193}, 'BB': {'fix': 136, 'out': 42, 'total': 178}, 'C': {'fix': 146, 'out': 69, 'total': 215}}}, {'createtime': '2020-02-27 20:55:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 105, 'out': 52, 'total': 157}, 'BB': {'fix': 115, 'out': 60, 'total': 175}, 'C': {'fix': 120, 'out': 72, 'total': 192}}}, {'createtime': '2020-02-27 20:55:53', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 147, 'out': 75, 'total': 222}, 'BB': {'fix': 140, 'out': 89, 'total': 229}, 'C': {'fix': 115, 'out': 67, 'total': 182}}}, {'createtime': '2020-02-27 20:56:23', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 130, 'out': 41, 'total': 171}, 'BB': {'fix': 142, 'out': 62, 'total': 204}, 'C': {'fix': 97, 'out': 75, 'total': 172}}}, {'createtime': '2020-02-27 20:56:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 106, 'out': 71, 'total': 177}, 'BB': {'fix': 112, 'out': 88, 'total': 200}, 'C': {'fix': 120, 'out': 59, 'total': 179}}}, {'createtime': '2020-02-27 20:57:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 110, 'out': 77, 'total': 187}, 'BB': {'fix': 128, 'out': 54, 'total': 182}, 'C': {'fix': 132, 'out': 60, 'total': 192}}}, {'createtime': '2020-02-27 20:59:33', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 72, 'out': 56, 'total': 128}, 'BB': {'fix': 110, 'out': 77, 'total': 187}, 'C': {'fix': 71, 'out': 43, 'total': 114}}}, {'createtime': '2020-02-27 21:05:14', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 94, 'out': 34, 'total': 128}, 'BB': {'fix': 129, 'out': 45, 'total': 174}, 'C': {'fix': 130, 'out': 53, 'total': 183}}}, {'createtime': '2020-02-27 21:06:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 96, 'out': 57, 'total': 153}, 'BB': {'fix': 112, 'out': 73, 'total': 185}, 'C': {'fix': 103, 'out': 55, 'total': 158}}}, {'createtime': '2020-02-27 21:08:11', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 85, 'out': 66, 'total': 151}, 'BB': {'fix': 91, 'out': 32, 'total': 123}, 'C': {'fix': 120, 'out': 55, 'total': 175}}}, {'createtime': '2020-02-27 21:15:27', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 125, 'out': 45, 'total': 170}, 'BB': {'fix': 149, 'out': 52, 'total': 201}, 'C': {'fix': 68, 'out': 50, 'total': 118}}}, {'createtime': '2020-02-27 21:18:22', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 51, 'total': 145}, 'BB': {'fix': 69, 'out': 53, 'total': 122}, 'C': {'fix': 118, 'out': 41, 'total': 159}}}, {'createtime': '2020-02-28 11:08:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 116, 'out': 68, 'total': 184}, 'BB': {'fix': 137, 'out': 20, 'total': 157}, 'C': {'fix': 93, 'out': 59, 'total': 152}}}, {'createtime': '2020-02-28 16:57:49', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 66, 'total': 201}, 'BB': {'fix': 118, 'out': 90, 'total': 208}, 'C': {'fix': 111, 'out': 42, 'total': 153}}}, {'createtime': '2020-02-28 17:17:24', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 102, 'out': 65, 'total': 167}, 'BB': {'fix': 137, 'out': 76, 'total': 213}, 'C': {'fix': 99, 'out': 74, 'total': 173}}}, {'createtime': '2020-02-28 18:06:44', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 141, 'out': 81, 'total': 222}, 'BB': {'fix': 107, 'out': 50, 'total': 157}, 'C': {'fix': 126, 'out': 35, 'total': 161}}}, {'createtime': '2020-02-28 19:31:34', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 107, 'out': 59, 'total': 166}, 'BB': {'fix': 123, 'out': 54, 'total': 177}, 'C': {'fix': 153, 'out': 98, 'total': 251}}}, {'createtime': '2020-02-28 19:33:46', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 127, 'out': 56, 'total': 183}, 'BB': {'fix': 102, 'out': 68, 'total': 170}, 'C': {'fix': 84, 'out': 74, 'total': 158}}}, {'createtime': '2020-02-28 19:36:54', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 85, 'out': 92, 'total': 177}, 'BB': {'fix': 98, 'out': 50, 'total': 148}, 'C': {'fix': 104, 'out': 49, 'total': 153}}}, {'createtime': '2020-02-28 19:53:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 124, 'out': 64, 'total': 188}, 'BB': {'fix': 111, 'out': 76, 'total': 187}, 'C': {'fix': 86, 'out': 96, 'total': 182}}}, {'createtime': '2020-02-28 19:59:16', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 81, 'out': 64, 'total': 145}, 'BB': {'fix': 103, 'out': 85, 'total': 188}, 'C': {'fix': 111, 'out': 87, 'total': 198}}}, {'createtime': '2020-02-28 20:02:15', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}, {'createtime': '2020-02-28 20:08:07', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 111, 'out': 73, 'total': 184}, 'BB': {'fix': 125, 'out': 47, 'total': 172}, 'C': {'fix': 110, 'out': 88, 'total': 198}}}, {'createtime': '2020-02-28 20:08:35', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 89, 'out': 88, 'total': 177}, 'BB': {'fix': 77, 'out': 75, 'total': 152}, 'C': {'fix': 62, 'out': 52, 'total': 114}}}, {'createtime': '2020-02-28 20:10:19', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 105, 'out': 65, 'total': 170}, 'BB': {'fix': 94, 'out': 71, 'total': 165}, 'C': {'fix': 99, 'out': 44, 'total': 143}}}, {'createtime': '2020-02-28 20:11:26', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 114, 'out': 63, 'total': 177}, 'BB': {'fix': 98, 'out': 60, 'total': 158}, 'C': {'fix': 103, 'out': 73, 'total': 176}}}, {'createtime': '2020-02-28 20:12:40', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 74, 'out': 81, 'total': 155}, 'BB': {'fix': 131, 'out': 66, 'total': 197}, 'C': {'fix': 116, 'out': 44, 'total': 160}}}]
+2020-02-29 19:42:47,559  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-29 19:42:47,559  rtckpi.py <module>: : INFO  url:111.html
+2020-02-29 19:42:47,560  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-29 19:42:47,560  rtckpi.py <module>: : INFO  {'name': 'AAA', 'fix': 50}
+2020-02-29 19:42:47,560  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'AAA', 'fix': 50}
+2020-02-29 19:42:47,560  rtckpi.py <module>: : INFO  {'name': 'BB', 'fix': 61}
+2020-02-29 19:42:47,561  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'BB', 'fix': 61}
+2020-02-29 19:42:47,561  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 35}
+2020-02-29 19:42:47,561  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'C', 'fix': 35}
+2020-02-29 19:42:47,561  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-29 19:42:47,562  rtckpi.py <module>: : INFO  out id:table3
+2020-02-29 19:42:47,562  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 27}
+2020-02-29 19:42:47,562  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 27}
+2020-02-29 19:42:47,563  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 17}
+2020-02-29 19:42:47,563  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 17}
+2020-02-29 19:42:47,563  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 24}
+2020-02-29 19:42:47,563  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 24}
+2020-02-29 19:42:47,564  rtckpi.py <module>: : INFO  out id:table4
+2020-02-29 19:42:47,564  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 5}
+2020-02-29 19:42:47,564  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 5}
+2020-02-29 19:42:47,564  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 29}
+2020-02-29 19:42:47,565  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 29}
+2020-02-29 19:42:47,565  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 8}
+2020-02-29 19:42:47,565  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 8}
+2020-02-29 19:42:47,565  rtckpi.py <module>: : INFO  url:222.html
+2020-02-29 19:42:47,566  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-29 19:42:47,566  rtckpi.py <module>: : INFO  {'name': 'AAA', 'fix': 78}
+2020-02-29 19:42:47,566  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'AAA', 'fix': 78}
+2020-02-29 19:42:47,566  rtckpi.py <module>: : INFO  {'name': 'BB', 'fix': 78}
+2020-02-29 19:42:47,567  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'BB', 'fix': 78}
+2020-02-29 19:42:47,567  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 56}
+2020-02-29 19:42:47,567  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'C', 'fix': 56}
+2020-02-29 19:42:47,568  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-29 19:42:47,568  rtckpi.py <module>: : INFO  out id:table5
+2020-02-29 19:42:47,568  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 8}
+2020-02-29 19:42:47,568  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 8}
+2020-02-29 19:42:47,569  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 20}
+2020-02-29 19:42:47,569  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 20}
+2020-02-29 19:42:47,569  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 8}
+2020-02-29 19:42:47,569  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 8}
+2020-02-29 19:42:47,570  rtckpi.py <module>: : INFO  out id:table6
+2020-02-29 19:42:47,570  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 15}
+2020-02-29 19:42:47,570  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 15}
+2020-02-29 19:42:47,570  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 10}
+2020-02-29 19:42:47,571  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 10}
+2020-02-29 19:42:47,571  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 14}
+2020-02-29 19:42:47,571  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 14}
+2020-02-29 19:42:47,572  db.py calc_all: : DEBUG  [{'name': 'AAA', 'fix': 50, 'url': '111.html'}, {'name': 'BB', 'fix': 61, 'url': '111.html'}, {'name': 'C', 'fix': 35, 'url': '111.html'}, {'name': 'AAA', 'fix': 78, 'url': '222.html'}, {'name': 'BB', 'fix': 78, 'url': '222.html'}, {'name': 'C', 'fix': 56, 'url': '222.html'}]
+2020-02-29 19:42:47,572  db.py calc_all: : DEBUG  [{'name': 'AAA', 'out': 27, 'url': '111.html'}, {'name': 'BB', 'out': 17, 'url': '111.html'}, {'name': 'C', 'out': 24, 'url': '111.html'}, {'name': 'AAA', 'out': 5, 'url': '111.html'}, {'name': 'BB', 'out': 29, 'url': '111.html'}, {'name': 'C', 'out': 8, 'url': '111.html'}, {'name': 'AAA', 'out': 8, 'url': '222.html'}, {'name': 'BB', 'out': 20, 'url': '222.html'}, {'name': 'C', 'out': 8, 'url': '222.html'}, {'name': 'AAA', 'out': 15, 'url': '222.html'}, {'name': 'BB', 'out': 10, 'url': '222.html'}, {'name': 'C', 'out': 14, 'url': '222.html'}]
+2020-02-29 19:42:47,572  db.py calc_all: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 128,
+        "out": 55,
+        "total": 183
+    },
+    "BB": {
+        "fix": 139,
+        "out": 76,
+        "total": 215
+    },
+    "C": {
+        "fix": 91,
+        "out": 54,
+        "total": 145
+    }
+}
+2020-02-29 19:42:47,573  db.py calc_new: : DEBUG  2020-2-29
+2020-02-29 19:42:47,573  db.py calc_new: : DEBUG  {'fix': 128, 'out': 55, 'total': 183}
+2020-02-29 19:42:47,573  db.py calc_new: : DEBUG  {'fix': 139, 'out': 76, 'total': 215}
+2020-02-29 19:42:47,573  db.py calc_new: : DEBUG  {'fix': 91, 'out': 54, 'total': 145}
+2020-02-29 19:42:47,574  db.py calc_new: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -7,
+        "out": -1,
+        "total": -8
+    },
+    "BB": {
+        "fix": 139,
+        "out": 76,
+        "total": 215
+    },
+    "C": {
+        "fix": 91,
+        "out": 54,
+        "total": 145
+    }
+}
+2020-02-29 19:42:47,574  db.py calc_new: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 128,
+        "out": 55,
+        "total": 183
+    },
+    "BB": {
+        "fix": 139,
+        "out": 76,
+        "total": 215
+    },
+    "C": {
+        "fix": 91,
+        "out": 54,
+        "total": 145
+    }
+}
+2020-02-29 19:42:47,574  db.py calc_last: : DEBUG  old data: {'date': '2020-2-29', 'AAA': {'fix': 128, 'out': 55, 'total': 183}, 'BB': {'fix': 139, 'out': 76, 'total': 215}, 'C': {'fix': 91, 'out': 54, 'total': 145}}
+2020-02-29 19:42:47,575  db.py calc_last: : DEBUG  2020-2-29
+2020-02-29 19:42:47,575  db.py calc_last: : DEBUG  {'fix': 128, 'out': 55, 'total': 183}
+2020-02-29 19:42:47,575  db.py calc_last: : DEBUG  {'fix': 139, 'out': 76, 'total': 215}
+2020-02-29 19:42:47,575  db.py calc_last: : DEBUG  {'fix': 91, 'out': 54, 'total': 145}
+2020-02-29 19:42:47,577  db.py calc_last: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -7,
+        "out": -1,
+        "total": -8
+    },
+    "BB": {
+        "fix": 22,
+        "out": 19,
+        "total": 41
+    },
+    "C": {
+        "fix": -5,
+        "out": -7,
+        "total": -12
+    }
+}
+2020-02-29 19:42:47,577  db.py calc_last: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 128,
+        "out": 55,
+        "total": 183
+    },
+    "BB": {
+        "fix": 139,
+        "out": 76,
+        "total": 215
+    },
+    "C": {
+        "fix": 91,
+        "out": 54,
+        "total": 145
+    }
+}
+2020-02-29 19:42:47,577  db.py calc_data_by_file: : DEBUG  ['111.html', '222.html']
+2020-02-29 19:42:47,578  db.py calc_data_by_file: : DEBUG  {'AAA': {'name': 'AAA', 'fix': 50, 'out': 32, 'total': 82}, 'BB': {'name': 'BB', 'fix': 61, 'out': 46, 'total': 107}, 'C': {'name': 'C', 'fix': 35, 'out': 32, 'total': 67}}
+2020-02-29 19:44:26,781  rtckpi.py <module>: : DEBUG  check done.
+2020-02-29 19:44:26,783  config.py read_config: : DEBUG  {'version': '2', 'members': ['AAA', 'BB', 'C'], 'report_title': '710Q项目, Network组修复问题汇总', 'report_time': '2020-2-29', 'report_fmt': 'text', 'report_file': '710Q_bugs_report.txt', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-29 19:44:26,784  config.py read_config: : DEBUG  RTCs: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-29 19:44:26,784  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-29 19:44:26,784  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-29 19:44:26,785  db.py initial: : DEBUG  {'initial': {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}, 'last': {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}
+2020-02-29 19:44:26,785  db.py initial: : DEBUG  initial: {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}
+2020-02-29 19:44:26,786  db.py initial: : DEBUG  last: {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}
+2020-02-29 19:44:26,789  db.py initial: : DEBUG  history:[{'createtime': '2020-02-27 20:24:36', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 102, 'out': 55, 'total': 157}, 'BB': {'fix': 98, 'out': 78, 'total': 176}, 'C': {'fix': 76, 'out': 77, 'total': 153}}}, {'createtime': '2020-02-27 20:24:52', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 115, 'out': 54, 'total': 169}, 'BB': {'fix': 113, 'out': 58, 'total': 171}, 'C': {'fix': 114, 'out': 84, 'total': 198}}}, {'createtime': '2020-02-27 20:34:49', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 109, 'out': 57, 'total': 166}, 'BB': {'fix': 76, 'out': 65, 'total': 141}, 'C': {'fix': 147, 'out': 77, 'total': 224}}}, {'createtime': '2020-02-27 20:35:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 144, 'out': 65, 'total': 209}, 'BB': {'fix': 98, 'out': 28, 'total': 126}, 'C': {'fix': 126, 'out': 82, 'total': 208}}}, {'createtime': '2020-02-27 20:43:30', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 98, 'out': 69, 'total': 167}, 'BB': {'fix': 129, 'out': 81, 'total': 210}, 'C': {'fix': 117, 'out': 57, 'total': 174}}}, {'createtime': '2020-02-27 20:51:09', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 141, 'out': 47, 'total': 188}, 'BB': {'fix': 111, 'out': 45, 'total': 156}, 'C': {'fix': 108, 'out': 46, 'total': 154}}}, {'createtime': '2020-02-27 20:51:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 93, 'out': 50, 'total': 143}, 'BB': {'fix': 128, 'out': 62, 'total': 190}, 'C': {'fix': 133, 'out': 78, 'total': 211}}}, {'createtime': '2020-02-27 20:51:27', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 114, 'out': 79, 'total': 193}, 'BB': {'fix': 136, 'out': 42, 'total': 178}, 'C': {'fix': 146, 'out': 69, 'total': 215}}}, {'createtime': '2020-02-27 20:55:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 105, 'out': 52, 'total': 157}, 'BB': {'fix': 115, 'out': 60, 'total': 175}, 'C': {'fix': 120, 'out': 72, 'total': 192}}}, {'createtime': '2020-02-27 20:55:53', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 147, 'out': 75, 'total': 222}, 'BB': {'fix': 140, 'out': 89, 'total': 229}, 'C': {'fix': 115, 'out': 67, 'total': 182}}}, {'createtime': '2020-02-27 20:56:23', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 130, 'out': 41, 'total': 171}, 'BB': {'fix': 142, 'out': 62, 'total': 204}, 'C': {'fix': 97, 'out': 75, 'total': 172}}}, {'createtime': '2020-02-27 20:56:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 106, 'out': 71, 'total': 177}, 'BB': {'fix': 112, 'out': 88, 'total': 200}, 'C': {'fix': 120, 'out': 59, 'total': 179}}}, {'createtime': '2020-02-27 20:57:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 110, 'out': 77, 'total': 187}, 'BB': {'fix': 128, 'out': 54, 'total': 182}, 'C': {'fix': 132, 'out': 60, 'total': 192}}}, {'createtime': '2020-02-27 20:59:33', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 72, 'out': 56, 'total': 128}, 'BB': {'fix': 110, 'out': 77, 'total': 187}, 'C': {'fix': 71, 'out': 43, 'total': 114}}}, {'createtime': '2020-02-27 21:05:14', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 94, 'out': 34, 'total': 128}, 'BB': {'fix': 129, 'out': 45, 'total': 174}, 'C': {'fix': 130, 'out': 53, 'total': 183}}}, {'createtime': '2020-02-27 21:06:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 96, 'out': 57, 'total': 153}, 'BB': {'fix': 112, 'out': 73, 'total': 185}, 'C': {'fix': 103, 'out': 55, 'total': 158}}}, {'createtime': '2020-02-27 21:08:11', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 85, 'out': 66, 'total': 151}, 'BB': {'fix': 91, 'out': 32, 'total': 123}, 'C': {'fix': 120, 'out': 55, 'total': 175}}}, {'createtime': '2020-02-27 21:15:27', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 125, 'out': 45, 'total': 170}, 'BB': {'fix': 149, 'out': 52, 'total': 201}, 'C': {'fix': 68, 'out': 50, 'total': 118}}}, {'createtime': '2020-02-27 21:18:22', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 51, 'total': 145}, 'BB': {'fix': 69, 'out': 53, 'total': 122}, 'C': {'fix': 118, 'out': 41, 'total': 159}}}, {'createtime': '2020-02-28 11:08:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 116, 'out': 68, 'total': 184}, 'BB': {'fix': 137, 'out': 20, 'total': 157}, 'C': {'fix': 93, 'out': 59, 'total': 152}}}, {'createtime': '2020-02-28 16:57:49', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 66, 'total': 201}, 'BB': {'fix': 118, 'out': 90, 'total': 208}, 'C': {'fix': 111, 'out': 42, 'total': 153}}}, {'createtime': '2020-02-28 17:17:24', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 102, 'out': 65, 'total': 167}, 'BB': {'fix': 137, 'out': 76, 'total': 213}, 'C': {'fix': 99, 'out': 74, 'total': 173}}}, {'createtime': '2020-02-28 18:06:44', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 141, 'out': 81, 'total': 222}, 'BB': {'fix': 107, 'out': 50, 'total': 157}, 'C': {'fix': 126, 'out': 35, 'total': 161}}}, {'createtime': '2020-02-28 19:31:34', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 107, 'out': 59, 'total': 166}, 'BB': {'fix': 123, 'out': 54, 'total': 177}, 'C': {'fix': 153, 'out': 98, 'total': 251}}}, {'createtime': '2020-02-28 19:33:46', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 127, 'out': 56, 'total': 183}, 'BB': {'fix': 102, 'out': 68, 'total': 170}, 'C': {'fix': 84, 'out': 74, 'total': 158}}}, {'createtime': '2020-02-28 19:36:54', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 85, 'out': 92, 'total': 177}, 'BB': {'fix': 98, 'out': 50, 'total': 148}, 'C': {'fix': 104, 'out': 49, 'total': 153}}}, {'createtime': '2020-02-28 19:53:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 124, 'out': 64, 'total': 188}, 'BB': {'fix': 111, 'out': 76, 'total': 187}, 'C': {'fix': 86, 'out': 96, 'total': 182}}}, {'createtime': '2020-02-28 19:59:16', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 81, 'out': 64, 'total': 145}, 'BB': {'fix': 103, 'out': 85, 'total': 188}, 'C': {'fix': 111, 'out': 87, 'total': 198}}}, {'createtime': '2020-02-28 20:02:15', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}, {'createtime': '2020-02-28 20:08:07', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 111, 'out': 73, 'total': 184}, 'BB': {'fix': 125, 'out': 47, 'total': 172}, 'C': {'fix': 110, 'out': 88, 'total': 198}}}, {'createtime': '2020-02-28 20:08:35', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 89, 'out': 88, 'total': 177}, 'BB': {'fix': 77, 'out': 75, 'total': 152}, 'C': {'fix': 62, 'out': 52, 'total': 114}}}, {'createtime': '2020-02-28 20:10:19', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 105, 'out': 65, 'total': 170}, 'BB': {'fix': 94, 'out': 71, 'total': 165}, 'C': {'fix': 99, 'out': 44, 'total': 143}}}, {'createtime': '2020-02-28 20:11:26', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 114, 'out': 63, 'total': 177}, 'BB': {'fix': 98, 'out': 60, 'total': 158}, 'C': {'fix': 103, 'out': 73, 'total': 176}}}, {'createtime': '2020-02-28 20:12:40', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 74, 'out': 81, 'total': 155}, 'BB': {'fix': 131, 'out': 66, 'total': 197}, 'C': {'fix': 116, 'out': 44, 'total': 160}}}]
+2020-02-29 19:44:26,791  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-29 19:44:26,791  rtckpi.py <module>: : INFO  url:111.html
+2020-02-29 19:44:26,792  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-29 19:44:26,792  rtckpi.py <module>: : INFO  {'name': 'AAA', 'fix': 74}
+2020-02-29 19:44:26,792  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'AAA', 'fix': 74}
+2020-02-29 19:44:26,792  rtckpi.py <module>: : INFO  {'name': 'BB', 'fix': 39}
+2020-02-29 19:44:26,793  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'BB', 'fix': 39}
+2020-02-29 19:44:26,793  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 61}
+2020-02-29 19:44:26,794  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'C', 'fix': 61}
+2020-02-29 19:44:26,794  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-29 19:44:26,795  rtckpi.py <module>: : INFO  out id:table3
+2020-02-29 19:44:26,795  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 27}
+2020-02-29 19:44:26,796  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 27}
+2020-02-29 19:44:26,796  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 29}
+2020-02-29 19:44:26,796  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 29}
+2020-02-29 19:44:26,797  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 4}
+2020-02-29 19:44:26,797  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 4}
+2020-02-29 19:44:26,798  rtckpi.py <module>: : INFO  out id:table4
+2020-02-29 19:44:26,798  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 28}
+2020-02-29 19:44:26,799  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 28}
+2020-02-29 19:44:26,799  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 27}
+2020-02-29 19:44:26,800  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 27}
+2020-02-29 19:44:26,800  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 12}
+2020-02-29 19:44:26,801  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 12}
+2020-02-29 19:44:26,801  rtckpi.py <module>: : INFO  url:222.html
+2020-02-29 19:44:26,802  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-29 19:44:26,802  rtckpi.py <module>: : INFO  {'name': 'AAA', 'fix': 59}
+2020-02-29 19:44:26,802  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'AAA', 'fix': 59}
+2020-02-29 19:44:26,803  rtckpi.py <module>: : INFO  {'name': 'BB', 'fix': 54}
+2020-02-29 19:44:26,803  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'BB', 'fix': 54}
+2020-02-29 19:44:26,804  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 36}
+2020-02-29 19:44:26,805  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'C', 'fix': 36}
+2020-02-29 19:44:26,805  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-29 19:44:26,806  rtckpi.py <module>: : INFO  out id:table5
+2020-02-29 19:44:26,806  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 21}
+2020-02-29 19:44:26,807  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 21}
+2020-02-29 19:44:26,807  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 28}
+2020-02-29 19:44:26,808  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 28}
+2020-02-29 19:44:26,808  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 16}
+2020-02-29 19:44:26,808  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 16}
+2020-02-29 19:44:26,809  rtckpi.py <module>: : INFO  out id:table6
+2020-02-29 19:44:26,809  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 30}
+2020-02-29 19:44:26,810  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 30}
+2020-02-29 19:44:26,810  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 3}
+2020-02-29 19:44:26,811  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 3}
+2020-02-29 19:44:26,811  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 7}
+2020-02-29 19:44:26,812  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 7}
+2020-02-29 19:44:26,812  db.py calc_all: : DEBUG  [{'name': 'AAA', 'fix': 74, 'url': '111.html'}, {'name': 'BB', 'fix': 39, 'url': '111.html'}, {'name': 'C', 'fix': 61, 'url': '111.html'}, {'name': 'AAA', 'fix': 59, 'url': '222.html'}, {'name': 'BB', 'fix': 54, 'url': '222.html'}, {'name': 'C', 'fix': 36, 'url': '222.html'}]
+2020-02-29 19:44:26,812  db.py calc_all: : DEBUG  [{'name': 'AAA', 'out': 27, 'url': '111.html'}, {'name': 'BB', 'out': 29, 'url': '111.html'}, {'name': 'C', 'out': 4, 'url': '111.html'}, {'name': 'AAA', 'out': 28, 'url': '111.html'}, {'name': 'BB', 'out': 27, 'url': '111.html'}, {'name': 'C', 'out': 12, 'url': '111.html'}, {'name': 'AAA', 'out': 21, 'url': '222.html'}, {'name': 'BB', 'out': 28, 'url': '222.html'}, {'name': 'C', 'out': 16, 'url': '222.html'}, {'name': 'AAA', 'out': 30, 'url': '222.html'}, {'name': 'BB', 'out': 3, 'url': '222.html'}, {'name': 'C', 'out': 7, 'url': '222.html'}]
+2020-02-29 19:44:26,813  db.py calc_all: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 133,
+        "out": 106,
+        "total": 239
+    },
+    "BB": {
+        "fix": 93,
+        "out": 87,
+        "total": 180
+    },
+    "C": {
+        "fix": 97,
+        "out": 39,
+        "total": 136
+    }
+}
+2020-02-29 19:44:26,814  db.py calc_new: : DEBUG  2020-2-29
+2020-02-29 19:44:26,814  db.py calc_new: : DEBUG  {'fix': 133, 'out': 106, 'total': 239}
+2020-02-29 19:44:26,814  db.py calc_new: : DEBUG  {'fix': 93, 'out': 87, 'total': 180}
+2020-02-29 19:44:26,815  db.py calc_new: : DEBUG  {'fix': 97, 'out': 39, 'total': 136}
+2020-02-29 19:44:26,815  db.py calc_new: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -2,
+        "out": 50,
+        "total": 48
+    },
+    "BB": {
+        "fix": 93,
+        "out": 87,
+        "total": 180
+    },
+    "C": {
+        "fix": 97,
+        "out": 39,
+        "total": 136
+    }
+}
+2020-02-29 19:44:26,816  db.py calc_new: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 133,
+        "out": 106,
+        "total": 239
+    },
+    "BB": {
+        "fix": 93,
+        "out": 87,
+        "total": 180
+    },
+    "C": {
+        "fix": 97,
+        "out": 39,
+        "total": 136
+    }
+}
+2020-02-29 19:44:26,817  db.py calc_last: : DEBUG  old data: {'date': '2020-2-29', 'AAA': {'fix': 133, 'out': 106, 'total': 239}, 'BB': {'fix': 93, 'out': 87, 'total': 180}, 'C': {'fix': 97, 'out': 39, 'total': 136}}
+2020-02-29 19:44:26,817  db.py calc_last: : DEBUG  2020-2-29
+2020-02-29 19:44:26,817  db.py calc_last: : DEBUG  {'fix': 133, 'out': 106, 'total': 239}
+2020-02-29 19:44:26,818  db.py calc_last: : DEBUG  {'fix': 93, 'out': 87, 'total': 180}
+2020-02-29 19:44:26,818  db.py calc_last: : DEBUG  {'fix': 97, 'out': 39, 'total': 136}
+2020-02-29 19:44:26,819  db.py calc_last: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -2,
+        "out": 50,
+        "total": 48
+    },
+    "BB": {
+        "fix": -24,
+        "out": 30,
+        "total": 6
+    },
+    "C": {
+        "fix": 1,
+        "out": -22,
+        "total": -21
+    }
+}
+2020-02-29 19:44:26,820  db.py calc_last: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 133,
+        "out": 106,
+        "total": 239
+    },
+    "BB": {
+        "fix": 93,
+        "out": 87,
+        "total": 180
+    },
+    "C": {
+        "fix": 97,
+        "out": 39,
+        "total": 136
+    }
+}
+2020-02-29 19:44:26,820  db.py calc_data_by_file: : DEBUG  ['111.html', '222.html']
+2020-02-29 19:44:26,821  db.py calc_data_by_file: : DEBUG  {'AAA': {'name': 'AAA', 'fix': 74, 'out': 55, 'total': 129}, 'BB': {'name': 'BB', 'fix': 39, 'out': 56, 'total': 95}, 'C': {'name': 'C', 'fix': 61, 'out': 16, 'total': 77}}
+2020-02-29 19:44:44,047  rtckpi.py <module>: : DEBUG  check done.
+2020-02-29 19:44:44,048  config.py read_config: : DEBUG  {'version': '2', 'members': ['AAA', 'BB', 'C'], 'report_title': '710Q项目, Network组修复问题汇总', 'report_time': '2020-2-29', 'report_fmt': 'text', 'report_file': '710Q_bugs_report.txt', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-29 19:44:44,049  config.py read_config: : DEBUG  RTCs: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-29 19:44:44,050  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-29 19:44:44,050  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-29 19:44:44,051  db.py initial: : DEBUG  {'initial': {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}, 'last': {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}
+2020-02-29 19:44:44,052  db.py initial: : DEBUG  initial: {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}
+2020-02-29 19:44:44,052  db.py initial: : DEBUG  last: {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}
+2020-02-29 19:44:44,053  db.py initial: : DEBUG  history:[{'createtime': '2020-02-27 20:24:36', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 102, 'out': 55, 'total': 157}, 'BB': {'fix': 98, 'out': 78, 'total': 176}, 'C': {'fix': 76, 'out': 77, 'total': 153}}}, {'createtime': '2020-02-27 20:24:52', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 115, 'out': 54, 'total': 169}, 'BB': {'fix': 113, 'out': 58, 'total': 171}, 'C': {'fix': 114, 'out': 84, 'total': 198}}}, {'createtime': '2020-02-27 20:34:49', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 109, 'out': 57, 'total': 166}, 'BB': {'fix': 76, 'out': 65, 'total': 141}, 'C': {'fix': 147, 'out': 77, 'total': 224}}}, {'createtime': '2020-02-27 20:35:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 144, 'out': 65, 'total': 209}, 'BB': {'fix': 98, 'out': 28, 'total': 126}, 'C': {'fix': 126, 'out': 82, 'total': 208}}}, {'createtime': '2020-02-27 20:43:30', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 98, 'out': 69, 'total': 167}, 'BB': {'fix': 129, 'out': 81, 'total': 210}, 'C': {'fix': 117, 'out': 57, 'total': 174}}}, {'createtime': '2020-02-27 20:51:09', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 141, 'out': 47, 'total': 188}, 'BB': {'fix': 111, 'out': 45, 'total': 156}, 'C': {'fix': 108, 'out': 46, 'total': 154}}}, {'createtime': '2020-02-27 20:51:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 93, 'out': 50, 'total': 143}, 'BB': {'fix': 128, 'out': 62, 'total': 190}, 'C': {'fix': 133, 'out': 78, 'total': 211}}}, {'createtime': '2020-02-27 20:51:27', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 114, 'out': 79, 'total': 193}, 'BB': {'fix': 136, 'out': 42, 'total': 178}, 'C': {'fix': 146, 'out': 69, 'total': 215}}}, {'createtime': '2020-02-27 20:55:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 105, 'out': 52, 'total': 157}, 'BB': {'fix': 115, 'out': 60, 'total': 175}, 'C': {'fix': 120, 'out': 72, 'total': 192}}}, {'createtime': '2020-02-27 20:55:53', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 147, 'out': 75, 'total': 222}, 'BB': {'fix': 140, 'out': 89, 'total': 229}, 'C': {'fix': 115, 'out': 67, 'total': 182}}}, {'createtime': '2020-02-27 20:56:23', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 130, 'out': 41, 'total': 171}, 'BB': {'fix': 142, 'out': 62, 'total': 204}, 'C': {'fix': 97, 'out': 75, 'total': 172}}}, {'createtime': '2020-02-27 20:56:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 106, 'out': 71, 'total': 177}, 'BB': {'fix': 112, 'out': 88, 'total': 200}, 'C': {'fix': 120, 'out': 59, 'total': 179}}}, {'createtime': '2020-02-27 20:57:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 110, 'out': 77, 'total': 187}, 'BB': {'fix': 128, 'out': 54, 'total': 182}, 'C': {'fix': 132, 'out': 60, 'total': 192}}}, {'createtime': '2020-02-27 20:59:33', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 72, 'out': 56, 'total': 128}, 'BB': {'fix': 110, 'out': 77, 'total': 187}, 'C': {'fix': 71, 'out': 43, 'total': 114}}}, {'createtime': '2020-02-27 21:05:14', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 94, 'out': 34, 'total': 128}, 'BB': {'fix': 129, 'out': 45, 'total': 174}, 'C': {'fix': 130, 'out': 53, 'total': 183}}}, {'createtime': '2020-02-27 21:06:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 96, 'out': 57, 'total': 153}, 'BB': {'fix': 112, 'out': 73, 'total': 185}, 'C': {'fix': 103, 'out': 55, 'total': 158}}}, {'createtime': '2020-02-27 21:08:11', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 85, 'out': 66, 'total': 151}, 'BB': {'fix': 91, 'out': 32, 'total': 123}, 'C': {'fix': 120, 'out': 55, 'total': 175}}}, {'createtime': '2020-02-27 21:15:27', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 125, 'out': 45, 'total': 170}, 'BB': {'fix': 149, 'out': 52, 'total': 201}, 'C': {'fix': 68, 'out': 50, 'total': 118}}}, {'createtime': '2020-02-27 21:18:22', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 51, 'total': 145}, 'BB': {'fix': 69, 'out': 53, 'total': 122}, 'C': {'fix': 118, 'out': 41, 'total': 159}}}, {'createtime': '2020-02-28 11:08:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 116, 'out': 68, 'total': 184}, 'BB': {'fix': 137, 'out': 20, 'total': 157}, 'C': {'fix': 93, 'out': 59, 'total': 152}}}, {'createtime': '2020-02-28 16:57:49', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 66, 'total': 201}, 'BB': {'fix': 118, 'out': 90, 'total': 208}, 'C': {'fix': 111, 'out': 42, 'total': 153}}}, {'createtime': '2020-02-28 17:17:24', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 102, 'out': 65, 'total': 167}, 'BB': {'fix': 137, 'out': 76, 'total': 213}, 'C': {'fix': 99, 'out': 74, 'total': 173}}}, {'createtime': '2020-02-28 18:06:44', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 141, 'out': 81, 'total': 222}, 'BB': {'fix': 107, 'out': 50, 'total': 157}, 'C': {'fix': 126, 'out': 35, 'total': 161}}}, {'createtime': '2020-02-28 19:31:34', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 107, 'out': 59, 'total': 166}, 'BB': {'fix': 123, 'out': 54, 'total': 177}, 'C': {'fix': 153, 'out': 98, 'total': 251}}}, {'createtime': '2020-02-28 19:33:46', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 127, 'out': 56, 'total': 183}, 'BB': {'fix': 102, 'out': 68, 'total': 170}, 'C': {'fix': 84, 'out': 74, 'total': 158}}}, {'createtime': '2020-02-28 19:36:54', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 85, 'out': 92, 'total': 177}, 'BB': {'fix': 98, 'out': 50, 'total': 148}, 'C': {'fix': 104, 'out': 49, 'total': 153}}}, {'createtime': '2020-02-28 19:53:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 124, 'out': 64, 'total': 188}, 'BB': {'fix': 111, 'out': 76, 'total': 187}, 'C': {'fix': 86, 'out': 96, 'total': 182}}}, {'createtime': '2020-02-28 19:59:16', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 81, 'out': 64, 'total': 145}, 'BB': {'fix': 103, 'out': 85, 'total': 188}, 'C': {'fix': 111, 'out': 87, 'total': 198}}}, {'createtime': '2020-02-28 20:02:15', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}, {'createtime': '2020-02-28 20:08:07', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 111, 'out': 73, 'total': 184}, 'BB': {'fix': 125, 'out': 47, 'total': 172}, 'C': {'fix': 110, 'out': 88, 'total': 198}}}, {'createtime': '2020-02-28 20:08:35', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 89, 'out': 88, 'total': 177}, 'BB': {'fix': 77, 'out': 75, 'total': 152}, 'C': {'fix': 62, 'out': 52, 'total': 114}}}, {'createtime': '2020-02-28 20:10:19', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 105, 'out': 65, 'total': 170}, 'BB': {'fix': 94, 'out': 71, 'total': 165}, 'C': {'fix': 99, 'out': 44, 'total': 143}}}, {'createtime': '2020-02-28 20:11:26', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 114, 'out': 63, 'total': 177}, 'BB': {'fix': 98, 'out': 60, 'total': 158}, 'C': {'fix': 103, 'out': 73, 'total': 176}}}, {'createtime': '2020-02-28 20:12:40', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 74, 'out': 81, 'total': 155}, 'BB': {'fix': 131, 'out': 66, 'total': 197}, 'C': {'fix': 116, 'out': 44, 'total': 160}}}]
+2020-02-29 19:44:44,056  rtckpi.py <module>: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-29 19:44:44,056  rtckpi.py <module>: : INFO  url:111.html
+2020-02-29 19:44:44,057  rtckpi.py <module>: : INFO  fix id:table1
+2020-02-29 19:44:44,057  rtckpi.py <module>: : INFO  {'name': 'AAA', 'fix': 50}
+2020-02-29 19:44:44,058  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'AAA', 'fix': 50}
+2020-02-29 19:44:44,059  rtckpi.py <module>: : INFO  {'name': 'BB', 'fix': 39}
+2020-02-29 19:44:44,061  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'BB', 'fix': 39}
+2020-02-29 19:44:44,061  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 50}
+2020-02-29 19:44:44,061  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'C', 'fix': 50}
+2020-02-29 19:44:44,062  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-29 19:44:44,062  rtckpi.py <module>: : INFO  out id:table3
+2020-02-29 19:44:44,062  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 30}
+2020-02-29 19:44:44,063  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 30}
+2020-02-29 19:44:44,063  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 13}
+2020-02-29 19:44:44,063  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 13}
+2020-02-29 19:44:44,063  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 11}
+2020-02-29 19:44:44,064  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 11}
+2020-02-29 19:44:44,064  rtckpi.py <module>: : INFO  out id:table4
+2020-02-29 19:44:44,064  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 12}
+2020-02-29 19:44:44,064  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 12}
+2020-02-29 19:44:44,065  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 24}
+2020-02-29 19:44:44,065  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 24}
+2020-02-29 19:44:44,066  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 13}
+2020-02-29 19:44:44,066  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 13}
+2020-02-29 19:44:44,067  rtckpi.py <module>: : INFO  url:222.html
+2020-02-29 19:44:44,067  rtckpi.py <module>: : INFO  fix id:table3
+2020-02-29 19:44:44,068  rtckpi.py <module>: : INFO  {'name': 'AAA', 'fix': 44}
+2020-02-29 19:44:44,068  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'AAA', 'fix': 44}
+2020-02-29 19:44:44,068  rtckpi.py <module>: : INFO  {'name': 'BB', 'fix': 37}
+2020-02-29 19:44:44,069  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'BB', 'fix': 37}
+2020-02-29 19:44:44,070  rtckpi.py <module>: : INFO  {'name': 'C', 'fix': 40}
+2020-02-29 19:44:44,070  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'C', 'fix': 40}
+2020-02-29 19:44:44,070  rtckpi.py <module>: : INFO  ======================================================================================================================================================
+2020-02-29 19:44:44,071  rtckpi.py <module>: : INFO  out id:table5
+2020-02-29 19:44:44,071  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 14}
+2020-02-29 19:44:44,072  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 14}
+2020-02-29 19:44:44,072  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 7}
+2020-02-29 19:44:44,073  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 7}
+2020-02-29 19:44:44,074  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 22}
+2020-02-29 19:44:44,074  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 22}
+2020-02-29 19:44:44,074  rtckpi.py <module>: : INFO  out id:table6
+2020-02-29 19:44:44,075  rtckpi.py <module>: : INFO  {'name': 'AAA', 'out': 20}
+2020-02-29 19:44:44,075  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 20}
+2020-02-29 19:44:44,076  rtckpi.py <module>: : INFO  {'name': 'BB', 'out': 17}
+2020-02-29 19:44:44,076  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 17}
+2020-02-29 19:44:44,077  rtckpi.py <module>: : INFO  {'name': 'C', 'out': 19}
+2020-02-29 19:44:44,077  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 19}
+2020-02-29 19:44:44,077  db.py calc_all: : DEBUG  [{'name': 'AAA', 'fix': 50, 'url': '111.html'}, {'name': 'BB', 'fix': 39, 'url': '111.html'}, {'name': 'C', 'fix': 50, 'url': '111.html'}, {'name': 'AAA', 'fix': 44, 'url': '222.html'}, {'name': 'BB', 'fix': 37, 'url': '222.html'}, {'name': 'C', 'fix': 40, 'url': '222.html'}]
+2020-02-29 19:44:44,078  db.py calc_all: : DEBUG  [{'name': 'AAA', 'out': 30, 'url': '111.html'}, {'name': 'BB', 'out': 13, 'url': '111.html'}, {'name': 'C', 'out': 11, 'url': '111.html'}, {'name': 'AAA', 'out': 12, 'url': '111.html'}, {'name': 'BB', 'out': 24, 'url': '111.html'}, {'name': 'C', 'out': 13, 'url': '111.html'}, {'name': 'AAA', 'out': 14, 'url': '222.html'}, {'name': 'BB', 'out': 7, 'url': '222.html'}, {'name': 'C', 'out': 22, 'url': '222.html'}, {'name': 'AAA', 'out': 20, 'url': '222.html'}, {'name': 'BB', 'out': 17, 'url': '222.html'}, {'name': 'C', 'out': 19, 'url': '222.html'}]
+2020-02-29 19:44:44,079  db.py calc_all: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 94,
+        "out": 76,
+        "total": 170
+    },
+    "BB": {
+        "fix": 76,
+        "out": 61,
+        "total": 137
+    },
+    "C": {
+        "fix": 90,
+        "out": 65,
+        "total": 155
+    }
+}
+2020-02-29 19:44:44,079  db.py calc_new: : DEBUG  2020-2-29
+2020-02-29 19:44:44,080  db.py calc_new: : DEBUG  {'fix': 94, 'out': 76, 'total': 170}
+2020-02-29 19:44:44,080  db.py calc_new: : DEBUG  {'fix': 76, 'out': 61, 'total': 137}
+2020-02-29 19:44:44,080  db.py calc_new: : DEBUG  {'fix': 90, 'out': 65, 'total': 155}
+2020-02-29 19:44:44,081  db.py calc_new: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -41,
+        "out": 20,
+        "total": -21
+    },
+    "BB": {
+        "fix": 76,
+        "out": 61,
+        "total": 137
+    },
+    "C": {
+        "fix": 90,
+        "out": 65,
+        "total": 155
+    }
+}
+2020-02-29 19:44:44,082  db.py calc_new: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 94,
+        "out": 76,
+        "total": 170
+    },
+    "BB": {
+        "fix": 76,
+        "out": 61,
+        "total": 137
+    },
+    "C": {
+        "fix": 90,
+        "out": 65,
+        "total": 155
+    }
+}
+2020-02-29 19:44:44,083  db.py calc_last: : DEBUG  old data: {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 76, 'total': 170}, 'BB': {'fix': 76, 'out': 61, 'total': 137}, 'C': {'fix': 90, 'out': 65, 'total': 155}}
+2020-02-29 19:44:44,084  db.py calc_last: : DEBUG  2020-2-29
+2020-02-29 19:44:44,084  db.py calc_last: : DEBUG  {'fix': 94, 'out': 76, 'total': 170}
+2020-02-29 19:44:44,085  db.py calc_last: : DEBUG  {'fix': 76, 'out': 61, 'total': 137}
+2020-02-29 19:44:44,085  db.py calc_last: : DEBUG  {'fix': 90, 'out': 65, 'total': 155}
+2020-02-29 19:44:44,086  db.py calc_last: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -41,
+        "out": 20,
+        "total": -21
+    },
+    "BB": {
+        "fix": -41,
+        "out": 4,
+        "total": -37
+    },
+    "C": {
+        "fix": -6,
+        "out": 4,
+        "total": -2
+    }
+}
+2020-02-29 19:44:44,086  db.py calc_last: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 94,
+        "out": 76,
+        "total": 170
+    },
+    "BB": {
+        "fix": 76,
+        "out": 61,
+        "total": 137
+    },
+    "C": {
+        "fix": 90,
+        "out": 65,
+        "total": 155
+    }
+}
+2020-02-29 19:44:44,086  db.py calc_data_by_file: : DEBUG  ['111.html', '222.html']
+2020-02-29 19:44:44,087  db.py calc_data_by_file: : DEBUG  {'AAA': {'name': 'AAA', 'fix': 50, 'out': 42, 'total': 92}, 'BB': {'name': 'BB', 'fix': 39, 'out': 37, 'total': 76}, 'C': {'name': 'C', 'fix': 50, 'out': 24, 'total': 74}}
+2020-02-29 19:44:44,087  db.py calc_data_by_file: : DEBUG  {'AAA': {'name': 'AAA', 'fix': 44, 'out': 34, 'total': 78}, 'BB': {'name': 'BB', 'fix': 37, 'out': 24, 'total': 61}, 'C': {'name': 'C', 'fix': 40, 'out': 41, 'total': 81}}
+2020-02-29 19:44:44,087  db.py calc_new: : DEBUG  2020-2-29
+2020-02-29 19:44:44,088  db.py calc_new: : DEBUG  {'fix': 94, 'out': 76, 'total': 170}
+2020-02-29 19:44:44,088  db.py calc_new: : DEBUG  {'fix': 76, 'out': 61, 'total': 137}
+2020-02-29 19:44:44,088  db.py calc_new: : DEBUG  {'fix': 90, 'out': 65, 'total': 155}
+2020-02-29 19:44:44,091  db.py calc_new: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -41,
+        "out": 20,
+        "total": -21
+    },
+    "BB": {
+        "fix": 76,
+        "out": 61,
+        "total": 137
+    },
+    "C": {
+        "fix": 90,
+        "out": 65,
+        "total": 155
+    }
+}
+2020-02-29 19:44:44,092  db.py calc_new: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 94,
+        "out": 76,
+        "total": 170
+    },
+    "BB": {
+        "fix": 76,
+        "out": 61,
+        "total": 137
+    },
+    "C": {
+        "fix": 90,
+        "out": 65,
+        "total": 155
+    }
+}
+2020-02-29 19:44:44,092  db.py calc_last: : DEBUG  old data: {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 76, 'total': 170}, 'BB': {'fix': 76, 'out': 61, 'total': 137}, 'C': {'fix': 90, 'out': 65, 'total': 155}}
+2020-02-29 19:44:44,093  db.py calc_last: : DEBUG  2020-2-29
+2020-02-29 19:44:44,093  db.py calc_last: : DEBUG  {'fix': 94, 'out': 76, 'total': 170}
+2020-02-29 19:44:44,093  db.py calc_last: : DEBUG  {'fix': 76, 'out': 61, 'total': 137}
+2020-02-29 19:44:44,094  db.py calc_last: : DEBUG  {'fix': 90, 'out': 65, 'total': 155}
+2020-02-29 19:44:44,094  db.py calc_last: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -41,
+        "out": 20,
+        "total": -21
+    },
+    "BB": {
+        "fix": -41,
+        "out": 4,
+        "total": -37
+    },
+    "C": {
+        "fix": -6,
+        "out": 4,
+        "total": -2
+    }
+}
+2020-02-29 19:44:44,095  db.py calc_last: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 94,
+        "out": 76,
+        "total": 170
+    },
+    "BB": {
+        "fix": 76,
+        "out": 61,
+        "total": 137
+    },
+    "C": {
+        "fix": 90,
+        "out": 65,
+        "total": 155
+    }
+}
+2020-02-29 19:44:44,095  report.py report_render: : DEBUG  ----------------------------------------------------------------------------------------------------
+2020-02-29 19:44:44,096  report.py report_render: : DEBUG  标题：710Q项目, Network组修复问题汇总
+2020-02-29 19:44:44,096  report.py report_render: : DEBUG  数据采集时间：2020-2-29
+2020-02-29 19:44:44,097  report.py report_render: : DEBUG  报告生成时间: 2020-02-29_19:44:44
+2020-02-29 19:44:44,098  report.py report_render: : DEBUG  ----------------------------------------------------------------------------------------------------
+2020-02-29 19:44:44,098  report.py report_render: : DEBUG  
+2020-02-29 19:44:44,098  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:44:44,099  report.py report_render: : DEBUG  File: 111.html
+2020-02-29 19:44:44,100  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 19:44:44,100  report.py report_render: : DEBUG  AAA       	50        	42             	92             
+2020-02-29 19:44:44,101  report.py report_render: : DEBUG  BB        	39        	37             	76             
+2020-02-29 19:44:44,102  report.py report_render: : DEBUG  C         	50        	24             	74             
+2020-02-29 19:44:44,102  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:44:44,103  report.py report_render: : DEBUG  
+2020-02-29 19:44:44,103  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:44:44,103  report.py report_render: : DEBUG  File: 222.html
+2020-02-29 19:44:44,104  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 19:44:44,104  report.py report_render: : DEBUG  AAA       	44        	34             	78             
+2020-02-29 19:44:44,104  report.py report_render: : DEBUG  BB        	37        	24             	61             
+2020-02-29 19:44:44,105  report.py report_render: : DEBUG  C         	40        	41             	81             
+2020-02-29 19:44:44,105  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:44:44,105  report.py report_render: : DEBUG  
+2020-02-29 19:44:44,106  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:44:44,106  report.py report_render: : DEBUG  2020-1-2 ~ 2020-2-29 的新增Bug
+2020-02-29 19:44:44,106  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 19:44:44,106  report.py report_render: : DEBUG  AAA       	-41       	20             	-21            
+2020-02-29 19:44:44,107  report.py report_render: : DEBUG  BB        	76        	61             	137            
+2020-02-29 19:44:44,107  report.py report_render: : DEBUG  C         	90        	65             	155            
+2020-02-29 19:44:44,107  report.py report_render: : DEBUG  
+2020-02-29 19:44:44,108  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:44:44,108  report.py report_render: : DEBUG  
+2020-02-29 19:44:44,108  report.py report_render: : DEBUG  2020-2-2 ~ 2020-2-29 的新增Bug
+2020-02-29 19:44:44,109  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 19:44:44,109  report.py report_render: : DEBUG  AAA       	-41       	20             	-21            
+2020-02-29 19:44:44,109  report.py report_render: : DEBUG  BB        	-41       	4              	-37            
+2020-02-29 19:44:44,110  report.py report_render: : DEBUG  C         	-6        	4              	-2             
+2020-02-29 19:44:44,111  report.py report_render: : DEBUG  
+2020-02-29 19:44:44,112  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:44:44,112  report.py report_render: : DEBUG  全部Bug数据
+2020-02-29 19:44:44,112  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 19:44:44,113  report.py report_render: : DEBUG  AAA       	94        	76             	170            
+2020-02-29 19:44:44,113  report.py report_render: : DEBUG  BB        	76        	61             	137            
+2020-02-29 19:44:44,113  report.py report_render: : DEBUG  C         	90        	65             	155            
+2020-02-29 19:44:44,113  report.py report_render: : DEBUG  ----------------------------------------------------------------------------------------------------
+2020-02-29 19:44:44,114  report.py report_render: : INFO  output to : 2020-2-20\710Q_bugs_report.txt
+2020-02-29 19:44:44,117  db.py save_all: : DEBUG  {
+    "createtime": "2020-02-29 19:44:44",
+    "delta": {
+        "date": "2020-2-29",
+        "AAA": {
+            "fix": 94,
+            "out": 76,
+            "total": 170
+        },
+        "BB": {
+            "fix": 76,
+            "out": 61,
+            "total": 137
+        },
+        "C": {
+            "fix": 90,
+            "out": 65,
+            "total": 155
+        }
+    }
+}
+2020-02-29 19:52:04,974  rtckpi.py run: : DEBUG  check done.
+2020-02-29 19:52:04,974  config.py read_config: : DEBUG  {'version': '2', 'members': ['AAA', 'BB', 'C'], 'report_title': '710Q项目, Network组修复问题汇总', 'report_time': '2020-2-29', 'report_fmt': 'text', 'report_file': '710Q_bugs_report.txt', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-29 19:52:04,975  config.py read_config: : DEBUG  RTCs: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-29 19:52:04,975  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-29 19:52:04,976  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-29 19:52:04,976  db.py initial: : DEBUG  {'initial': {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}, 'last': {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}
+2020-02-29 19:52:04,977  db.py initial: : DEBUG  initial: {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}
+2020-02-29 19:52:04,977  db.py initial: : DEBUG  last: {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}
+2020-02-29 19:52:04,978  db.py initial: : DEBUG  history:[{'createtime': '2020-02-27 20:24:36', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 102, 'out': 55, 'total': 157}, 'BB': {'fix': 98, 'out': 78, 'total': 176}, 'C': {'fix': 76, 'out': 77, 'total': 153}}}, {'createtime': '2020-02-27 20:24:52', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 115, 'out': 54, 'total': 169}, 'BB': {'fix': 113, 'out': 58, 'total': 171}, 'C': {'fix': 114, 'out': 84, 'total': 198}}}, {'createtime': '2020-02-27 20:34:49', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 109, 'out': 57, 'total': 166}, 'BB': {'fix': 76, 'out': 65, 'total': 141}, 'C': {'fix': 147, 'out': 77, 'total': 224}}}, {'createtime': '2020-02-27 20:35:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 144, 'out': 65, 'total': 209}, 'BB': {'fix': 98, 'out': 28, 'total': 126}, 'C': {'fix': 126, 'out': 82, 'total': 208}}}, {'createtime': '2020-02-27 20:43:30', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 98, 'out': 69, 'total': 167}, 'BB': {'fix': 129, 'out': 81, 'total': 210}, 'C': {'fix': 117, 'out': 57, 'total': 174}}}, {'createtime': '2020-02-27 20:51:09', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 141, 'out': 47, 'total': 188}, 'BB': {'fix': 111, 'out': 45, 'total': 156}, 'C': {'fix': 108, 'out': 46, 'total': 154}}}, {'createtime': '2020-02-27 20:51:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 93, 'out': 50, 'total': 143}, 'BB': {'fix': 128, 'out': 62, 'total': 190}, 'C': {'fix': 133, 'out': 78, 'total': 211}}}, {'createtime': '2020-02-27 20:51:27', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 114, 'out': 79, 'total': 193}, 'BB': {'fix': 136, 'out': 42, 'total': 178}, 'C': {'fix': 146, 'out': 69, 'total': 215}}}, {'createtime': '2020-02-27 20:55:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 105, 'out': 52, 'total': 157}, 'BB': {'fix': 115, 'out': 60, 'total': 175}, 'C': {'fix': 120, 'out': 72, 'total': 192}}}, {'createtime': '2020-02-27 20:55:53', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 147, 'out': 75, 'total': 222}, 'BB': {'fix': 140, 'out': 89, 'total': 229}, 'C': {'fix': 115, 'out': 67, 'total': 182}}}, {'createtime': '2020-02-27 20:56:23', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 130, 'out': 41, 'total': 171}, 'BB': {'fix': 142, 'out': 62, 'total': 204}, 'C': {'fix': 97, 'out': 75, 'total': 172}}}, {'createtime': '2020-02-27 20:56:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 106, 'out': 71, 'total': 177}, 'BB': {'fix': 112, 'out': 88, 'total': 200}, 'C': {'fix': 120, 'out': 59, 'total': 179}}}, {'createtime': '2020-02-27 20:57:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 110, 'out': 77, 'total': 187}, 'BB': {'fix': 128, 'out': 54, 'total': 182}, 'C': {'fix': 132, 'out': 60, 'total': 192}}}, {'createtime': '2020-02-27 20:59:33', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 72, 'out': 56, 'total': 128}, 'BB': {'fix': 110, 'out': 77, 'total': 187}, 'C': {'fix': 71, 'out': 43, 'total': 114}}}, {'createtime': '2020-02-27 21:05:14', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 94, 'out': 34, 'total': 128}, 'BB': {'fix': 129, 'out': 45, 'total': 174}, 'C': {'fix': 130, 'out': 53, 'total': 183}}}, {'createtime': '2020-02-27 21:06:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 96, 'out': 57, 'total': 153}, 'BB': {'fix': 112, 'out': 73, 'total': 185}, 'C': {'fix': 103, 'out': 55, 'total': 158}}}, {'createtime': '2020-02-27 21:08:11', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 85, 'out': 66, 'total': 151}, 'BB': {'fix': 91, 'out': 32, 'total': 123}, 'C': {'fix': 120, 'out': 55, 'total': 175}}}, {'createtime': '2020-02-27 21:15:27', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 125, 'out': 45, 'total': 170}, 'BB': {'fix': 149, 'out': 52, 'total': 201}, 'C': {'fix': 68, 'out': 50, 'total': 118}}}, {'createtime': '2020-02-27 21:18:22', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 51, 'total': 145}, 'BB': {'fix': 69, 'out': 53, 'total': 122}, 'C': {'fix': 118, 'out': 41, 'total': 159}}}, {'createtime': '2020-02-28 11:08:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 116, 'out': 68, 'total': 184}, 'BB': {'fix': 137, 'out': 20, 'total': 157}, 'C': {'fix': 93, 'out': 59, 'total': 152}}}, {'createtime': '2020-02-28 16:57:49', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 66, 'total': 201}, 'BB': {'fix': 118, 'out': 90, 'total': 208}, 'C': {'fix': 111, 'out': 42, 'total': 153}}}, {'createtime': '2020-02-28 17:17:24', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 102, 'out': 65, 'total': 167}, 'BB': {'fix': 137, 'out': 76, 'total': 213}, 'C': {'fix': 99, 'out': 74, 'total': 173}}}, {'createtime': '2020-02-28 18:06:44', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 141, 'out': 81, 'total': 222}, 'BB': {'fix': 107, 'out': 50, 'total': 157}, 'C': {'fix': 126, 'out': 35, 'total': 161}}}, {'createtime': '2020-02-28 19:31:34', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 107, 'out': 59, 'total': 166}, 'BB': {'fix': 123, 'out': 54, 'total': 177}, 'C': {'fix': 153, 'out': 98, 'total': 251}}}, {'createtime': '2020-02-28 19:33:46', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 127, 'out': 56, 'total': 183}, 'BB': {'fix': 102, 'out': 68, 'total': 170}, 'C': {'fix': 84, 'out': 74, 'total': 158}}}, {'createtime': '2020-02-28 19:36:54', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 85, 'out': 92, 'total': 177}, 'BB': {'fix': 98, 'out': 50, 'total': 148}, 'C': {'fix': 104, 'out': 49, 'total': 153}}}, {'createtime': '2020-02-28 19:53:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 124, 'out': 64, 'total': 188}, 'BB': {'fix': 111, 'out': 76, 'total': 187}, 'C': {'fix': 86, 'out': 96, 'total': 182}}}, {'createtime': '2020-02-28 19:59:16', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 81, 'out': 64, 'total': 145}, 'BB': {'fix': 103, 'out': 85, 'total': 188}, 'C': {'fix': 111, 'out': 87, 'total': 198}}}, {'createtime': '2020-02-28 20:02:15', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}, {'createtime': '2020-02-28 20:08:07', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 111, 'out': 73, 'total': 184}, 'BB': {'fix': 125, 'out': 47, 'total': 172}, 'C': {'fix': 110, 'out': 88, 'total': 198}}}, {'createtime': '2020-02-28 20:08:35', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 89, 'out': 88, 'total': 177}, 'BB': {'fix': 77, 'out': 75, 'total': 152}, 'C': {'fix': 62, 'out': 52, 'total': 114}}}, {'createtime': '2020-02-28 20:10:19', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 105, 'out': 65, 'total': 170}, 'BB': {'fix': 94, 'out': 71, 'total': 165}, 'C': {'fix': 99, 'out': 44, 'total': 143}}}, {'createtime': '2020-02-28 20:11:26', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 114, 'out': 63, 'total': 177}, 'BB': {'fix': 98, 'out': 60, 'total': 158}, 'C': {'fix': 103, 'out': 73, 'total': 176}}}, {'createtime': '2020-02-28 20:12:40', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 74, 'out': 81, 'total': 155}, 'BB': {'fix': 131, 'out': 66, 'total': 197}, 'C': {'fix': 116, 'out': 44, 'total': 160}}}, {'createtime': '2020-02-29 19:44:44', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 76, 'total': 170}, 'BB': {'fix': 76, 'out': 61, 'total': 137}, 'C': {'fix': 90, 'out': 65, 'total': 155}}}]
+2020-02-29 19:52:04,980  rtckpi.py run: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-29 19:52:04,980  rtckpi.py run: : INFO  url:111.html
+2020-02-29 19:52:04,980  rtckpi.py run: : INFO  fix id:table1
+2020-02-29 19:52:04,981  rtckpi.py run: : INFO  {'name': 'AAA', 'fix': 32}
+2020-02-29 19:52:04,981  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'AAA', 'fix': 32}
+2020-02-29 19:52:04,981  rtckpi.py run: : INFO  {'name': 'BB', 'fix': 33}
+2020-02-29 19:52:04,982  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'BB', 'fix': 33}
+2020-02-29 19:52:04,982  rtckpi.py run: : INFO  {'name': 'C', 'fix': 50}
+2020-02-29 19:52:04,982  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'C', 'fix': 50}
+2020-02-29 19:52:04,982  rtckpi.py run: : INFO  ======================================================================================================================================================
+2020-02-29 19:52:04,983  rtckpi.py run: : INFO  out id:table3
+2020-02-29 19:52:04,983  rtckpi.py run: : INFO  {'name': 'AAA', 'out': 5}
+2020-02-29 19:52:04,983  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 5}
+2020-02-29 19:52:04,983  rtckpi.py run: : INFO  {'name': 'BB', 'out': 16}
+2020-02-29 19:52:04,983  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 16}
+2020-02-29 19:52:04,984  rtckpi.py run: : INFO  {'name': 'C', 'out': 24}
+2020-02-29 19:52:04,984  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 24}
+2020-02-29 19:52:04,984  rtckpi.py run: : INFO  out id:table4
+2020-02-29 19:52:04,984  rtckpi.py run: : INFO  {'name': 'AAA', 'out': 13}
+2020-02-29 19:52:04,985  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 13}
+2020-02-29 19:52:04,985  rtckpi.py run: : INFO  {'name': 'BB', 'out': 26}
+2020-02-29 19:52:04,985  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 26}
+2020-02-29 19:52:04,985  rtckpi.py run: : INFO  {'name': 'C', 'out': 28}
+2020-02-29 19:52:04,986  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 28}
+2020-02-29 19:52:04,986  rtckpi.py run: : INFO  url:222.html
+2020-02-29 19:52:04,986  rtckpi.py run: : INFO  fix id:table3
+2020-02-29 19:52:04,987  rtckpi.py run: : INFO  {'name': 'AAA', 'fix': 32}
+2020-02-29 19:52:04,987  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'AAA', 'fix': 32}
+2020-02-29 19:52:04,987  rtckpi.py run: : INFO  {'name': 'BB', 'fix': 30}
+2020-02-29 19:52:04,988  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'BB', 'fix': 30}
+2020-02-29 19:52:04,988  rtckpi.py run: : INFO  {'name': 'C', 'fix': 62}
+2020-02-29 19:52:04,988  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'C', 'fix': 62}
+2020-02-29 19:52:04,989  rtckpi.py run: : INFO  ======================================================================================================================================================
+2020-02-29 19:52:04,989  rtckpi.py run: : INFO  out id:table5
+2020-02-29 19:52:04,989  rtckpi.py run: : INFO  {'name': 'AAA', 'out': 25}
+2020-02-29 19:52:04,989  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 25}
+2020-02-29 19:52:04,990  rtckpi.py run: : INFO  {'name': 'BB', 'out': 30}
+2020-02-29 19:52:04,990  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 30}
+2020-02-29 19:52:04,990  rtckpi.py run: : INFO  {'name': 'C', 'out': 8}
+2020-02-29 19:52:04,990  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 8}
+2020-02-29 19:52:04,991  rtckpi.py run: : INFO  out id:table6
+2020-02-29 19:52:04,991  rtckpi.py run: : INFO  {'name': 'AAA', 'out': 26}
+2020-02-29 19:52:04,991  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 26}
+2020-02-29 19:52:04,991  rtckpi.py run: : INFO  {'name': 'BB', 'out': 11}
+2020-02-29 19:52:04,992  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 11}
+2020-02-29 19:52:04,992  rtckpi.py run: : INFO  {'name': 'C', 'out': 12}
+2020-02-29 19:52:04,992  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 12}
+2020-02-29 19:52:04,992  db.py calc_all: : DEBUG  [{'name': 'AAA', 'fix': 32, 'url': '111.html'}, {'name': 'BB', 'fix': 33, 'url': '111.html'}, {'name': 'C', 'fix': 50, 'url': '111.html'}, {'name': 'AAA', 'fix': 32, 'url': '222.html'}, {'name': 'BB', 'fix': 30, 'url': '222.html'}, {'name': 'C', 'fix': 62, 'url': '222.html'}]
+2020-02-29 19:52:04,993  db.py calc_all: : DEBUG  [{'name': 'AAA', 'out': 5, 'url': '111.html'}, {'name': 'BB', 'out': 16, 'url': '111.html'}, {'name': 'C', 'out': 24, 'url': '111.html'}, {'name': 'AAA', 'out': 13, 'url': '111.html'}, {'name': 'BB', 'out': 26, 'url': '111.html'}, {'name': 'C', 'out': 28, 'url': '111.html'}, {'name': 'AAA', 'out': 25, 'url': '222.html'}, {'name': 'BB', 'out': 30, 'url': '222.html'}, {'name': 'C', 'out': 8, 'url': '222.html'}, {'name': 'AAA', 'out': 26, 'url': '222.html'}, {'name': 'BB', 'out': 11, 'url': '222.html'}, {'name': 'C', 'out': 12, 'url': '222.html'}]
+2020-02-29 19:52:04,993  db.py calc_all: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 64,
+        "out": 69,
+        "total": 133
+    },
+    "BB": {
+        "fix": 63,
+        "out": 83,
+        "total": 146
+    },
+    "C": {
+        "fix": 112,
+        "out": 72,
+        "total": 184
+    }
+}
+2020-02-29 19:52:04,994  db.py calc_new: : DEBUG  2020-2-29
+2020-02-29 19:52:04,994  db.py calc_new: : DEBUG  {'fix': 64, 'out': 69, 'total': 133}
+2020-02-29 19:52:04,994  db.py calc_new: : DEBUG  {'fix': 63, 'out': 83, 'total': 146}
+2020-02-29 19:52:04,994  db.py calc_new: : DEBUG  {'fix': 112, 'out': 72, 'total': 184}
+2020-02-29 19:52:04,995  db.py calc_new: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -71,
+        "out": 13,
+        "total": -58
+    },
+    "BB": {
+        "fix": 63,
+        "out": 83,
+        "total": 146
+    },
+    "C": {
+        "fix": 112,
+        "out": 72,
+        "total": 184
+    }
+}
+2020-02-29 19:52:04,995  db.py calc_new: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 64,
+        "out": 69,
+        "total": 133
+    },
+    "BB": {
+        "fix": 63,
+        "out": 83,
+        "total": 146
+    },
+    "C": {
+        "fix": 112,
+        "out": 72,
+        "total": 184
+    }
+}
+2020-02-29 19:52:04,995  db.py calc_last: : DEBUG  old data: {'date': '2020-2-29', 'AAA': {'fix': 64, 'out': 69, 'total': 133}, 'BB': {'fix': 63, 'out': 83, 'total': 146}, 'C': {'fix': 112, 'out': 72, 'total': 184}}
+2020-02-29 19:52:04,995  db.py calc_last: : DEBUG  2020-2-29
+2020-02-29 19:52:04,996  db.py calc_last: : DEBUG  {'fix': 64, 'out': 69, 'total': 133}
+2020-02-29 19:52:04,996  db.py calc_last: : DEBUG  {'fix': 63, 'out': 83, 'total': 146}
+2020-02-29 19:52:04,996  db.py calc_last: : DEBUG  {'fix': 112, 'out': 72, 'total': 184}
+2020-02-29 19:52:04,997  db.py calc_last: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -71,
+        "out": 13,
+        "total": -58
+    },
+    "BB": {
+        "fix": -54,
+        "out": 26,
+        "total": -28
+    },
+    "C": {
+        "fix": 16,
+        "out": 11,
+        "total": 27
+    }
+}
+2020-02-29 19:52:04,997  db.py calc_last: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 64,
+        "out": 69,
+        "total": 133
+    },
+    "BB": {
+        "fix": 63,
+        "out": 83,
+        "total": 146
+    },
+    "C": {
+        "fix": 112,
+        "out": 72,
+        "total": 184
+    }
+}
+2020-02-29 19:52:04,997  db.py calc_data_by_file: : DEBUG  ['111.html', '222.html']
+2020-02-29 19:52:04,998  db.py calc_data_by_file: : DEBUG  {'AAA': {'name': 'AAA', 'fix': 32, 'out': 18, 'total': 50}, 'BB': {'name': 'BB', 'fix': 33, 'out': 42, 'total': 75}, 'C': {'name': 'C', 'fix': 50, 'out': 52, 'total': 102}}
+2020-02-29 19:52:04,998  db.py calc_data_by_file: : DEBUG  {'AAA': {'name': 'AAA', 'fix': 32, 'out': 51, 'total': 83}, 'BB': {'name': 'BB', 'fix': 30, 'out': 41, 'total': 71}, 'C': {'name': 'C', 'fix': 62, 'out': 20, 'total': 82}}
+2020-02-29 19:52:04,998  db.py calc_new: : DEBUG  2020-2-29
+2020-02-29 19:52:04,998  db.py calc_new: : DEBUG  {'fix': 64, 'out': 69, 'total': 133}
+2020-02-29 19:52:04,999  db.py calc_new: : DEBUG  {'fix': 63, 'out': 83, 'total': 146}
+2020-02-29 19:52:04,999  db.py calc_new: : DEBUG  {'fix': 112, 'out': 72, 'total': 184}
+2020-02-29 19:52:04,999  db.py calc_new: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -71,
+        "out": 13,
+        "total": -58
+    },
+    "BB": {
+        "fix": 63,
+        "out": 83,
+        "total": 146
+    },
+    "C": {
+        "fix": 112,
+        "out": 72,
+        "total": 184
+    }
+}
+2020-02-29 19:52:05,000  db.py calc_new: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 64,
+        "out": 69,
+        "total": 133
+    },
+    "BB": {
+        "fix": 63,
+        "out": 83,
+        "total": 146
+    },
+    "C": {
+        "fix": 112,
+        "out": 72,
+        "total": 184
+    }
+}
+2020-02-29 19:52:05,000  db.py calc_last: : DEBUG  old data: {'date': '2020-2-29', 'AAA': {'fix': 64, 'out': 69, 'total': 133}, 'BB': {'fix': 63, 'out': 83, 'total': 146}, 'C': {'fix': 112, 'out': 72, 'total': 184}}
+2020-02-29 19:52:05,001  db.py calc_last: : DEBUG  2020-2-29
+2020-02-29 19:52:05,001  db.py calc_last: : DEBUG  {'fix': 64, 'out': 69, 'total': 133}
+2020-02-29 19:52:05,001  db.py calc_last: : DEBUG  {'fix': 63, 'out': 83, 'total': 146}
+2020-02-29 19:52:05,002  db.py calc_last: : DEBUG  {'fix': 112, 'out': 72, 'total': 184}
+2020-02-29 19:52:05,002  db.py calc_last: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -71,
+        "out": 13,
+        "total": -58
+    },
+    "BB": {
+        "fix": -54,
+        "out": 26,
+        "total": -28
+    },
+    "C": {
+        "fix": 16,
+        "out": 11,
+        "total": 27
+    }
+}
+2020-02-29 19:52:05,003  db.py calc_last: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 64,
+        "out": 69,
+        "total": 133
+    },
+    "BB": {
+        "fix": 63,
+        "out": 83,
+        "total": 146
+    },
+    "C": {
+        "fix": 112,
+        "out": 72,
+        "total": 184
+    }
+}
+2020-02-29 19:52:05,003  report.py report_render: : DEBUG  ----------------------------------------------------------------------------------------------------
+2020-02-29 19:52:05,003  report.py report_render: : DEBUG  标题：710Q项目, Network组修复问题汇总
+2020-02-29 19:52:05,004  report.py report_render: : DEBUG  数据采集时间：2020-2-29
+2020-02-29 19:52:05,004  report.py report_render: : DEBUG  报告生成时间: 2020-02-29_19:52:04
+2020-02-29 19:52:05,004  report.py report_render: : DEBUG  ----------------------------------------------------------------------------------------------------
+2020-02-29 19:52:05,005  report.py report_render: : DEBUG  
+2020-02-29 19:52:05,005  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:52:05,006  report.py report_render: : DEBUG  File: 111.html
+2020-02-29 19:52:05,006  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 19:52:05,006  report.py report_render: : DEBUG  AAA       	32        	18             	50             
+2020-02-29 19:52:05,006  report.py report_render: : DEBUG  BB        	33        	42             	75             
+2020-02-29 19:52:05,007  report.py report_render: : DEBUG  C         	50        	52             	102            
+2020-02-29 19:52:05,007  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:52:05,007  report.py report_render: : DEBUG  
+2020-02-29 19:52:05,008  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:52:05,008  report.py report_render: : DEBUG  File: 222.html
+2020-02-29 19:52:05,008  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 19:52:05,009  report.py report_render: : DEBUG  AAA       	32        	51             	83             
+2020-02-29 19:52:05,009  report.py report_render: : DEBUG  BB        	30        	41             	71             
+2020-02-29 19:52:05,009  report.py report_render: : DEBUG  C         	62        	20             	82             
+2020-02-29 19:52:05,009  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:52:05,010  report.py report_render: : DEBUG  
+2020-02-29 19:52:05,010  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:52:05,010  report.py report_render: : DEBUG  2020-1-2 ~ 2020-2-29 的新增Bug
+2020-02-29 19:52:05,010  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 19:52:05,011  report.py report_render: : DEBUG  AAA       	-71       	13             	-58            
+2020-02-29 19:52:05,011  report.py report_render: : DEBUG  BB        	63        	83             	146            
+2020-02-29 19:52:05,011  report.py report_render: : DEBUG  C         	112       	72             	184            
+2020-02-29 19:52:05,011  report.py report_render: : DEBUG  
+2020-02-29 19:52:05,012  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:52:05,012  report.py report_render: : DEBUG  
+2020-02-29 19:52:05,012  report.py report_render: : DEBUG  2020-2-2 ~ 2020-2-29 的新增Bug
+2020-02-29 19:52:05,012  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 19:52:05,013  report.py report_render: : DEBUG  AAA       	-71       	13             	-58            
+2020-02-29 19:52:05,013  report.py report_render: : DEBUG  BB        	-54       	26             	-28            
+2020-02-29 19:52:05,013  report.py report_render: : DEBUG  C         	16        	11             	27             
+2020-02-29 19:52:05,013  report.py report_render: : DEBUG  
+2020-02-29 19:52:05,014  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 19:52:05,014  report.py report_render: : DEBUG  全部Bug数据
+2020-02-29 19:52:05,014  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 19:52:05,014  report.py report_render: : DEBUG  AAA       	64        	69             	133            
+2020-02-29 19:52:05,015  report.py report_render: : DEBUG  BB        	63        	83             	146            
+2020-02-29 19:52:05,015  report.py report_render: : DEBUG  C         	112       	72             	184            
+2020-02-29 19:52:05,015  report.py report_render: : DEBUG  ----------------------------------------------------------------------------------------------------
+2020-02-29 19:52:05,015  report.py report_render: : INFO  output to : 2020-2-20\710Q_bugs_report.txt
+2020-02-29 19:52:05,017  db.py save_all: : DEBUG  {
+    "createtime": "2020-02-29 19:52:05",
+    "delta": {
+        "date": "2020-2-29",
+        "AAA": {
+            "fix": 64,
+            "out": 69,
+            "total": 133
+        },
+        "BB": {
+            "fix": 63,
+            "out": 83,
+            "total": 146
+        },
+        "C": {
+            "fix": 112,
+            "out": 72,
+            "total": 184
+        }
+    }
+}
+2020-02-29 20:10:49,008  rtckpi.py run: : DEBUG  check done.
+2020-02-29 20:10:49,009  config.py read_config: : DEBUG  {'version': '2', 'members': ['AAA', 'BB', 'C'], 'report_title': '710Q项目, Network组修复问题汇总', 'report_time': '2020-2-29', 'report_fmt': 'text', 'report_file': '710Q_bugs_report.txt', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-29 20:10:49,009  config.py read_config: : DEBUG  RTCs: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-29 20:10:49,010  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-29 20:10:49,011  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-29 20:10:49,011  db.py initial: : DEBUG  {'initial': {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}, 'last': {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}
+2020-02-29 20:10:49,012  db.py initial: : DEBUG  initial: {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}
+2020-02-29 20:10:49,012  db.py initial: : DEBUG  last: {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}
+2020-02-29 20:10:49,014  db.py initial: : DEBUG  history:[{'createtime': '2020-02-27 20:24:36', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 102, 'out': 55, 'total': 157}, 'BB': {'fix': 98, 'out': 78, 'total': 176}, 'C': {'fix': 76, 'out': 77, 'total': 153}}}, {'createtime': '2020-02-27 20:24:52', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 115, 'out': 54, 'total': 169}, 'BB': {'fix': 113, 'out': 58, 'total': 171}, 'C': {'fix': 114, 'out': 84, 'total': 198}}}, {'createtime': '2020-02-27 20:34:49', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 109, 'out': 57, 'total': 166}, 'BB': {'fix': 76, 'out': 65, 'total': 141}, 'C': {'fix': 147, 'out': 77, 'total': 224}}}, {'createtime': '2020-02-27 20:35:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 144, 'out': 65, 'total': 209}, 'BB': {'fix': 98, 'out': 28, 'total': 126}, 'C': {'fix': 126, 'out': 82, 'total': 208}}}, {'createtime': '2020-02-27 20:43:30', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 98, 'out': 69, 'total': 167}, 'BB': {'fix': 129, 'out': 81, 'total': 210}, 'C': {'fix': 117, 'out': 57, 'total': 174}}}, {'createtime': '2020-02-27 20:51:09', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 141, 'out': 47, 'total': 188}, 'BB': {'fix': 111, 'out': 45, 'total': 156}, 'C': {'fix': 108, 'out': 46, 'total': 154}}}, {'createtime': '2020-02-27 20:51:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 93, 'out': 50, 'total': 143}, 'BB': {'fix': 128, 'out': 62, 'total': 190}, 'C': {'fix': 133, 'out': 78, 'total': 211}}}, {'createtime': '2020-02-27 20:51:27', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 114, 'out': 79, 'total': 193}, 'BB': {'fix': 136, 'out': 42, 'total': 178}, 'C': {'fix': 146, 'out': 69, 'total': 215}}}, {'createtime': '2020-02-27 20:55:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 105, 'out': 52, 'total': 157}, 'BB': {'fix': 115, 'out': 60, 'total': 175}, 'C': {'fix': 120, 'out': 72, 'total': 192}}}, {'createtime': '2020-02-27 20:55:53', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 147, 'out': 75, 'total': 222}, 'BB': {'fix': 140, 'out': 89, 'total': 229}, 'C': {'fix': 115, 'out': 67, 'total': 182}}}, {'createtime': '2020-02-27 20:56:23', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 130, 'out': 41, 'total': 171}, 'BB': {'fix': 142, 'out': 62, 'total': 204}, 'C': {'fix': 97, 'out': 75, 'total': 172}}}, {'createtime': '2020-02-27 20:56:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 106, 'out': 71, 'total': 177}, 'BB': {'fix': 112, 'out': 88, 'total': 200}, 'C': {'fix': 120, 'out': 59, 'total': 179}}}, {'createtime': '2020-02-27 20:57:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 110, 'out': 77, 'total': 187}, 'BB': {'fix': 128, 'out': 54, 'total': 182}, 'C': {'fix': 132, 'out': 60, 'total': 192}}}, {'createtime': '2020-02-27 20:59:33', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 72, 'out': 56, 'total': 128}, 'BB': {'fix': 110, 'out': 77, 'total': 187}, 'C': {'fix': 71, 'out': 43, 'total': 114}}}, {'createtime': '2020-02-27 21:05:14', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 94, 'out': 34, 'total': 128}, 'BB': {'fix': 129, 'out': 45, 'total': 174}, 'C': {'fix': 130, 'out': 53, 'total': 183}}}, {'createtime': '2020-02-27 21:06:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 96, 'out': 57, 'total': 153}, 'BB': {'fix': 112, 'out': 73, 'total': 185}, 'C': {'fix': 103, 'out': 55, 'total': 158}}}, {'createtime': '2020-02-27 21:08:11', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 85, 'out': 66, 'total': 151}, 'BB': {'fix': 91, 'out': 32, 'total': 123}, 'C': {'fix': 120, 'out': 55, 'total': 175}}}, {'createtime': '2020-02-27 21:15:27', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 125, 'out': 45, 'total': 170}, 'BB': {'fix': 149, 'out': 52, 'total': 201}, 'C': {'fix': 68, 'out': 50, 'total': 118}}}, {'createtime': '2020-02-27 21:18:22', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 51, 'total': 145}, 'BB': {'fix': 69, 'out': 53, 'total': 122}, 'C': {'fix': 118, 'out': 41, 'total': 159}}}, {'createtime': '2020-02-28 11:08:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 116, 'out': 68, 'total': 184}, 'BB': {'fix': 137, 'out': 20, 'total': 157}, 'C': {'fix': 93, 'out': 59, 'total': 152}}}, {'createtime': '2020-02-28 16:57:49', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 66, 'total': 201}, 'BB': {'fix': 118, 'out': 90, 'total': 208}, 'C': {'fix': 111, 'out': 42, 'total': 153}}}, {'createtime': '2020-02-28 17:17:24', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 102, 'out': 65, 'total': 167}, 'BB': {'fix': 137, 'out': 76, 'total': 213}, 'C': {'fix': 99, 'out': 74, 'total': 173}}}, {'createtime': '2020-02-28 18:06:44', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 141, 'out': 81, 'total': 222}, 'BB': {'fix': 107, 'out': 50, 'total': 157}, 'C': {'fix': 126, 'out': 35, 'total': 161}}}, {'createtime': '2020-02-28 19:31:34', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 107, 'out': 59, 'total': 166}, 'BB': {'fix': 123, 'out': 54, 'total': 177}, 'C': {'fix': 153, 'out': 98, 'total': 251}}}, {'createtime': '2020-02-28 19:33:46', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 127, 'out': 56, 'total': 183}, 'BB': {'fix': 102, 'out': 68, 'total': 170}, 'C': {'fix': 84, 'out': 74, 'total': 158}}}, {'createtime': '2020-02-28 19:36:54', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 85, 'out': 92, 'total': 177}, 'BB': {'fix': 98, 'out': 50, 'total': 148}, 'C': {'fix': 104, 'out': 49, 'total': 153}}}, {'createtime': '2020-02-28 19:53:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 124, 'out': 64, 'total': 188}, 'BB': {'fix': 111, 'out': 76, 'total': 187}, 'C': {'fix': 86, 'out': 96, 'total': 182}}}, {'createtime': '2020-02-28 19:59:16', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 81, 'out': 64, 'total': 145}, 'BB': {'fix': 103, 'out': 85, 'total': 188}, 'C': {'fix': 111, 'out': 87, 'total': 198}}}, {'createtime': '2020-02-28 20:02:15', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}, {'createtime': '2020-02-28 20:08:07', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 111, 'out': 73, 'total': 184}, 'BB': {'fix': 125, 'out': 47, 'total': 172}, 'C': {'fix': 110, 'out': 88, 'total': 198}}}, {'createtime': '2020-02-28 20:08:35', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 89, 'out': 88, 'total': 177}, 'BB': {'fix': 77, 'out': 75, 'total': 152}, 'C': {'fix': 62, 'out': 52, 'total': 114}}}, {'createtime': '2020-02-28 20:10:19', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 105, 'out': 65, 'total': 170}, 'BB': {'fix': 94, 'out': 71, 'total': 165}, 'C': {'fix': 99, 'out': 44, 'total': 143}}}, {'createtime': '2020-02-28 20:11:26', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 114, 'out': 63, 'total': 177}, 'BB': {'fix': 98, 'out': 60, 'total': 158}, 'C': {'fix': 103, 'out': 73, 'total': 176}}}, {'createtime': '2020-02-28 20:12:40', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 74, 'out': 81, 'total': 155}, 'BB': {'fix': 131, 'out': 66, 'total': 197}, 'C': {'fix': 116, 'out': 44, 'total': 160}}}, {'createtime': '2020-02-29 19:44:44', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 76, 'total': 170}, 'BB': {'fix': 76, 'out': 61, 'total': 137}, 'C': {'fix': 90, 'out': 65, 'total': 155}}}, {'createtime': '2020-02-29 19:52:05', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 64, 'out': 69, 'total': 133}, 'BB': {'fix': 63, 'out': 83, 'total': 146}, 'C': {'fix': 112, 'out': 72, 'total': 184}}}]
+2020-02-29 20:10:49,019  rtckpi.py run: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-29 20:29:13,202  rtckpi.py run: : DEBUG  check done.
+2020-02-29 20:29:13,204  config.py read_config: : DEBUG  {'version': '2', 'members': ['AAA', 'BB', 'C'], 'report_title': '710Q项目, Network组修复问题汇总', 'report_time': '2020-2-29', 'report_fmt': 'text', 'report_file': '710Q_bugs_report.txt', 'rtc1': {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, 'rtc2': {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}}
+2020-02-29 20:29:13,207  config.py read_config: : DEBUG  RTCs: [{'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}, {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}]
+2020-02-29 20:29:13,208  config.py read_config: : DEBUG  {'url': '111.html', 'fix': ['table1'], 'out': ['table3', 'table4']}
+2020-02-29 20:29:13,208  config.py read_config: : DEBUG  {'url': '222.html', 'fix': ['table3'], 'out': ['table5', 'table6']}
+2020-02-29 20:29:13,209  db.py initial: : DEBUG  {'initial': {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}, 'last': {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}
+2020-02-29 20:29:13,209  db.py initial: : DEBUG  initial: {'date': '2020-1-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}}
+2020-02-29 20:29:13,210  db.py initial: : DEBUG  last: {'date': '2020-2-2', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}
+2020-02-29 20:29:13,211  db.py initial: : DEBUG  history:[{'createtime': '2020-02-27 20:24:36', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 102, 'out': 55, 'total': 157}, 'BB': {'fix': 98, 'out': 78, 'total': 176}, 'C': {'fix': 76, 'out': 77, 'total': 153}}}, {'createtime': '2020-02-27 20:24:52', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 115, 'out': 54, 'total': 169}, 'BB': {'fix': 113, 'out': 58, 'total': 171}, 'C': {'fix': 114, 'out': 84, 'total': 198}}}, {'createtime': '2020-02-27 20:34:49', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 109, 'out': 57, 'total': 166}, 'BB': {'fix': 76, 'out': 65, 'total': 141}, 'C': {'fix': 147, 'out': 77, 'total': 224}}}, {'createtime': '2020-02-27 20:35:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 144, 'out': 65, 'total': 209}, 'BB': {'fix': 98, 'out': 28, 'total': 126}, 'C': {'fix': 126, 'out': 82, 'total': 208}}}, {'createtime': '2020-02-27 20:43:30', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 98, 'out': 69, 'total': 167}, 'BB': {'fix': 129, 'out': 81, 'total': 210}, 'C': {'fix': 117, 'out': 57, 'total': 174}}}, {'createtime': '2020-02-27 20:51:09', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 141, 'out': 47, 'total': 188}, 'BB': {'fix': 111, 'out': 45, 'total': 156}, 'C': {'fix': 108, 'out': 46, 'total': 154}}}, {'createtime': '2020-02-27 20:51:24', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 93, 'out': 50, 'total': 143}, 'BB': {'fix': 128, 'out': 62, 'total': 190}, 'C': {'fix': 133, 'out': 78, 'total': 211}}}, {'createtime': '2020-02-27 20:51:27', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 114, 'out': 79, 'total': 193}, 'BB': {'fix': 136, 'out': 42, 'total': 178}, 'C': {'fix': 146, 'out': 69, 'total': 215}}}, {'createtime': '2020-02-27 20:55:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 105, 'out': 52, 'total': 157}, 'BB': {'fix': 115, 'out': 60, 'total': 175}, 'C': {'fix': 120, 'out': 72, 'total': 192}}}, {'createtime': '2020-02-27 20:55:53', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 147, 'out': 75, 'total': 222}, 'BB': {'fix': 140, 'out': 89, 'total': 229}, 'C': {'fix': 115, 'out': 67, 'total': 182}}}, {'createtime': '2020-02-27 20:56:23', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 130, 'out': 41, 'total': 171}, 'BB': {'fix': 142, 'out': 62, 'total': 204}, 'C': {'fix': 97, 'out': 75, 'total': 172}}}, {'createtime': '2020-02-27 20:56:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 106, 'out': 71, 'total': 177}, 'BB': {'fix': 112, 'out': 88, 'total': 200}, 'C': {'fix': 120, 'out': 59, 'total': 179}}}, {'createtime': '2020-02-27 20:57:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 110, 'out': 77, 'total': 187}, 'BB': {'fix': 128, 'out': 54, 'total': 182}, 'C': {'fix': 132, 'out': 60, 'total': 192}}}, {'createtime': '2020-02-27 20:59:33', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 72, 'out': 56, 'total': 128}, 'BB': {'fix': 110, 'out': 77, 'total': 187}, 'C': {'fix': 71, 'out': 43, 'total': 114}}}, {'createtime': '2020-02-27 21:05:14', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 94, 'out': 34, 'total': 128}, 'BB': {'fix': 129, 'out': 45, 'total': 174}, 'C': {'fix': 130, 'out': 53, 'total': 183}}}, {'createtime': '2020-02-27 21:06:32', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 96, 'out': 57, 'total': 153}, 'BB': {'fix': 112, 'out': 73, 'total': 185}, 'C': {'fix': 103, 'out': 55, 'total': 158}}}, {'createtime': '2020-02-27 21:08:11', 'delta': {'date': '2020-2-20', 'AAA': {'fix': 85, 'out': 66, 'total': 151}, 'BB': {'fix': 91, 'out': 32, 'total': 123}, 'C': {'fix': 120, 'out': 55, 'total': 175}}}, {'createtime': '2020-02-27 21:15:27', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 125, 'out': 45, 'total': 170}, 'BB': {'fix': 149, 'out': 52, 'total': 201}, 'C': {'fix': 68, 'out': 50, 'total': 118}}}, {'createtime': '2020-02-27 21:18:22', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 51, 'total': 145}, 'BB': {'fix': 69, 'out': 53, 'total': 122}, 'C': {'fix': 118, 'out': 41, 'total': 159}}}, {'createtime': '2020-02-28 11:08:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 116, 'out': 68, 'total': 184}, 'BB': {'fix': 137, 'out': 20, 'total': 157}, 'C': {'fix': 93, 'out': 59, 'total': 152}}}, {'createtime': '2020-02-28 16:57:49', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 66, 'total': 201}, 'BB': {'fix': 118, 'out': 90, 'total': 208}, 'C': {'fix': 111, 'out': 42, 'total': 153}}}, {'createtime': '2020-02-28 17:17:24', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 102, 'out': 65, 'total': 167}, 'BB': {'fix': 137, 'out': 76, 'total': 213}, 'C': {'fix': 99, 'out': 74, 'total': 173}}}, {'createtime': '2020-02-28 18:06:44', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 141, 'out': 81, 'total': 222}, 'BB': {'fix': 107, 'out': 50, 'total': 157}, 'C': {'fix': 126, 'out': 35, 'total': 161}}}, {'createtime': '2020-02-28 19:31:34', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 107, 'out': 59, 'total': 166}, 'BB': {'fix': 123, 'out': 54, 'total': 177}, 'C': {'fix': 153, 'out': 98, 'total': 251}}}, {'createtime': '2020-02-28 19:33:46', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 127, 'out': 56, 'total': 183}, 'BB': {'fix': 102, 'out': 68, 'total': 170}, 'C': {'fix': 84, 'out': 74, 'total': 158}}}, {'createtime': '2020-02-28 19:36:54', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 85, 'out': 92, 'total': 177}, 'BB': {'fix': 98, 'out': 50, 'total': 148}, 'C': {'fix': 104, 'out': 49, 'total': 153}}}, {'createtime': '2020-02-28 19:53:06', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 124, 'out': 64, 'total': 188}, 'BB': {'fix': 111, 'out': 76, 'total': 187}, 'C': {'fix': 86, 'out': 96, 'total': 182}}}, {'createtime': '2020-02-28 19:59:16', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 81, 'out': 64, 'total': 145}, 'BB': {'fix': 103, 'out': 85, 'total': 188}, 'C': {'fix': 111, 'out': 87, 'total': 198}}}, {'createtime': '2020-02-28 20:02:15', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 135, 'out': 56, 'total': 191}, 'BB': {'fix': 117, 'out': 57, 'total': 174}, 'C': {'fix': 96, 'out': 61, 'total': 157}}}, {'createtime': '2020-02-28 20:08:07', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 111, 'out': 73, 'total': 184}, 'BB': {'fix': 125, 'out': 47, 'total': 172}, 'C': {'fix': 110, 'out': 88, 'total': 198}}}, {'createtime': '2020-02-28 20:08:35', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 89, 'out': 88, 'total': 177}, 'BB': {'fix': 77, 'out': 75, 'total': 152}, 'C': {'fix': 62, 'out': 52, 'total': 114}}}, {'createtime': '2020-02-28 20:10:19', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 105, 'out': 65, 'total': 170}, 'BB': {'fix': 94, 'out': 71, 'total': 165}, 'C': {'fix': 99, 'out': 44, 'total': 143}}}, {'createtime': '2020-02-28 20:11:26', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 114, 'out': 63, 'total': 177}, 'BB': {'fix': 98, 'out': 60, 'total': 158}, 'C': {'fix': 103, 'out': 73, 'total': 176}}}, {'createtime': '2020-02-28 20:12:40', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 74, 'out': 81, 'total': 155}, 'BB': {'fix': 131, 'out': 66, 'total': 197}, 'C': {'fix': 116, 'out': 44, 'total': 160}}}, {'createtime': '2020-02-29 19:44:44', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 94, 'out': 76, 'total': 170}, 'BB': {'fix': 76, 'out': 61, 'total': 137}, 'C': {'fix': 90, 'out': 65, 'total': 155}}}, {'createtime': '2020-02-29 19:52:05', 'delta': {'date': '2020-2-29', 'AAA': {'fix': 64, 'out': 69, 'total': 133}, 'BB': {'fix': 63, 'out': 83, 'total': 146}, 'C': {'fix': 112, 'out': 72, 'total': 184}}}]
+2020-02-29 20:29:13,213  rtckpi.py run: : DEBUG  ------------------------------------------------------------------------------------------------------------------------------------------------------
+2020-02-29 20:29:13,213  rtckpi.py run: : INFO  url:111.html
+2020-02-29 20:29:13,213  rtckpi.py run: : INFO  fix id:table1
+2020-02-29 20:29:13,214  rtckpi.py run: : INFO  {'name': 'AAA', 'fix': 72}
+2020-02-29 20:29:13,214  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'AAA', 'fix': 72}
+2020-02-29 20:29:13,214  rtckpi.py run: : INFO  {'name': 'BB', 'fix': 63}
+2020-02-29 20:29:13,215  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'BB', 'fix': 63}
+2020-02-29 20:29:13,215  rtckpi.py run: : INFO  {'name': 'C', 'fix': 39}
+2020-02-29 20:29:13,215  db.py put_fix: : DEBUG  url: 111.html , data: {'name': 'C', 'fix': 39}
+2020-02-29 20:29:13,215  rtckpi.py run: : INFO  ======================================================================================================================================================
+2020-02-29 20:29:13,215  rtckpi.py run: : INFO  out id:table3
+2020-02-29 20:29:13,216  rtckpi.py run: : INFO  {'name': 'AAA', 'out': 23}
+2020-02-29 20:29:13,216  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 23}
+2020-02-29 20:29:13,216  rtckpi.py run: : INFO  {'name': 'BB', 'out': 28}
+2020-02-29 20:29:13,216  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 28}
+2020-02-29 20:29:13,217  rtckpi.py run: : INFO  {'name': 'C', 'out': 10}
+2020-02-29 20:29:13,217  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 10}
+2020-02-29 20:29:13,217  rtckpi.py run: : INFO  out id:table4
+2020-02-29 20:29:13,217  rtckpi.py run: : INFO  {'name': 'AAA', 'out': 6}
+2020-02-29 20:29:13,218  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'AAA', 'out': 6}
+2020-02-29 20:29:13,218  rtckpi.py run: : INFO  {'name': 'BB', 'out': 30}
+2020-02-29 20:29:13,218  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'BB', 'out': 30}
+2020-02-29 20:29:13,218  rtckpi.py run: : INFO  {'name': 'C', 'out': 16}
+2020-02-29 20:29:13,219  db.py put_out: : DEBUG  url: 111.html , data: {'name': 'C', 'out': 16}
+2020-02-29 20:29:13,219  rtckpi.py run: : INFO  url:222.html
+2020-02-29 20:29:13,219  rtckpi.py run: : INFO  fix id:table3
+2020-02-29 20:29:13,219  rtckpi.py run: : INFO  {'name': 'AAA', 'fix': 59}
+2020-02-29 20:29:13,220  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'AAA', 'fix': 59}
+2020-02-29 20:29:13,221  rtckpi.py run: : INFO  {'name': 'BB', 'fix': 77}
+2020-02-29 20:29:13,222  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'BB', 'fix': 77}
+2020-02-29 20:29:13,223  rtckpi.py run: : INFO  {'name': 'C', 'fix': 60}
+2020-02-29 20:29:13,223  db.py put_fix: : DEBUG  url: 222.html , data: {'name': 'C', 'fix': 60}
+2020-02-29 20:29:13,224  rtckpi.py run: : INFO  ======================================================================================================================================================
+2020-02-29 20:29:13,224  rtckpi.py run: : INFO  out id:table5
+2020-02-29 20:29:13,224  rtckpi.py run: : INFO  {'name': 'AAA', 'out': 8}
+2020-02-29 20:29:13,225  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 8}
+2020-02-29 20:29:13,225  rtckpi.py run: : INFO  {'name': 'BB', 'out': 17}
+2020-02-29 20:29:13,225  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 17}
+2020-02-29 20:29:13,225  rtckpi.py run: : INFO  {'name': 'C', 'out': 30}
+2020-02-29 20:29:13,226  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 30}
+2020-02-29 20:29:13,226  rtckpi.py run: : INFO  out id:table6
+2020-02-29 20:29:13,226  rtckpi.py run: : INFO  {'name': 'AAA', 'out': 28}
+2020-02-29 20:29:13,227  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'AAA', 'out': 28}
+2020-02-29 20:29:13,227  rtckpi.py run: : INFO  {'name': 'BB', 'out': 15}
+2020-02-29 20:29:13,227  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'BB', 'out': 15}
+2020-02-29 20:29:13,228  rtckpi.py run: : INFO  {'name': 'C', 'out': 20}
+2020-02-29 20:29:13,228  db.py put_out: : DEBUG  url: 222.html , data: {'name': 'C', 'out': 20}
+2020-02-29 20:29:13,228  db.py calc_all: : DEBUG  [{'name': 'AAA', 'fix': 72, 'url': '111.html'}, {'name': 'BB', 'fix': 63, 'url': '111.html'}, {'name': 'C', 'fix': 39, 'url': '111.html'}, {'name': 'AAA', 'fix': 59, 'url': '222.html'}, {'name': 'BB', 'fix': 77, 'url': '222.html'}, {'name': 'C', 'fix': 60, 'url': '222.html'}]
+2020-02-29 20:29:13,228  db.py calc_all: : DEBUG  [{'name': 'AAA', 'out': 23, 'url': '111.html'}, {'name': 'BB', 'out': 28, 'url': '111.html'}, {'name': 'C', 'out': 10, 'url': '111.html'}, {'name': 'AAA', 'out': 6, 'url': '111.html'}, {'name': 'BB', 'out': 30, 'url': '111.html'}, {'name': 'C', 'out': 16, 'url': '111.html'}, {'name': 'AAA', 'out': 8, 'url': '222.html'}, {'name': 'BB', 'out': 17, 'url': '222.html'}, {'name': 'C', 'out': 30, 'url': '222.html'}, {'name': 'AAA', 'out': 28, 'url': '222.html'}, {'name': 'BB', 'out': 15, 'url': '222.html'}, {'name': 'C', 'out': 20, 'url': '222.html'}]
+2020-02-29 20:29:13,229  db.py calc_all: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 131,
+        "out": 65,
+        "total": 196
+    },
+    "BB": {
+        "fix": 140,
+        "out": 90,
+        "total": 230
+    },
+    "C": {
+        "fix": 99,
+        "out": 76,
+        "total": 175
+    }
+}
+2020-02-29 20:29:13,230  db.py calc_new: : DEBUG  2020-2-29
+2020-02-29 20:29:13,230  db.py calc_new: : DEBUG  {'fix': 131, 'out': 65, 'total': 196}
+2020-02-29 20:29:13,231  db.py calc_new: : DEBUG  {'fix': 140, 'out': 90, 'total': 230}
+2020-02-29 20:29:13,231  db.py calc_new: : DEBUG  {'fix': 99, 'out': 76, 'total': 175}
+2020-02-29 20:29:13,231  db.py calc_new: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -4,
+        "out": 9,
+        "total": 5
+    },
+    "BB": {
+        "fix": 140,
+        "out": 90,
+        "total": 230
+    },
+    "C": {
+        "fix": 99,
+        "out": 76,
+        "total": 175
+    }
+}
+2020-02-29 20:29:13,231  db.py calc_new: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 131,
+        "out": 65,
+        "total": 196
+    },
+    "BB": {
+        "fix": 140,
+        "out": 90,
+        "total": 230
+    },
+    "C": {
+        "fix": 99,
+        "out": 76,
+        "total": 175
+    }
+}
+2020-02-29 20:29:13,232  db.py calc_last: : DEBUG  old data: {'date': '2020-2-29', 'AAA': {'fix': 131, 'out': 65, 'total': 196}, 'BB': {'fix': 140, 'out': 90, 'total': 230}, 'C': {'fix': 99, 'out': 76, 'total': 175}}
+2020-02-29 20:29:13,232  db.py calc_last: : DEBUG  2020-2-29
+2020-02-29 20:29:13,232  db.py calc_last: : DEBUG  {'fix': 131, 'out': 65, 'total': 196}
+2020-02-29 20:29:13,232  db.py calc_last: : DEBUG  {'fix': 140, 'out': 90, 'total': 230}
+2020-02-29 20:29:13,233  db.py calc_last: : DEBUG  {'fix': 99, 'out': 76, 'total': 175}
+2020-02-29 20:29:13,233  db.py calc_last: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -4,
+        "out": 9,
+        "total": 5
+    },
+    "BB": {
+        "fix": 23,
+        "out": 33,
+        "total": 56
+    },
+    "C": {
+        "fix": 3,
+        "out": 15,
+        "total": 18
+    }
+}
+2020-02-29 20:29:13,233  db.py calc_last: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 131,
+        "out": 65,
+        "total": 196
+    },
+    "BB": {
+        "fix": 140,
+        "out": 90,
+        "total": 230
+    },
+    "C": {
+        "fix": 99,
+        "out": 76,
+        "total": 175
+    }
+}
+2020-02-29 20:29:13,234  db.py calc_data_by_file: : DEBUG  ['111.html', '222.html']
+2020-02-29 20:29:13,234  db.py calc_data_by_file: : DEBUG  {'AAA': {'name': 'AAA', 'fix': 72, 'out': 29, 'total': 101}, 'BB': {'name': 'BB', 'fix': 63, 'out': 58, 'total': 121}, 'C': {'name': 'C', 'fix': 39, 'out': 26, 'total': 65}}
+2020-02-29 20:29:13,234  db.py calc_data_by_file: : DEBUG  {'AAA': {'name': 'AAA', 'fix': 59, 'out': 36, 'total': 95}, 'BB': {'name': 'BB', 'fix': 77, 'out': 32, 'total': 109}, 'C': {'name': 'C', 'fix': 60, 'out': 50, 'total': 110}}
+2020-02-29 20:29:13,234  db.py calc_new: : DEBUG  2020-2-29
+2020-02-29 20:29:13,235  db.py calc_new: : DEBUG  {'fix': 131, 'out': 65, 'total': 196}
+2020-02-29 20:29:13,235  db.py calc_new: : DEBUG  {'fix': 140, 'out': 90, 'total': 230}
+2020-02-29 20:29:13,235  db.py calc_new: : DEBUG  {'fix': 99, 'out': 76, 'total': 175}
+2020-02-29 20:29:13,235  db.py calc_new: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -4,
+        "out": 9,
+        "total": 5
+    },
+    "BB": {
+        "fix": 140,
+        "out": 90,
+        "total": 230
+    },
+    "C": {
+        "fix": 99,
+        "out": 76,
+        "total": 175
+    }
+}
+2020-02-29 20:29:13,236  db.py calc_new: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 131,
+        "out": 65,
+        "total": 196
+    },
+    "BB": {
+        "fix": 140,
+        "out": 90,
+        "total": 230
+    },
+    "C": {
+        "fix": 99,
+        "out": 76,
+        "total": 175
+    }
+}
+2020-02-29 20:29:13,236  db.py calc_last: : DEBUG  old data: {'date': '2020-2-29', 'AAA': {'fix': 131, 'out': 65, 'total': 196}, 'BB': {'fix': 140, 'out': 90, 'total': 230}, 'C': {'fix': 99, 'out': 76, 'total': 175}}
+2020-02-29 20:29:13,236  db.py calc_last: : DEBUG  2020-2-29
+2020-02-29 20:29:13,237  db.py calc_last: : DEBUG  {'fix': 131, 'out': 65, 'total': 196}
+2020-02-29 20:29:13,237  db.py calc_last: : DEBUG  {'fix': 140, 'out': 90, 'total': 230}
+2020-02-29 20:29:13,237  db.py calc_last: : DEBUG  {'fix': 99, 'out': 76, 'total': 175}
+2020-02-29 20:29:13,237  db.py calc_last: : DEBUG  return: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": -4,
+        "out": 9,
+        "total": 5
+    },
+    "BB": {
+        "fix": 23,
+        "out": 33,
+        "total": 56
+    },
+    "C": {
+        "fix": 3,
+        "out": 15,
+        "total": 18
+    }
+}
+2020-02-29 20:29:13,238  db.py calc_last: : DEBUG  return2: {
+    "date": "2020-2-29",
+    "AAA": {
+        "fix": 131,
+        "out": 65,
+        "total": 196
+    },
+    "BB": {
+        "fix": 140,
+        "out": 90,
+        "total": 230
+    },
+    "C": {
+        "fix": 99,
+        "out": 76,
+        "total": 175
+    }
+}
+2020-02-29 20:29:13,238  report.py report_render: : DEBUG  ----------------------------------------------------------------------------------------------------
+2020-02-29 20:29:13,238  report.py report_render: : DEBUG  标题：710Q项目, Network组修复问题汇总
+2020-02-29 20:29:13,238  report.py report_render: : DEBUG  数据采集时间：2020-2-29
+2020-02-29 20:29:13,239  report.py report_render: : DEBUG  报告生成时间: 2020-02-29_20:29:13
+2020-02-29 20:29:13,239  report.py report_render: : DEBUG  ----------------------------------------------------------------------------------------------------
+2020-02-29 20:29:13,239  report.py report_render: : DEBUG  
+2020-02-29 20:29:13,240  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 20:29:13,240  report.py report_render: : DEBUG  File: 111.html
+2020-02-29 20:29:13,240  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 20:29:13,240  report.py report_render: : DEBUG  AAA       	72        	29             	101            
+2020-02-29 20:29:13,241  report.py report_render: : DEBUG  BB        	63        	58             	121            
+2020-02-29 20:29:13,241  report.py report_render: : DEBUG  C         	39        	26             	65             
+2020-02-29 20:29:13,241  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 20:29:13,241  report.py report_render: : DEBUG  
+2020-02-29 20:29:13,241  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 20:29:13,242  report.py report_render: : DEBUG  File: 222.html
+2020-02-29 20:29:13,242  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 20:29:13,243  report.py report_render: : DEBUG  AAA       	59        	36             	95             
+2020-02-29 20:29:13,243  report.py report_render: : DEBUG  BB        	77        	32             	109            
+2020-02-29 20:29:13,243  report.py report_render: : DEBUG  C         	60        	50             	110            
+2020-02-29 20:29:13,244  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 20:29:13,244  report.py report_render: : DEBUG  
+2020-02-29 20:29:13,244  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 20:29:13,245  report.py report_render: : DEBUG  2020-1-2 ~ 2020-2-29 的新增Bug
+2020-02-29 20:29:13,245  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 20:29:13,245  report.py report_render: : DEBUG  AAA       	-4        	9              	5              
+2020-02-29 20:29:13,245  report.py report_render: : DEBUG  BB        	140       	90             	230            
+2020-02-29 20:29:13,246  report.py report_render: : DEBUG  C         	99        	76             	175            
+2020-02-29 20:29:13,246  report.py report_render: : DEBUG  
+2020-02-29 20:29:13,247  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 20:29:13,247  report.py report_render: : DEBUG  
+2020-02-29 20:29:13,248  report.py report_render: : DEBUG  2020-2-2 ~ 2020-2-29 的新增Bug
+2020-02-29 20:29:13,248  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 20:29:13,248  report.py report_render: : DEBUG  AAA       	-4        	9              	5              
+2020-02-29 20:29:13,248  report.py report_render: : DEBUG  BB        	23        	33             	56             
+2020-02-29 20:29:13,248  report.py report_render: : DEBUG  C         	3         	15             	18             
+2020-02-29 20:29:13,249  report.py report_render: : DEBUG  
+2020-02-29 20:29:13,249  report.py report_render: : DEBUG  ====================================================================================================
+2020-02-29 20:29:13,249  report.py report_render: : DEBUG  全部Bug数据
+2020-02-29 20:29:13,250  report.py report_render: : DEBUG  姓名        	修复        	分析转出      	小计        
+2020-02-29 20:29:13,250  report.py report_render: : DEBUG  AAA       	131       	65             	196            
+2020-02-29 20:29:13,250  report.py report_render: : DEBUG  BB        	140       	90             	230            
+2020-02-29 20:29:13,250  report.py report_render: : DEBUG  C         	99        	76             	175            
+2020-02-29 20:29:13,251  report.py report_render: : DEBUG  ----------------------------------------------------------------------------------------------------
+2020-02-29 20:29:13,251  report.py report_render: : INFO  output to : 2020-2-20\710Q_bugs_report.txt
+2020-02-29 20:29:13,253  db.py save_all: : DEBUG  {
+    "createtime": "2020-02-29 20:29:13",
+    "delta": {
+        "date": "2020-2-29",
+        "AAA": {
+            "fix": 131,
+            "out": 65,
+            "total": 196
+        },
+        "BB": {
+            "fix": 140,
+            "out": 90,
+            "total": 230
+        },
+        "C": {
+            "fix": 99,
+            "out": 76,
+            "total": 175
+        }
+    }
+}

@@ -10,19 +10,19 @@
     "last": {
         "date": "2020-2-29",
         "AAA": {
-            "fix": 74,
-            "out": 81,
-            "total": 155
+            "fix": 131,
+            "out": 65,
+            "total": 196
         },
         "BB": {
-            "fix": 131,
-            "out": 66,
-            "total": 197
+            "fix": 140,
+            "out": 90,
+            "total": 230
         },
         "C": {
-            "fix": 116,
-            "out": 44,
-            "total": 160
+            "fix": 99,
+            "out": 76,
+            "total": 175
         }
     }
 }

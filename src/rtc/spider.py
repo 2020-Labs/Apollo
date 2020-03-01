@@ -1,28 +1,27 @@
-import config
 import random
 
 
-class HtmlLoader:
-    def load(self,htmlfile):
-        self.html_content = ''
+class RtcSpider:
 
-    def parser(self):
-        pass
+    __members = []
+    def __init__(self, filename, members):
+        self.__file = filename
+        self.__members = members
+
+    def load(self):
+        #从htmlfile文件中加载html内容
+        self.__html_content = ''
 
     def extract_fix(self, id):
-        data_list = []
-        for n in config.MEMBERS:
-            data = {
-                    'name': n,
-                    'fix': random.randint(30,80)
-                }
-            data_list.append(data)
-        return data_list
-
-
-    def extract_out(self, id):
-        for n in config.MEMBERS:
+        for n in self.__members:
             yield {
                     'name': n,
-                    'out': random.randint(3,30)
+                    'fix': random.randint(30, 80)
+                }
+
+    def extract_out(self, id):
+        for n in self.__members:
+            yield {
+                    'name': n,
+                    'out': random.randint(3, 30)
                 }

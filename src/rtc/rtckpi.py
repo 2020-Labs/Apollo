@@ -1,41 +1,59 @@
+#!/usr/bin/env python
+#-*- coding:utf-8 _*-
+
+"""
+@File       : rtckpi.py
+@version    : 0.1
+@Author     : Kelvin
+@Time       : 2020-03-01
+
+--------------------------------------------------------------------
+@Changes log:
+    2020-03-01 : 0.1 Create
+"""
 import getopt
 import logging
 import os
 import sys
 
+import config
 import db
 import log
-import config
 import report
-from spider import HtmlLoader
+
+from config import AppConfig
+from spider import RtcSpider
 
 CONFIG_FILE = ''
 
+ERROR_ARGS = -1
+
+ERROR_CONFIG_FILE_NOT_FOUND = -2
+
 
 def usage():
-    print('Usage: [-c|-h] [--help|--config=]');
-    print('   -c|--config=')
+    print('Usage: [-c|-h] [--help|--config-file=]');
+    print('   -c|--config-file=')
     print('     配置文件路径，')
 
 
 def check_arg():
     global CONFIG_FILE
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "hc:", ["help", "config="]);
+        opts, args = getopt.getopt(sys.argv[1:], "hc:", ["help", "config-file="]);
 
-        # check all param
         for opt, arg in opts:
             if opt in ("-h", "--help"):
                 usage();
                 sys.exit(1);
-            elif opt in ("-c", "--config"):
+            elif opt in ("-c", "--config-file"):
                 CONFIG_FILE = arg
             else:
                 logging.info("%s ==> %s" % (opt, arg));
 
     except getopt.GetoptError:
         print("getopt error!");
-        usage();
+        usage()
         return False
 
     if not CONFIG_FILE:
@@ -54,49 +72,49 @@ def check_arg():
 def run():
     log.initial()
     if not check_arg():
-        sys.exit(-1)
+        sys.exit(ERROR_ARGS)
 
-    logging.debug('check done.')
+    logging.info('check done.')
 
-    if not config.read_config(CONFIG_FILE):
-        sys.exit(-2)
+    if not AppConfig(CONFIG_FILE).readConfig():
+        sys.exit(ERROR_CONFIG_FILE_NOT_FOUND)
 
-    db.initial()
-    report.initial()
+    #db.initial()
+    db2 = db.DbHelper.getInstance()
 
-    logging.debug('-' * 150)
+    logging.info('-' * 150)
 
-    for cfg in config.RTCs:
-        htmlloader = HtmlLoader()
-        htmlloader.load(os.path.join(config.BASE_PATH, cfg['url']))
-        htmlloader.parser()
 
-        logging.info('url:{0}'.format(cfg['url']))
+    for cfg in AppConfig.RTCs:
+        htmlloader = RtcSpider(os.path.join(AppConfig.BASE_PATH, cfg[config.KEY_URL]), AppConfig.MEMBERS)
+        htmlloader.load()
 
-        for id in cfg['fix']:
+        logging.info('url:{0}'.format(cfg[config.KEY_URL]))
+
+        for id in cfg[config.KEY_FIX]:
             logging.info('fix id:{0}'.format(id))
             for fix in htmlloader.extract_fix(id):
                 logging.info(fix)
-                db.put_fix(cfg['url'], fix)
+                db2.put_fix(cfg[config.KEY_URL], fix)
 
             logging.info('=' * 150)
 
         #out
-        for id in cfg['out']:
+        for id in cfg[config.KEY_OUT]:
             logging.info('out id:{0}'.format(id))
             for out in htmlloader.extract_out(id):
                 logging.info(out)
-                db.put_out(cfg['url'], out)
+                db2.put_out(cfg[config.KEY_URL], out)
 
-    db.calc_all()
+    db2.calc_all()
 
-    db.calc_new()
+    db2.calc_new()
 
-    db.calc_last()
+    db2.calc_last()
+    rpt = report.ReportText()
+    rpt.output_report()
 
-    report.report_render()
-
-    db.save_all()
+    db2.save_all()
 
 if __name__ == '__main__':
     run()

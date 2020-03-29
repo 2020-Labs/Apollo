@@ -57,7 +57,7 @@ def check_arg():
         return False
 
     if not CONFIG_FILE:
-        usage();
+        usage()
         print('-_-' * 20)
         print('错误：-c|--config, 请指定配置文件路径！！')
         return False

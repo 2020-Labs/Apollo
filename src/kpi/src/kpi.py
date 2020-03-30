@@ -24,7 +24,7 @@ __args_opts__ = None
 
 def main():
     excel_data.run('//work2//git-source//Apollo//src//kpi//docs//Book.xlsx')
-    daily_kpi_report.output_report(__args_opts__)
+    #daily_kpi_report.output_report(__args_opts__)
     #week_kpi_report.output_report(__args_opts__)
 
 

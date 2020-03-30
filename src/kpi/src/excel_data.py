@@ -37,6 +37,7 @@ DATA_KEY_BUG = 'Bugs'
 DATA_KEY_JOB = 'Jobs'
 DATA_KEY_DOC = 'Docs'
 
+
 __data_mapping__ = [
     {
         #BugId 平台	项目	投入时长	标题	进展	状态	日期	风险
@@ -45,7 +46,7 @@ __data_mapping__ = [
             {"column": "BugId", "field":  "BugId", "type": str},
             {"column": "平台", "field":  "platform", "type": str},
             {"column": "项目", "field":  "project", "type": str},
-            {"column": "日期", "field": "update_date", "type": datetime},
+            {"column": "日期", "field": "update_date", "type": Timestamp},
             {"column": "投入时长", "field": "hour", "type": float},
             {"column": "标题", "field": "title", "type": str},
             {"column": "进展", "field": "detailed", "type": str},
@@ -60,7 +61,7 @@ __data_mapping__ = [
             {"column": "标题", "field": "title", "type": str},
             {"column": "进展", "field": "detailed", "type": str},
             {"column": "状态", "field": "status", "type": str},
-            {"column": "日期", "field": "update_date", "type": datetime.date},
+            {"column": "日期", "field": "update_date", "type": Timestamp},
             {"column": "投入时长", "field": "hour", "type": float}
         ]
     },
@@ -75,7 +76,7 @@ __data_mapping__ = [
             {"column": "标题", "field": "title", "type": str},
             {"column": "进展", "field": "detailed", "type": str},
             {"column": "状态", "field": "status", "type": str},
-            {"column": "日期", "field": "update_date", "type": datetime.date},
+            {"column": "日期", "field": "update_date", "type": Timestamp},
         ]
     }
 ]
@@ -87,6 +88,7 @@ __db_jobs_records__ = []
 
 def initialize():
     pass
+
 
 
 def read_excel(name):
@@ -103,21 +105,26 @@ def read_excel(name):
     records = [{cols[i]: rec[i] for i in range(len(cols))} for rec in rows]
 
     #Print records
-    [logging.debug(r) for r in records]
+    #[logging.debug(r) for r in records]
 
     return records
 
 
 def data_filter(val, dt):
-    logging.debug('{0},{1}'.format(val, dt))
+    logging.debug('{0}(type: {2}), {1} '.format(val, dt , type(val)))
     if issubclass(dt, datetime):
        return __strtodate__(str(val))
 
     if issubclass(dt, str):
-        if isinstance(val, float) and isnan(val):
-            return ''
-        else:
-            return str(val)
+        if isinstance(val, float):
+            if isnan(val):
+                return ''
+
+            idx = str(val).find('.0')
+            if idx > 0:
+                return str(val)[:idx]
+
+        return str(val)
 
     if issubclass(dt, float):
         return __strtofloat__(val)
@@ -159,7 +166,7 @@ def run(excel_file):
 
 
     __db_bugs_records__ = setup_data(DATA_KEY_BUG)
-    # __db_docs_records__ = setup_data(DATA_KEY_DOC)
+    __db_docs_records__ = setup_data(DATA_KEY_DOC)
     # __db_jobs_records__ = setup_data(DATA_KEY_JOB)
 
 

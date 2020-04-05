@@ -26,6 +26,7 @@ DATA_MAPPING_COLUMNS = 'columns'
 DATA_MAPPING_COL = 'column'
 DATA_MAPPING_FIELD = 'field'
 DATA_MAPPING_TYPE = 'type'
+DATA_MAPPING_NOT_NULL = 'not_null'
 
 FIELD_UPDATE_DATE = 'update_date'
 FIELD_PLATFORM = 'platform'
@@ -43,8 +44,8 @@ __data_mapping__ = [
         #BugId 平台	项目	投入时长	标题	进展	状态	日期	风险
         "name": "Bugs",
         "columns": [
-            {"column": "BugId", "field":  "BugId", "type": str},
-            {"column": "平台", "field":  "platform", "type": str},
+            {"column": "BugId", "field":  "BugId", "type": str, DATA_MAPPING_NOT_NULL: True},
+            {"column": "平台", "field":  "platform", "type": str, DATA_MAPPING_NOT_NULL: True},
             {"column": "项目", "field":  "project", "type": str},
             {"column": "日期", "field": "update_date", "type": Timestamp},
             {"column": "投入时长", "field": "hour", "type": float},
@@ -114,8 +115,7 @@ def data_filter(val, dt):
     logging.debug('{0}(type: {2}), {1} '.format(val, dt , type(val)))
     if issubclass(dt, datetime):
        return __strtodate__(str(val))
-
-    if issubclass(dt, str):
+    elif issubclass(dt, str):
         if isinstance(val, float):
             if isnan(val):
                 return ''
@@ -126,10 +126,18 @@ def data_filter(val, dt):
 
         return str(val)
 
-    if issubclass(dt, float):
+    elif issubclass(dt, float):
         return __strtofloat__(val)
 
+    elif issubclass(dt, int):
+        return __strtoint__(val)
 
+
+def __strtoint__(val):
+    try:
+        return int(val)
+    except ValueError as e:
+        return '{0}_#ValueError#'.format(val)    
 
 
 def __strtodate__(val):
@@ -140,7 +148,6 @@ def __strtodate__(val):
 
 
 def __strtofloat__(val):
-
     try:
         if isinstance(val, float) and isnan(val):
             return 0.0
@@ -153,9 +160,6 @@ def __strtofloat__(val):
         return '{0}_#ValueError'.format(val)
 
 
-
-
-
 def run(excel_file):
     global __excel_file__, __db_bugs_records__ , __db_jobs_records__, __db_docs_records__
 
@@ -164,10 +168,9 @@ def run(excel_file):
         return
     __excel_file__ = excel_file
 
-
     __db_bugs_records__ = setup_data(DATA_KEY_BUG)
     __db_docs_records__ = setup_data(DATA_KEY_DOC)
-    # __db_jobs_records__ = setup_data(DATA_KEY_JOB)
+    __db_jobs_records__ = setup_data(DATA_KEY_JOB)
 
 
 def data_mapping(sheet, records):
@@ -186,11 +189,19 @@ def data_mapping(sheet, records):
 
         new_records.append(obj)
 
-    [logging.debug(r) for r in new_records]
+    #[logging.debug(r) for r in new_records]
     return new_records
 
 
+def get_not_null_cols(name):
+    _not_null_cols = []
+    __mapping = [r for r in __data_mapping__ if r[DATA_MAPPING_NAME] == name]
 
+    if len(__mapping) > 0:
+        _columns = __mapping[0][DATA_MAPPING_COLUMNS]
+        _not_null_cols = [c for c in _columns if c.get(DATA_MAPPING_NOT_NULL)]
+
+    return _not_null_cols
 
 
 def setup_data(sheet):

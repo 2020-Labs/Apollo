@@ -25,7 +25,7 @@ __args_opts__ = None
 def main():
     excel_data.run('//work2//git-source//Apollo//src//kpi//docs//Book.xlsx')
     #daily_kpi_report.output_report(__args_opts__)
-    #week_kpi_report.output_report(__args_opts__)
+    week_kpi_report.output_report(__args_opts__)
 
 
 
@@ -46,7 +46,16 @@ def logging_initialize():
 
 
 if __name__ == '__main__':
-    opts, args = getopt.getopt(sys.argv[1:], "h", ["help", "excel=", 'daily-kpi-report', 'output='])
+    # kpi.py --help
+    #   --excel=xxx.xlsx
+    #   --daily-kpi-report
+    #   --weekly-kpi-report
+    #   --start-date=2020-2-1
+    #   --end-date=2020-2-2
+    #   --date=2020-3-1/2020-3-4
+
+
+    opts, args = getopt.getopt(sys.argv[1:], "h", ["help", "excel=", 'daily-kpi-report','weekly-kpi-report', 'output='])
     __args_opts__ = opts
     logging_initialize()
     main()

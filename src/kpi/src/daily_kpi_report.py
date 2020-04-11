@@ -171,18 +171,21 @@ def output_excel_report(records):
 def output_report_by_day(records):
     output_text = []
 
-    #platforms = [r for r in {r[db.FIELD_PLATFORM] for r in records}]
-    #logging.debug(platforms)
-
-
-    #platforms = [rec for rec in {r[db.FIELD_PLATFORM] for k,r in records.items()}]
     platforms = [rec for rec in {r[db.FIELD_PLATFORM] for k, recs in records.items() for r in recs if r.get(db.FIELD_PLATFORM)}]
-    #logging.debug(platforms)
-
-
     result = []
 
+    total_hours = sum([r[db.FIELD_HOUR] for k, recs in records.items() for r in recs])
+
+    bugs_summary_output_text = []
+    bugs_summary_output_text.append('\n工作汇总：')
+
+    hour_summary_output_text = []
+    hour_summary_output_text.append('\n投入度')
     for platform in platforms:
+
+        #计算平台工作时间投入度
+        hour_ = sum([r[db.FIELD_HOUR] for k, recs in records.items() for r in recs if r.get(db.FIELD_PLATFORM) == platform])
+
         new_records = [r for r in records[db.DATA_KEY_BUG] if r[db.FIELD_PLATFORM] == platform]
 
         #Bug
@@ -190,13 +193,23 @@ def output_report_by_day(records):
             output_text.append(platform)
 
         for r in new_records:
-
             if r[db.FIELD_STATUS] in ['解决中', '待验证', '打回', '分析转出']:
                 r['__type__'] = db.DATA_KEY_BUG
                 result.append(r)
                 output_text.append(' - Bug {0} {1}'.format(r['BugId'], r[db.FIELD_TITLE]))
                 output_text.append('   状态：{0}'.format(r[db.FIELD_STATUS]))
                 output_text.append('   进展：{0}'.format(r[db.FIELD_DETAILED]))
+
+
+        count_fixed = sum([1 for r in new_records if r[db.FIELD_STATUS] in ['待验证', '打回']])
+        count_process = sum([1 for r in new_records if r[db.FIELD_STATUS] in ['解决中']])
+        count_out = sum([1 for r in new_records if r[db.FIELD_STATUS] in ['分析转出']])
+        count_case = sum([1 for r in new_records if r[db.FIELD_STATUS] in ['解决中'] and r['case'] !=''])
+        bugs_summary_output_text.append('{0} Bugs：'.format(platform))
+        bugs_summary_output_text.append(' - 已处理：{0}， 解决中：{1}(case:{3})， 分析转出：{2}'.format(count_fixed, count_process, count_out, count_case))
+
+        #hour_ = sum([r[db.FIELD_HOUR] for r in new_records])
+
 
         #Job
         new_records = [r for r in records[db.DATA_KEY_JOB] if r[db.FIELD_PLATFORM] == platform]
@@ -211,6 +224,15 @@ def output_report_by_day(records):
                 output_text.append('   状态：{0}'.format(r[db.FIELD_STATUS]))
                 output_text.append('   进展：{0}'.format(r[db.FIELD_DETAILED]))
 
+
+        #hour_ += sum([r[db.FIELD_HOUR] for r in new_records])
+        hour_summary_output_text.append('')
+        #hour_summary_output_text.append(platform)
+        #hour_summary_output_text.append(' ' + platform + ': {0} / {1} = {2}'.format(hour_, total_hours, float(hour_/total_hours )))
+        hour_summary_output_text.append(
+            ' ' + platform + ': {0} / {1} = {2}'.format(hour_, total_hours,
+                                                             format(float(hour_ / total_hours),'0.00%')))
+
     #Docs
     new_records = [r for r in records[db.DATA_KEY_DOC]]
     if len(new_records) > 0:
@@ -222,6 +244,10 @@ def output_report_by_day(records):
             output_text.append(' - {0} {1} '.format(r['category'], r[db.FIELD_TITLE]))
 
 
+    count = sum([1 for r in new_records if r[db.FIELD_STATUS] in ['完成']])
+    if count >0:
+        bugs_summary_output_text.append('')
+        bugs_summary_output_text.append('文档输出：{0} 篇。'.format(count))
 
     #ouput
 
@@ -232,6 +258,13 @@ def output_report_by_day(records):
         result_text += r + '\n'
 
     #logging.debug(result_text)
+
+    if result_text != '':
+        for r in bugs_summary_output_text:
+            result_text += r + '\n'
+
+        for r in hour_summary_output_text:
+            result_text += r + '\n'
 
     return result_text
 

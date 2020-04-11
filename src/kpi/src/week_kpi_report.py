@@ -104,7 +104,10 @@ headers_cell_setting = [
     }
 ]
 
+worksheet = None
+workbook = None
 def output_report(args):
+    global  workbook, worksheet
     workbook = xlsxwriter.Workbook(__output_excel__)
     worksheet = workbook.add_worksheet()
 
@@ -122,121 +125,6 @@ def output_report(args):
     worksheet.set_row(1, 20)
     worksheet.set_row(2, 20)
 
-    workbook.close()
-
-    records_list = [db.__db_bugs_records__, db.__db_jobs_records__ , db.__db_docs_records__]
-    days = sorted({r[db.FIELD_UPDATE_DATE] for rec in records_list for r in rec})
-
-    first_day = days[0]
-    last_day = days[-1]
-
-    week_of_fist_day = first_day.dayofweek
-
-    diff_day = last_day - first_day
-
-    #day = first_day.replace(day=first_day.day + i)
-
-    dayofweek_start = 2
-    dayofweek_end = 1
-
-    weeks = []
-
-
-    for i in range(diff_day.days + 1):
-        _day = first_day.replace(day=first_day.day + i)
-        _dayofweek = _day.dayofweek
-
-        if _dayofweek == dayofweek_start:
-            logging.debug(_day)
-
-            _start = _day
-            #_end = _day.replace(day=_day.day + 6)
-            _end = 6
-            weeks.append([_start, _end])
-        elif _day == first_day:
-            _start = _day
-
-            _day_step = 0
-
-            # if(_start.dayofweek > dayofweek_start):
-            #     _day_step = (7 - dayofweek_start) + (7 - dayofweek_end)
-            # elif (_start.dayofweek < dayofweek_start):
-            #     _day_step = dayofweek_end - _start + 1
-
-            _day.dayofweek - dayofweek_start
-
-            #_day_start =
-
-            #_end = _day.replace(day=_day.day + _day_step)
-            weeks.append([_start, _day_step])
-
-        # elif _day == last_day or _dayofweek == dayofweek_end:
-        #     logging.debug(_day)
-        #     logging.debug('<' * 5)
-        #     _w.append(_day)
-        # else:
-        #     continue
-
-    first_week_day = calendar.THURSDAY
-    last_week_day = calendar.WEDNESDAY
-    calendar.setfirstweekday(first_week_day)
-    weeks = calendar.monthcalendar(first_day.year, first_day.month)
-    days = []
-    days_week = []
-    for w in weeks:
-        for day in w:
-            if day == 0:
-                continue
-            else:
-                date_str = '2020-3-' + str(day)
-                days.append(date_str)
-
-    logging.debug(days)
-
-    for w in weeks:
-        week = []
-        for day in w:
-            if day == 0:
-                date_str = 'N/A'
-            else:
-                date_str = '2020-3-' + str(day)
-
-            if date_str == 'N/A':
-                week.append(date_str)
-            else:
-                week.append(Timestamp(date_str))
-
-
-        days_week.append(week)
-
-    logging.debug(days_week)
-
-    _step = 0
-
-    _test_day = Timestamp('2020-3-25')
-
-    if _test_day.dayofweek > first_week_day:
-        _step = calendar.SUNDAY - _test_day.dayofweek + last_week_day + 1
-    elif _test_day.dayofweek < last_week_day:
-        _step = last_week_day - _test_day.dayofweek
-
-    logging.debug('day: {0} , step: {1}'.format(_test_day ,  str(_step)))
-
-    t1 = Timestamp('2020-1-1')
-    t2 = Timestamp('2020-01-01')
-
-    for w in days_week:
-        if first_day in w:
-            logging.debug(w)
-
-
-
-
-    logging.debug('t1 == t2 ? ' + str(t1 == t2))
-
-    #print(calendar.monthcalendar(2020, 4))
-
-
 
 
     #logging.debug(weeks)
@@ -251,11 +139,12 @@ def output_report(args):
     #justdo()
     #(MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY) = range(7)
     get_week_range('2020-3-3', '2020-4-5')
-    get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.WEDNESDAY)
-    get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.THURSDAY)
-    get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.FRIDAY)
-    get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.SATURDAY)
+    #get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.WEDNESDAY)
+    # get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.THURSDAY)
+    # get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.FRIDAY)
+    # get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.SATURDAY)
 
+    workbook.close()
 
 
 def get_days(start_date,end_date):
@@ -327,9 +216,32 @@ def get_week_range(start_date, end_date, first_week_day=calendar.MONDAY):
 
         _last_day_dayofweek_index = _last_day_index + _tail_step
 
-    for i in range(_first_day_dayofweek_index,_last_day_dayofweek_index, 7):
+
+    _start_row = 3
+
+    for i in range(_first_day_dayofweek_index, _last_day_dayofweek_index, 7):
         end_index = i + 6
         logging.debug('{0}(index={1}) - {2}(index={3})'.format(__days[i],i, __days[end_index],end_index))
+        # for idx in range(i, end_index+1):
+        #    logging.debug('index {0}'.format(idx))
+
+        subdays = [__days[idx] for idx in range(i, end_index+1)]
+        logging.debug(subdays)
+
+
+        for day in subdays:
+            __date = day.__format__('%Y-%m-%d')
+            worksheet.write(_start_row, 2, __date)
+
+            _start_row += 1
+
+        #11
+
+        _merge_start_row = _start_row - 6
+        _merge_end_row = _start_row
+        worksheet.merge_range('L{0}:L{1}'.format(_merge_start_row, _merge_end_row), '本周小计：')
+        #worksheet.merge_range()
+
 
 
 

@@ -33,6 +33,7 @@ FIELD_PLATFORM = 'platform'
 FIELD_STATUS = 'status'
 FIELD_TITLE = 'title'
 FIELD_DETAILED = 'detailed'
+FIELD_HOUR = 'hour'
 
 DATA_KEY_BUG = 'Bugs'
 DATA_KEY_JOB = 'Jobs'
@@ -53,6 +54,7 @@ __data_mapping__ = [
             {"column": "进展", "field": "detailed", "type": str},
             {"column": "状态", "field": "status", "type": str},
             {"column": "风险", "field": "risk", "type": str},
+            {"column": "Case", "field": "case", "type": str},
        ]
     },
     {#分类	标题	文档地址	投入时长	进展	状态	日期

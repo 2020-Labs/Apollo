@@ -331,10 +331,12 @@ def get_report_data_by_week(start_date, end_date):
 
         bugs_delta = ' - 已处理：{0}， 解决中：{1}， 分析转出：{2}'.format(count_fixed, count_process, count_out)
 
+        bugs_delta += ' , 工作时长: {0}'.format(hour_)
         if len(bugs) > 0:
             summary_output_text.append('  - Bugs: ({0} 个) , {1}'.format(len(bugs),bugs_delta))
             summary_output_text.append('    {0}'.format(str(bugs)[1:-1].replace("'",'').replace(',',' ')))
             summary_output_text.append('')
+
         # 代码提交
         new_records = [r for r in records_by_days[db.DATA_KEY_CODE] if r[db.FIELD_PLATFORM] == platform]
         if len(new_records) > 0:

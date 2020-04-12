@@ -27,10 +27,10 @@ import team_work_report
 
 def main():
     excel_data.run('//work2//git-source//Apollo//Book.xlsx', my_name='AAAA', args= __args_opts__)
-    excel_data.run('//work2//git-source//Apollo//BookB.xlsx', my_name='BBB', args=__args_opts__)
+    #excel_data.run('//work2//git-source//Apollo//BookB.xlsx', my_name='BBB', args=__args_opts__)
     #daily_kpi_report.output_report(__args_opts__)
-    #week_kpi_report.output_report(__args_opts__)
-    team_work_report.output_report(__args_opts__)
+    week_kpi_report.output_report(__args_opts__)
+    #team_work_report.output_report(__args_opts__)
 
 
 
@@ -55,9 +55,7 @@ if __name__ == '__main__':
     #   --excel=xxx.xlsx
     #   --daily-kpi-report
     #   --weekly-kpi-report
-    #   --start-date=2020-2-1
-    #   --end-date=2020-2-2
-    #   --date=2020-3-1/2020-3-4
+    #   --date=2020-3-1,2020-3-4
     #   --
 
 

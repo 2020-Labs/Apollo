@@ -14,12 +14,15 @@
 
 __output_excel__ = '/work2//git-source//Apollo//src//kpi//docs//kpi_report.xlsx'
 
+import datetime
 import logging
+import operator
+import time
 
 import pandas as pd
 import excel_data as db
 import xlsxwriter
-from pandas._libs.tslibs.timestamps import Timestamp
+from pandas._libs.tslibs.timestamps import Timestamp, timedelta
 
 import calendar
 
@@ -39,6 +42,21 @@ header_center_format = {
     'border': 1,
     'font_size': 10,
     'font_name': '微软雅黑'
+}
+
+cell_format_string = {
+    'valign': 'vcenter',
+    'align': 'center',
+    'font_size': 10,
+    'font_name': '微软雅黑'
+}
+
+summary_cell_format_string = {
+    'valign': 'top',
+    'align': 'left',
+    'font_size': 10,
+    'font_name': '微软雅黑',
+    'text_wrap': True
 }
 
 headers_cell_setting = [
@@ -68,7 +86,7 @@ headers_cell_setting = [
     },
     {
         'cell': 'D3',
-        'text': '待验证',   'width': 6, 'format': header_center_format
+        'text': '已处理',   'width': 6, 'format': header_center_format
     },
     {
         'cell': 'E3',
@@ -104,258 +122,307 @@ headers_cell_setting = [
     }
 ]
 
-worksheet = None
-workbook = None
+WEEK_DAY_NAME = ['一', '二', '三', '四', '五', '六', '日']
+
+__worksheet__ = None
+__workbook__ = None
+__start_date__ = None
+__end_date__ = None
+
+DATE_FORMAT = '%Y-%m-%d'
+
+
 def output_report(args):
-    global  workbook, worksheet
-    workbook = xlsxwriter.Workbook(__output_excel__)
-    worksheet = workbook.add_worksheet()
+    global __workbook__, __worksheet__, __start_date__, __end_date__
+
+    logging.debug(' args: ' + str(args))
+
+    args_date = None
+    for opt, arg in args:
+        if opt in '--date':
+            args_date = arg
+
+    if args_date:
+        dates = args_date.split(',')
+        if len(dates) > 1:
+            __start_date__ = dates[0]
+            __end_date__ = dates[1]
+        else:
+            __start_date__ = dates[0]
+            __end_date__ = time.strftime('%Y-%m-%d', time.localtime())
+
+        try:
+            Timestamp(__start_date__)
+            Timestamp(__end_date__)
+        except ValueError as e:
+            raise ValueError('参数: --date 格式错误,不是有效的日期格式, 格式:yyyy-mm-dd , {0} {1}'.format(
+                __start_date__, __end_date__
+            ))
+
+
+    records_list = [db.__db_bugs_records__, db.__db_jobs_records__ , db.__db_docs_records__]
+    days = sorted({r[db.FIELD_UPDATE_DATE] for rec in records_list for r in rec})
+
+    if len(days) == 1:
+        __start_date__ = days.copy()
+        __end_date__ = __start_date__
+    else:
+        __start_date__ = days[0]
+        __end_date__ = days[-1]
+
+    __workbook__ = xlsxwriter.Workbook(__output_excel__)
+    __worksheet__ = __workbook__.add_worksheet()
 
     for cell in headers_cell_setting:
-        cell_format = workbook.add_format(cell['format'])
+        header_cell_format = __workbook__.add_format(cell['format'])
         cell_id = cell['cell']
         if cell_id.find(':') > 0:
-            worksheet.merge_range(cell['cell'], cell['text'], cell_format)
-            worksheet.set_column(cell_id, cell['width'])
+            __worksheet__.merge_range(cell['cell'], cell['text'], header_cell_format)
+            __worksheet__.set_column(cell_id, cell['width'])
         else:
-            worksheet.write(cell['cell'], cell['text'], cell_format)
-            worksheet.set_column('{0}:{0}'.format(cell_id), cell['width'])
+            __worksheet__.write(cell['cell'], cell['text'], header_cell_format)
+            __worksheet__.set_column('{0}:{0}'.format(cell_id), cell['width'])
 
-    worksheet.set_row(0, 20)
-    worksheet.set_row(1, 20)
-    worksheet.set_row(2, 20)
+    __worksheet__.set_row(0, 20)
+    __worksheet__.set_row(1, 20)
+    __worksheet__.set_row(2, 20)
 
-
-
-    #logging.debug(weeks)
-    # for _days in weeks:
-    #     day_start = _days[0]
-    #     day_end = _days[1]
-    #     records = [r for r in db.__db_bugs_records__ if r[db.FIELD_UPDATE_DATE] >=day_start and r[db.FIELD_UPDATE_DATE]<=day_end]
+    week_date_range = get_week_range_ext(__start_date__, __end_date__)
+    #week_date_range = get_week_range_ext('2020-3-3', '2020-4-5', first_week_day=calendar.WEDNESDAY)
     #
-    #     logging.debug(_days)
-    #     for r in records:
-    #         logging.debug(r)
-    #justdo()
-    #(MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY) = range(7)
-    get_week_range('2020-3-3', '2020-4-5')
-    #get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.WEDNESDAY)
-    # get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.THURSDAY)
-    # get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.FRIDAY)
-    # get_week_range('2020-3-3', '2020-4-5', first_week_day=calendar.SATURDAY)
+    week_date_range = get_week_range_ext(__start_date__, __end_date__, first_week_day=calendar.THURSDAY)
+    # get_week_range_ext('2020-3-3', '2020-4-5', first_week_day=calendar.FRIDAY)
+    # get_week_range_ext('2020-3-3', '2020-4-5', first_week_day=calendar.SATURDAY)
 
-    workbook.close()
+    report_data = []
+    for week in week_date_range:
+        # 周报数据
+        data_by_week = get_report_data_by_week(week[0], week[1])
+        if data_by_week:
+            report_data.append(data_by_week)
 
+    # 输出Excel
+    cell_format = __workbook__.add_format(cell_format_string)
+    summary_cell_format = __workbook__.add_format(summary_cell_format_string)
+    current_row = 3
+    for rec in report_data:
+        week_name = None
+        for r in rec['__delta__']:
+            day = Timestamp(r['__date__'])
 
-def get_days(start_date,end_date):
-    _first_year = start_date.year
-    _first_month = start_date.month
+            if not week_name:
+                week_name = 'W' + str(day.week)
+            __worksheet__.write(current_row, 1, WEEK_DAY_NAME[day.dayofweek], cell_format)
 
-    _last_year = end_date.year
-    _last_month = end_date.month
-
-    years = []
-
-    if start_date.day < 7:
-        years.append(calendar._prevmonth(_first_year, _first_month))
-
-    y_m = (_first_year, _first_month)
-    while y_m <= (_last_year, _last_month):
-        years.append(y_m)
-        y_m = calendar._nextmonth(y_m[0], y_m[1])
-
-    if end_date.day > calendar._monthlen(_last_year, _last_month) - 7:
-        years.append(calendar._nextmonth(_last_year, _last_month))
-
-    __days = []
-    for ym in years:
-        y = ym[0]
-        m = ym[1]
-        days = [Timestamp('{0}-{1}-{2}'.format(y, m, d)) for d in calendar.Calendar().itermonthdays(ym[0], ym[1]) if d > 0]
-        #logging.debug(days)
-
-        __days.extend(days)
-
-    return __days
+            __worksheet__.write(current_row, 2, r['__date__'].__format__('%Y-%m-%d'), cell_format)
+            __worksheet__.write(current_row, 3, r['__fixed__'], cell_format)
+            __worksheet__.write(current_row, 4, r['__out__'], cell_format)
+            __worksheet__.write(current_row, 5, r['__unfix__'], cell_format)
+            __worksheet__.write(current_row, 7, r['__codes__'], cell_format)
+            __worksheet__.write(current_row, 8, r['__docs__'], cell_format)
+            __worksheet__.write(current_row, 9, r['__otj__'], cell_format)
+            current_row += 1
 
 
-def get_week_range(start_date, end_date, first_week_day=calendar.MONDAY):
+        # 本周汇总
+        merge_start_row = current_row - len(rec['__delta__']) + 1
+        merge_end_row = current_row
+        __worksheet__.merge_range('L{0}:L{1}'.format(merge_start_row, merge_end_row), rec['__summary__'], cell_format=summary_cell_format)
+        __worksheet__.merge_range('A{0}:A{1}'.format(merge_start_row, merge_end_row), week_name,
+                                  cell_format=summary_cell_format)
+
+
+    __workbook__.close()
+
+
+def date_range(beginDate, endDate):
+    dates = []
+    _start = Timestamp(beginDate)
+    _end = Timestamp(endDate)
+    _date = _start
+    while _date <= _end:
+        dates.append(_date)
+        _date = _date + timedelta(1)
+
+    return dates
+
+
+def get_report_data_by_week(start_date, end_date):
+    __start_date = Timestamp(start_date)
+    __end_date = Timestamp(end_date)
+    __days = date_range(start_date, end_date)
+    # 查询数据
+    records_by_days = {}
+    #sorted(db.__db_bugs_records__, key=operator.itemgetter(db.FIELD_UPDATE_DATE), reverse=False)
+
+    #records = [r for r in db.__db_bugs_records__ if r[db.FIELD_UPDATE_DATE] >= start_date and r[db.FIELD_UPDATE_DATE] <= end_date]
+    records = [r for r in db.__db_bugs_records__ if r[db.FIELD_UPDATE_DATE] in __days]
+    records_by_days[db.DATA_KEY_BUG] = records
+
+    records = [r for r in db.__db_jobs_records__ if r[db.FIELD_UPDATE_DATE] in __days]
+    records_by_days[db.DATA_KEY_JOB] = records
+
+    records = [r for r in db.__db_docs_records__ if r[db.FIELD_UPDATE_DATE] in __days]
+    records_by_days[db.DATA_KEY_DOC] = records
+
+    records = [r for r in db.__db_codes_records__ if r[db.FIELD_UPDATE_DATE] in __days]
+    records_by_days[db.DATA_KEY_CODE] = records
+
+    #统计
+    platforms = [rec for rec in
+                 {r[db.FIELD_PLATFORM] for k, recs in records_by_days.items() for r in recs if r.get(db.FIELD_PLATFORM)}]
+
+    output = []
+    for day in __days:
+        # Bug
+        __records = [r for r in records_by_days[db.DATA_KEY_BUG] if r[db.FIELD_UPDATE_DATE] == day]
+
+        fixed = sum([1 for r in __records if r[db.FIELD_STATUS] in ['打回', '待验证']])
+        out = sum([1 for r in __records if r[db.FIELD_STATUS] in ['分析转出']])
+        unfix = sum([1 for r in __records if r[db.FIELD_STATUS] in ['解决中', '新建']])
+
+        # Doc
+        __records = [r for r in records_by_days[db.DATA_KEY_DOC] if r[db.FIELD_UPDATE_DATE] == day]
+
+        doc1 = sum([1 for r in __records if r[db.FIELD_STATUS] in ['完成'] and r['category'] in ['经验传承', '失效分析']])
+
+        doc2 = sum([1 for r in __records if r[db.FIELD_STATUS] in ['完成'] and r['category'] in ['OTJ','otj']])
+
+        # Code
+        __records = [r for r in records_by_days[db.DATA_KEY_CODE] if r[db.FIELD_UPDATE_DATE] == day]
+        code = sum([1 for r in __records ])
+
+        logging.debug('日期：{0} ， Bug: 已处理： {1} , 分析转出: {2} , 遗留：{3} , 文档： {4}, OTJ: {5} , 代码提交： {6}'.format(
+            day, fixed , out, unfix, doc1, doc2,code
+        ))
+
+
+        output.append({
+            '__date__': day,
+            '__fixed__': fixed,
+            '__out__':out,
+            '__unfix__': unfix,
+            '__docs__': doc1,
+            '__otj__': doc2,
+            '__codes__': code,
+             })
+
+    # 总用时
+    total_hours = sum([r[db.FIELD_HOUR] for k, recs in records_by_days.items() for r in recs if r.get(db.FIELD_HOUR)])
+
+    summary_output_text = []
+    hour_summary_output_text = []
+    for platform in platforms:
+
+        summary_output_text.append('[{0}]'.format(platform))
+        hour_ = sum([r[db.FIELD_HOUR] for k, recs in records_by_days.items() for r in recs if r.get(db.FIELD_HOUR) and r.get(db.FIELD_PLATFORM) == platform])
+
+        # Bugs
+        new_records = [r for r in records_by_days[db.DATA_KEY_BUG] if r[db.FIELD_PLATFORM] == platform]
+
+        bugs = {r['BugId'] for r in new_records}
+
+
+        __new_records = {r['BugId']:r for r in new_records}.values()
+        count_fixed = sum([1 for o in {r['BugId'] for r in __new_records if r[db.FIELD_STATUS] in ['待验证', '打回']}])
+        count_process = sum([1 for o in {r['BugId'] for r in __new_records if r[db.FIELD_STATUS] in ['解决中','新建']}])
+        count_out = sum([1 for o in {r['BugId'] for r in __new_records if r[db.FIELD_STATUS] in ['分析转出']}])
+
+
+        bugs_delta = ' - 已处理：{0}， 解决中：{1}， 分析转出：{2}'.format(count_fixed, count_process, count_out)
+
+        if len(bugs) > 0:
+            summary_output_text.append('  - Bugs: ({0} 个) , {1}'.format(len(bugs),bugs_delta))
+            summary_output_text.append('    {0}'.format(str(bugs)[1:-1].replace("'",'').replace(',',' ')))
+            summary_output_text.append('')
+        # 代码提交
+        new_records = [r for r in records_by_days[db.DATA_KEY_CODE] if r[db.FIELD_PLATFORM] == platform]
+        if len(new_records) > 0:
+            summary_output_text.append('  - 代码提交: {0}笔'.format(len(new_records)))
+            summary_output_text.append('')
+        summary_output_text.append('-' * 20)
+
+        # 工作时间
+        hour_summary_output_text.append(
+            ' ' + platform + ': {0} / {1} = {2}'.format(hour_, total_hours,
+                                                             format(float(hour_ / total_hours),'0.00%')))
+
+    # 文档
+    new_records = [r for r in records_by_days[db.DATA_KEY_DOC]]
+    if len(new_records)>0:
+        summary_output_text.append('')
+        summary_output_text.append('文档输出: {0} 篇'.format(len(new_records)))
+        summary_output_text.append('')
+
+    if len(summary_output_text) > 0:
+        summary = '{0} ~ {1} 工作汇总 \n'.format(start_date, end_date)
+        for r in summary_output_text:
+            summary += r + '\n'
+
+        summary += '工作时间投入度 \n'
+        for r in hour_summary_output_text:
+            summary += r + '\n'
+
+    else:
+        summary = 'N/A'
+
+    result = {
+            '__start__': start_date,
+            '__end__': end_date,
+            '__delta__': output,
+            '__summary__': summary
+    }
+
+    return result
+
+
+def get_week_range_ext(start_date, end_date, first_week_day=calendar.MONDAY):
     if not (first_week_day >= calendar.MONDAY and first_week_day <= calendar.SUNDAY):
         raise ValueError('first_week_day is invalid')
+
 
     if first_week_day == calendar.MONDAY:
         last_week_day = calendar.SUNDAY
     else:
         last_week_day = first_week_day - 1
 
-    logging.debug('first-day:{0} , last-day: {1}'.format(str(first_week_day), str(last_week_day)))
+    first_date = Timestamp(start_date)
+    last_date = Timestamp(end_date)
 
-    _first_day = Timestamp(start_date)
-    _last_day = Timestamp(end_date)
 
-    __days = get_days(_first_day, _last_day)
-
-    logging.debug(__days)
-
-    _first_day_index = __days.index(_first_day)
-    _last_day_index = __days.index(_last_day)
-
+    ## 根据参数中指定的开始日期和结束日期, 计算出开始日期所在周(星期)的第1天, 结束日期所在周的最后1天
     if first_week_day == calendar.MONDAY:
-        _first_day_dayofweek_index = _first_day_index - _first_day.dayofweek
-        _last_day_dayofweek_index = _last_day_index + (calendar.SUNDAY - _last_day.dayofweek)
+        first_day_dayofweek_step = first_date.dayofweek
+        last_day_dayofweek_step = (calendar.SUNDAY - last_date.dayofweek)
     else:
-        if _first_day.dayofweek >= first_week_day:
-            _first_day_dayofweek_index = _first_day_index - (_first_day.dayofweek - first_week_day)
+        if first_date.dayofweek >= first_week_day:
+            first_day_dayofweek_step = first_date.dayofweek - first_week_day
         else:
-            _first_day_dayofweek_index = _first_day_index - (calendar.SUNDAY - first_week_day + 1 + _first_day.dayofweek)
+            first_day_dayofweek_step = calendar.SUNDAY - first_week_day + 1 + first_date.dayofweek
 
-        if _last_day.dayofweek >= first_week_day:
-            _tail_step = calendar.SUNDAY - _last_day.dayofweek + last_week_day + 1
-        elif _last_day.dayofweek <= last_week_day:
-            _tail_step = last_week_day - _last_day.dayofweek
-
-        _last_day_dayofweek_index = _last_day_index + _tail_step
+        if last_date.dayofweek >= first_week_day:
+            last_day_dayofweek_step = calendar.SUNDAY - last_date.dayofweek + last_week_day + 1
+        elif last_date.dayofweek <= last_week_day:
+            last_day_dayofweek_step = last_week_day - last_date.dayofweek
 
 
-    _start_row = 3
+    first_date = first_date - timedelta(first_day_dayofweek_step)
+    last_date = last_date + timedelta(last_day_dayofweek_step)
 
-    for i in range(_first_day_dayofweek_index, _last_day_dayofweek_index, 7):
+    days = date_range(first_date, last_date)
+
+    # 计算出每周的开始和结束日期
+    result_date = []
+    for i in range(0, len(days), 7):
         end_index = i + 6
-        logging.debug('{0}(index={1}) - {2}(index={3})'.format(__days[i],i, __days[end_index],end_index))
-        # for idx in range(i, end_index+1):
-        #    logging.debug('index {0}'.format(idx))
+        result_date.append([strfdate(days[i]), strfdate(days[end_index])])
+        logging.debug('{0} - {1}'.format(strfdate(days[i]), strfdate(days[end_index])))
 
-        subdays = [__days[idx] for idx in range(i, end_index+1)]
-        logging.debug(subdays)
+    return result_date
 
 
-        for day in subdays:
-            __date = day.__format__('%Y-%m-%d')
-            worksheet.write(_start_row, 2, __date)
+def strfdate(date):
+    if isinstance(date, Timestamp):
+        return date.__format__(DATE_FORMAT)
 
-            _start_row += 1
-
-        #11
-
-        _merge_start_row = _start_row - 6
-        _merge_end_row = _start_row
-        worksheet.merge_range('L{0}:L{1}'.format(_merge_start_row, _merge_end_row), '本周小计：')
-        #worksheet.merge_range()
-
-
-
-
-
-def justdo():
-    _first_day = Timestamp('2020-3-2')
-    _last_day = Timestamp('2020-3-3')
-    first_week_day = calendar.MONDAY
-    last_week_day = calendar.SUNDAY
-
-    first_week_day = calendar.THURSDAY
-    last_week_day = calendar.WEDNESDAY
-
-    _first_year = _first_day.year
-    _first_month = _first_day.month
-
-    _last_year = _last_day.year
-    _last_month = _last_day.month
-
-
-    diff_day = _last_day - _first_day
-
-    #for m in range(_first_month, _last_month):
-
-    years = []
-
-    years.append(calendar._prevmonth(_first_year, _first_month))
-    y_m = (_first_year, _first_month)
-
-    while y_m <= (_last_year, _last_month):
-        years.append(y_m)
-        y_m = calendar._nextmonth(y_m[0], y_m[1])
-
-
-    years.append(calendar._nextmonth(_last_year, _last_month))
-    logging.debug(years)
-
-    __days = []
-    for ym in years:
-        y = ym[0]
-        m = ym[1]
-        days = [Timestamp('{0}-{1}-{2}'.format(y, m, d)) for d in calendar.Calendar().itermonthdays(ym[0], ym[1]) if d > 0]
-        #logging.debug(days)
-
-        __days.extend(days)
-        #__days.append('{0}-{1}-{2}'.format(y,m,))
-
-
-    _first_day_index = __days.index(_first_day)
-
-    _last_day_index = __days.index(_last_day)
-
-    #__days = [d for d in __days if d>=_first_day and d<=_last_day]
-    #logging.debug(__days)
-
-
-
-
-    #计算第一天所在周内第一天
-
-    if first_week_day == calendar.MONDAY:
-        _first_day_dayofweek_index = _first_day_index - _first_day.dayofweek
-    else:
-        if _first_day.dayofweek >= first_week_day:
-            _first_day_dayofweek_index = _first_day_index - (_first_day.dayofweek - first_week_day)
-        else:
-            _first_day_dayofweek_index = _first_day_index - (calendar.SUNDAY - first_week_day + 1 + _first_day.dayofweek)
-
-
-        # if _last_day.dayofweek >= first_week_day:
-        #     _last_day_dayofweek_index = _last_day_index - (_last_day.dayofweek - last_week_day)
-        # else:
-        #     _last_day_dayofweek_index = _last_day_index - (calendar.SUNDAY - last_week_day + 1 + _last_day.dayofweek)
-
-
-    logging.debug('first day: {0} , {1}'.format(__days[_first_day_dayofweek_index], __days[_first_day_index]))
-
-
-    #找出第一天所在周的周内最后一天
-    #周一是一周第一天
-    if first_week_day == calendar.MONDAY:
-        _head_step = last_week_day - _first_day.dayofweek
-        _tail_step = last_week_day - _last_day.dayofweek
-        _last_day_dayofweek_index = _last_day_index + (calendar.SUNDAY  - _last_day.dayofweek)
-    else:
-        if _first_day.dayofweek >= first_week_day:
-            _head_step = calendar.SUNDAY - _first_day.dayofweek + last_week_day + 1
-        elif _first_day.dayofweek <= last_week_day:
-            _head_step = last_week_day - _first_day.dayofweek
-
-        if _last_day.dayofweek >= first_week_day:
-            _tail_step = calendar.SUNDAY - _last_day.dayofweek + last_week_day + 1
-        elif _last_day.dayofweek <= last_week_day:
-            _tail_step = last_week_day - _last_day.dayofweek
-
-        _last_day_dayofweek_index = _last_day_index + _tail_step
-
-
-
-    # _result = [[_first_day, __days[_head_step]]]
-    # for i in range(_head_step + 1, diff_day.days + _tail_step, 7):
-    #     end_index = i + 6
-    #     if end_index <= len(days):
-    #         logging.debug('{0} - {1}'.format(__days[i] , __days[end_index]))
-    #         _result.append([__days[i] , __days[end_index]])
-    #     else:
-    #         logging.debug('{0} - {1}'.format(__days[i], __days[-1]))
-    #         _result.append([__days[i], __days[-1]])
-
-    _result = []
-
-    for i in range(_first_day_dayofweek_index,_last_day_dayofweek_index, 7):
-        end_index = i + 6
-        logging.debug('{0}(index={1}) - {2}(index={3})'.format(__days[i],i, __days[end_index],end_index))
-
-    logging.debug(_result)
-
+    return date

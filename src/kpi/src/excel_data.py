@@ -12,7 +12,9 @@
     2020-03-28 : 0.1 Create
 """
 import logging
+import operator
 import os
+import time
 from datetime import datetime
 from math import isnan
 
@@ -34,10 +36,12 @@ FIELD_STATUS = 'status'
 FIELD_TITLE = 'title'
 FIELD_DETAILED = 'detailed'
 FIELD_HOUR = 'hour'
+FIELD_AUTHOR = '__author__'
 
 DATA_KEY_BUG = 'Bugs'
 DATA_KEY_JOB = 'Jobs'
 DATA_KEY_DOC = 'Docs'
+DATA_KEY_CODE = 'Codes'
 
 
 __data_mapping__ = [
@@ -55,6 +59,7 @@ __data_mapping__ = [
             {"column": "状态", "field": "status", "type": str},
             {"column": "风险", "field": "risk", "type": str},
             {"column": "Case", "field": "case", "type": str},
+            {"column": "__author__","field":"__author__","type":str}
        ]
     },
     {#分类	标题	文档地址	投入时长	进展	状态	日期
@@ -65,7 +70,8 @@ __data_mapping__ = [
             {"column": "进展", "field": "detailed", "type": str},
             {"column": "状态", "field": "status", "type": str},
             {"column": "日期", "field": "update_date", "type": Timestamp},
-            {"column": "投入时长", "field": "hour", "type": float}
+            {"column": "投入时长", "field": "hour", "type": float},
+            {"column": "__author__","field":"__author__","type":str}
         ]
     },
     {
@@ -80,6 +86,19 @@ __data_mapping__ = [
             {"column": "进展", "field": "detailed", "type": str},
             {"column": "状态", "field": "status", "type": str},
             {"column": "日期", "field": "update_date", "type": Timestamp},
+            {"column": "__author__","field":"__author__","type":str}
+        ]
+    },
+    {
+        # 平台	项目	标题	链接	日期
+        "name": "Codes",
+        "columns": [
+            {"column": "平台", "field": "platform", "type": str},
+            {"column": "项目", "field": "project", "type": str},
+            {"column": "标题", "field": "title", "type": str},
+            {"column": "链接", "field": "link", "type": str},
+            {"column": "日期", "field": "update_date", "type": Timestamp},
+            {"column": "__author__","field":"__author__","type":str}
         ]
     }
 ]
@@ -87,12 +106,17 @@ __data_mapping__ = [
 __db_bugs_records__ = []
 __db_docs_records__ = []
 __db_jobs_records__ = []
+__db_codes_records__ = []
 
+__start_date__ = None
+__end_date__ = None
+
+__my_name__ = 'N/A'
+
+__db_users__ = []
 
 def initialize():
     pass
-
-
 
 def read_excel(name):
     if not os.path.exists(__excel_file__):
@@ -100,6 +124,12 @@ def read_excel(name):
         return
 
     df = pd.read_excel(__excel_file__, sheet_name=name)
+
+    if __start_date__:
+        start_date = Timestamp(__start_date__)
+        end_date = Timestamp(__end_date__)
+
+        df = df.loc[(df['日期'] >= start_date) & (df['日期'] <= end_date), :]
 
     cols = [r for r in df.columns]
 
@@ -162,17 +192,49 @@ def __strtofloat__(val):
         return '{0}_#ValueError'.format(val)
 
 
-def run(excel_file):
-    global __excel_file__, __db_bugs_records__ , __db_jobs_records__, __db_docs_records__
+def run(excel_file, my_name=None, args=None):
+    global __excel_file__, __db_bugs_records__ , __db_jobs_records__, __db_docs_records__, __db_codes_records__
+    global __start_date__, __end_date__ , __my_name__
+
+    if my_name:
+        __my_name__ = my_name
+        __db_users__.append(my_name)
 
     if not os.path.exists(excel_file):
         print('File not found')
         return
     __excel_file__ = excel_file
 
-    __db_bugs_records__ = setup_data(DATA_KEY_BUG)
-    __db_docs_records__ = setup_data(DATA_KEY_DOC)
-    __db_jobs_records__ = setup_data(DATA_KEY_JOB)
+    args_date = None
+    if args:
+        for opt, arg in args:
+            if opt in '--date':
+                args_date = arg
+
+        if args_date:
+            dates = args_date.split(',')
+            if len(dates) > 1:
+                __start_date__ = dates[0]
+                __end_date__ = dates[1]
+            else:
+                __start_date__ = dates[0]
+                __end_date__ = time.strftime('%Y-%m-%d', time.localtime())
+
+            try:
+                if __start_date__ and __end_date__:
+                    d1 = Timestamp(__start_date__)
+                    d2 = Timestamp(__end_date__)
+                else:
+                    raise ValueError
+            except ValueError as e:
+                raise ValueError('参数: --date 格式错误,不是有效的日期格式, 格式:yyyy-mm-dd , [{0}, {1}]'.format(
+                    __start_date__, __end_date__
+                ))
+
+    __db_bugs_records__.extend(setup_data(DATA_KEY_BUG))
+    __db_docs_records__.extend(setup_data(DATA_KEY_DOC))
+    __db_jobs_records__.extend(setup_data(DATA_KEY_JOB))
+    __db_codes_records__.extend(setup_data(DATA_KEY_CODE))
 
 
 def data_mapping(sheet, records):
@@ -186,13 +248,15 @@ def data_mapping(sheet, records):
     for rec in records:
         obj = {}
 
+        rec['__author__'] = __my_name__
         for col in _columns:
             obj[col[DATA_MAPPING_FIELD]] = data_filter(rec[col[DATA_MAPPING_COL]], col['type'])
 
         new_records.append(obj)
 
     #[logging.debug(r) for r in new_records]
-    return new_records
+
+    return sorted(new_records, key=operator.itemgetter(FIELD_UPDATE_DATE), reverse=False)
 
 
 def get_not_null_cols(name):

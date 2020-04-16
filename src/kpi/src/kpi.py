@@ -56,6 +56,7 @@ if __name__ == '__main__':
     #   --daily-kpi-report
     #   --weekly-kpi-report
     #   --date=2020-3-1,2020-3-4
+    #   --platform=
     #   --
 
 

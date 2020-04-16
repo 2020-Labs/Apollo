@@ -38,6 +38,9 @@ FIELD_DETAILED = 'detailed'
 FIELD_HOUR = 'hour'
 FIELD_AUTHOR = '__author__'
 
+BUGS_FIELD_ID = 'BugId'
+
+
 DATA_KEY_BUG = 'Bugs'
 DATA_KEY_JOB = 'Jobs'
 DATA_KEY_DOC = 'Docs'

@@ -17,7 +17,7 @@ import operator
 
 import excel_data as db
 
-__output_excel__ = '/work2//git-source//Apollo//src//kpi//docs//kpi_report.xlsx'
+__output_excel__ = '/work2//git-source//Apollo//src//kpi//docs//daily_kpi_report.xlsx'
 
 import pandas as pd
 import xlsxwriter
@@ -26,7 +26,7 @@ from pandas._libs.tslibs.timestamps import Timestamp
 header_format = {
     'valign': 'vcenter',
     'align': 'left',
-    'fg_color': '#B4C6E7',
+    'fg_color': '#00B050',
     'border': 1,
     'font_size': 10,
     'font_name': '微软雅黑'
@@ -35,7 +35,7 @@ header_format = {
 header_center_format = {
     'valign': 'vcenter',
     'align': 'center',
-    'fg_color': '#B4C6E7',
+    'fg_color': '#00B050',
     'border': 1,
     'font_size': 10,
     'font_name': '微软雅黑'
@@ -81,7 +81,7 @@ headers_cell_setting = [
     },
     {
         'cell': 'E1',
-        'text': '关键工作简述&评价',   'width': 50, 'format': header_format
+        'text': '关键工作简述&评价',   'width': 120, 'format': header_format
     }
 ]
 
@@ -211,6 +211,7 @@ def output_report_by_day(records):
         #hour_ = sum([r[db.FIELD_HOUR] for r in new_records])
 
 
+
         #Job
         new_records = [r for r in records[db.DATA_KEY_JOB] if r[db.FIELD_PLATFORM] == platform]
         if len(new_records) > 0:
@@ -226,7 +227,7 @@ def output_report_by_day(records):
 
 
         #hour_ += sum([r[db.FIELD_HOUR] for r in new_records])
-        hour_summary_output_text.append('')
+        #hour_summary_output_text.append('')
         #hour_summary_output_text.append(platform)
         #hour_summary_output_text.append(' ' + platform + ': {0} / {1} = {2}'.format(hour_, total_hours, float(hour_/total_hours )))
         hour_summary_output_text.append(

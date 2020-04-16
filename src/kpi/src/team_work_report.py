@@ -16,12 +16,11 @@ import logging
 import excel_data as db
 import xlsxwriter
 
-OUTOUT_EXCEL = '/work2//git-source//Apollo//src//kpi//docs//team_report.xlsx'
+OUTOUT_EXCEL = '/work2//git-source//Apollo//src//kpi//docs//team_work_report.xlsx'
 
 header_center_format = {
     'valign': 'vcenter',
     'align': 'center',
-    #'fg_color': '#B4C6E7',
     'fg_color': '#00B050',
     'border': 1,
     'font_size': 10,
@@ -62,14 +61,19 @@ headers_cell_setting = [
 __worksheet__ = None
 __workbook__ = None
 
+REPORT_KEY_PLATFORMS = 'platforms'
+SHEET_NAME = '一周各平台工作投入度'
+
 def output_report(args):
+    global  __workbook__, __worksheet__
+
     logging.debug(db.__db_users__)
 
     report_data = get_report_data()
 
 
     __workbook__ = xlsxwriter.Workbook(OUTOUT_EXCEL)
-    __worksheet__ = __workbook__.add_worksheet()
+    __worksheet__ = __workbook__.add_worksheet(SHEET_NAME)
 
     for cell in headers_cell_setting:
         header_cell_format = __workbook__.add_format(cell['format'])
@@ -110,7 +114,7 @@ def output_report(args):
     row = 2
     for r in report_data:
         __worksheet__.write(row, 0, r[db.FIELD_AUTHOR], cell_format)
-        __worksheet__.write(row, 2, r['platforms'] , cell_format)
+        __worksheet__.write(row, 2, r[REPORT_KEY_PLATFORMS], cell_format)
 
         for p, col in platforms_cols.items():
             if r.get(p):
@@ -143,11 +147,10 @@ def get_report_data():
             [r[db.FIELD_HOUR] for k, recs in records_by_u.items() for r in recs if r.get(db.FIELD_HOUR)])
 
         report = {db.FIELD_AUTHOR: u}
-        report['platforms'] = str(platforms)[1:-1].replace("'",'').replace(',','')
+        report[REPORT_KEY_PLATFORMS] = str(platforms)[1:-1].replace("'", '').replace(',', '')
         for p in platforms:
             hours = sum(
                 [r[db.FIELD_HOUR] for k, recs in records_by_u.items() for r in recs if r.get(db.FIELD_HOUR) and r.get(db.FIELD_PLATFORM) == p]
-
             )
 
             report[p] = hours

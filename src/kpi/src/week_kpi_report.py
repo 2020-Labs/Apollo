@@ -189,11 +189,7 @@ def output_report(args):
     __worksheet__.set_row(2, 30)
 
     week_date_range = get_week_range_ext(__start_date__, __end_date__)
-    # week_date_range = get_week_range_ext('2020-3-3', '2020-4-5', first_week_day=calendar.WEDNESDAY)
-    #
-    week_date_range = get_week_range_ext(__start_date__, __end_date__, first_week_day=calendar.THURSDAY)
-    # get_week_range_ext('2020-3-3', '2020-4-5', first_week_day=calendar.FRIDAY)
-    # get_week_range_ext('2020-3-3', '2020-4-5', first_week_day=calendar.SATURDAY)
+    #week_date_range = get_week_range_ext(__start_date__, __end_date__, first_week_day=calendar.THURSDAY)
 
     report_data = []
     for week in week_date_range:
@@ -255,27 +251,23 @@ def get_report_data_by_week(start_date, end_date):
     __days = date_range(start_date, end_date)
     # 查询数据
     records_by_days = {}
-    # sorted(db.__db_bugs_records__, key=operator.itemgetter(db.FIELD_UPDATE_DATE), reverse=False)
 
-    # records = [r for r in db.__db_bugs_records__ if r[db.FIELD_UPDATE_DATE] >= start_date and r[db.FIELD_UPDATE_DATE] <= end_date]
     records = [r for r in db.__db_bugs_records__ if r[db.FIELD_UPDATE_DATE] in __days]
-    records_by_days[db.DATA_KEY_BUG] = records
+    records_by_days[db.DATA_KEY_BUG] = sorted_records(records, db.FIELD_UPDATE_DATE)
 
     records = [r for r in db.__db_jobs_records__ if r[db.FIELD_UPDATE_DATE] in __days]
-    records_by_days[db.DATA_KEY_JOB] = records
+    records_by_days[db.DATA_KEY_JOB] = sorted_records(records, db.FIELD_UPDATE_DATE)
 
     records = [r for r in db.__db_docs_records__ if r[db.FIELD_UPDATE_DATE] in __days]
-    records_by_days[db.DATA_KEY_DOC] = records
+    records_by_days[db.DATA_KEY_DOC] = sorted_records(records, db.FIELD_UPDATE_DATE)
 
     records = [r for r in db.__db_codes_records__ if r[db.FIELD_UPDATE_DATE] in __days]
-    records_by_days[db.DATA_KEY_CODE] = records
+    records_by_days[db.DATA_KEY_CODE] = sorted_records(records, db.FIELD_UPDATE_DATE)
 
     # 统计
-    platforms = sorted([rec for rec in
-                 {r[db.FIELD_PLATFORM] for k, recs in records_by_days.items() for r in recs if
-                  r.get(db.FIELD_PLATFORM)}])
 
     output = []
+    # 按天统计 Bugs,文档,培训,代码提交
     for day in __days:
         # Bug
         __records = [r for r in records_by_days[db.DATA_KEY_BUG] if r[db.FIELD_UPDATE_DATE] == day]
@@ -286,9 +278,9 @@ def get_report_data_by_week(start_date, end_date):
 
         # Doc
         __records = [r for r in records_by_days[db.DATA_KEY_DOC] if r[db.FIELD_UPDATE_DATE] == day]
-
+        # 经验传承
         doc1 = sum([1 for r in __records if r[db.FIELD_STATUS] in ['完成'] and r['category'] in ['经验传承', '失效分析']])
-
+        # 培训
         doc2 = sum([1 for r in __records if r[db.FIELD_STATUS] in ['完成'] and r['category'] in ['OTJ', 'otj']])
 
         # Code
@@ -309,6 +301,21 @@ def get_report_data_by_week(start_date, end_date):
             '__codes__': code,
         })
 
+    summary = get_summary(records_by_days)
+
+    result = {
+        '__start__': start_date,
+        '__end__': end_date,
+        '__delta__': output,
+        '__summary__': summary
+    }
+
+    return result
+
+
+def get_summary(records_by_days):
+    start_date = strfdate(__start_date__)
+    end_date = strfdate(__end_date__)
     # 总用时
     total_hours = sum([r[db.FIELD_HOUR] for k, recs in records_by_days.items() for r in recs if r.get(db.FIELD_HOUR)])
 
@@ -324,6 +331,9 @@ def get_report_data_by_week(start_date, end_date):
     tbody = "{0:>6}\t    {1:<20}   {2:<20}    {3:<15}"
 
     summary_output_text.append(thead.format('平台', 'Bug工作量', '工时投入', '人效'))
+    platforms = sorted([rec for rec in
+                        {r[db.FIELD_PLATFORM] for k, recs in records_by_days.items() for r in recs if
+                         r.get(db.FIELD_PLATFORM)}])
 
     for platform in platforms:
 
@@ -332,12 +342,11 @@ def get_report_data_by_week(start_date, end_date):
                      r.get(db.FIELD_HOUR) and r.get(db.FIELD_PLATFORM) == platform])
 
         # Bugs
-
         new_records = [r for r in records_by_days[db.DATA_KEY_BUG] if r[db.FIELD_PLATFORM] == platform]
-
-        bugs = {r[db.BUGS_FIELD_ID] for r in new_records}
-
         __new_records = {r[db.BUGS_FIELD_ID]: r for r in new_records}.values()
+        bugs = {r[db.BUGS_FIELD_ID] for r in __new_records}
+
+        # 统计各状态的Bug数量
         count_fixed = sum(
             [1 for o in {r[db.BUGS_FIELD_ID] for r in __new_records if r[db.FIELD_STATUS] in ['待验证', '打回']}])
         count_process = sum(
@@ -354,9 +363,10 @@ def get_report_data_by_week(start_date, end_date):
             work_summary_output_text.append('    {0}'.format(str(bugs)[1:-1].replace("'", '').replace(',', ' ')))
             work_summary_output_text.append('')
 
-
-            summary_1 = '{0:>2} / {1:>2} = {2:>4}'.format(bugs_count_by_platform, bugs_count, format(float(bugs_count_by_platform / bugs_count), '0.00%'))
-            summary_3 = '{0:>2} / {1:>2} = {2:>5.2f}'.format(count_fixed + count_out, days, (count_fixed + count_out) / days)
+            summary_1 = '{0:>2} / {1:>2} = {2:>4}'.format(bugs_count_by_platform, bugs_count,
+                                                          format(float(bugs_count_by_platform / bugs_count), '0.00%'))
+            summary_3 = '{0:>2} / {1:>2} = {2:>5.2f}'.format(count_fixed + count_out, days,
+                                                             (count_fixed + count_out) / days)
 
         else:
             summary_1 = 'N/A'
@@ -372,7 +382,6 @@ def get_report_data_by_week(start_date, end_date):
             work_summary_output_text.append('  - 代码提交: {0}笔'.format(len(new_records)))
             work_summary_output_text.append('')
         work_summary_output_text.append('-' * 20)
-
 
     # 文档
     new_records = [r for r in records_by_days[db.DATA_KEY_DOC]]
@@ -393,14 +402,7 @@ def get_report_data_by_week(start_date, end_date):
     else:
         summary = 'N/A'
 
-    result = {
-        '__start__': start_date,
-        '__end__': end_date,
-        '__delta__': output,
-        '__summary__': summary
-    }
-
-    return result
+    return summary
 
 
 def get_week_range_ext(start_date, end_date, first_week_day=calendar.MONDAY):
@@ -450,3 +452,8 @@ def strfdate(date):
         return date.__format__(DATE_FORMAT)
 
     return date
+
+
+def sorted_records(records, fields, order_desc=False):
+    recs = sorted(records, key=operator.itemgetter(fields), reverse=order_desc)
+    return recs

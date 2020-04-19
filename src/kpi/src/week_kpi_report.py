@@ -12,7 +12,7 @@
     2020-03-29 : 0.1 Create
 """
 
-__output_excel__ = '/work2//git-source//Apollo//src//kpi//docs//weekly_kpi_report.xlsx'
+__output_excel__ = '/work2//git-source//Apollo//src//kpi//docs//weekly_kpi_report_{0}.xlsx'
 
 import datetime
 import logging
@@ -25,6 +25,7 @@ import xlsxwriter
 from pandas._libs.tslibs.timestamps import Timestamp, timedelta
 
 import calendar
+import app_config
 
 header_format = {
     'valign': 'vcenter',
@@ -122,11 +123,50 @@ headers_cell_setting = [
     }
 ]
 
+covert_cell_format_text = {
+    'font_size': 10,
+    'font_name': '微软雅黑',
+    'text_wrap': True,
+    'valign': 'vcenter',  # 垂直对齐方式
+    'align': 'left',  # 水平对齐方式
+}
+
+covert_cell_settings = [
+    {
+        'cell': 'A1',
+        'text': '',  'width': 10,   'format': covert_cell_format_text
+    },
+    {
+        'cell': 'B1',
+        'text': '填写说明',  'width': 100,   'format': covert_cell_format_text
+    },
+    {
+        'cell': 'B2','width': 100, 'format': covert_cell_format_text,
+        'text': '1. 已处理: 待验证,打回',
+    },
+    {
+        'cell': 'B3', 'width': 100, 'format': covert_cell_format_text,
+        'text': '2. 分析转出: 转给其他业务组',
+    },
+    {
+        'cell': 'B4', 'width': 100, 'format': covert_cell_format_text,
+        'text': '3. Bug工作量, 各平台Bug数量 / 所有平台的Bug数量',
+    },
+    {
+        'cell': 'B5', 'width': 100, 'format': covert_cell_format_text,
+        'text': '4. 工作投入: 平台所有工作项投入时长 / 总工时长',
+    },
+    {
+        'cell': 'B6', 'width': 100, 'format': covert_cell_format_text,
+        'text': '5. 人效计算方法: 已处理的Bug数量 / 平台投入天数, \n    投入天数: 每个工作日只要有投入,就按1天计算',
+    },
+]
+
 WEEK_DAY_NAME = ['一', '二', '三', '四', '五', '六', '日']
 
 __worksheet__ = None
 __workbook__ = None
-__start_date__ = None
+__start_date__ = app_config.__start_date__
 __end_date__ = None
 
 DATE_FORMAT = '%Y-%m-%d'
@@ -134,33 +174,12 @@ DATE_FORMAT = '%Y-%m-%d'
 SHEET_NAME = '周工作汇总'
 
 
-def output_report(args):
+def output_report(args=None):
     global __workbook__, __worksheet__, __start_date__, __end_date__
 
     logging.debug(' args: ' + str(args))
-
-    args_date = None
-    for opt, arg in args:
-        if opt in '--date':
-            args_date = arg
-
-    if args_date:
-        dates = args_date.split(',')
-        if len(dates) > 1:
-            __start_date__ = dates[0]
-            __end_date__ = dates[1]
-        else:
-            __start_date__ = dates[0]
-            __end_date__ = time.strftime('%Y-%m-%d', time.localtime())
-
-        try:
-            Timestamp(__start_date__)
-            Timestamp(__end_date__)
-        except ValueError as e:
-            raise ValueError('参数: --date 格式错误,不是有效的日期格式, 格式:yyyy-mm-dd , {0} {1}'.format(
-                __start_date__, __end_date__
-            ))
-
+    __start_date__ = app_config.__start_date__
+    __end_date__ = app_config.__end_date__
     records_list = [db.__db_bugs_records__, db.__db_jobs_records__, db.__db_docs_records__]
     days = sorted({r[db.FIELD_UPDATE_DATE] for rec in records_list for r in rec})
 
@@ -171,7 +190,9 @@ def output_report(args):
         __start_date__ = days[0]
         __end_date__ = days[-1]
 
-    __workbook__ = xlsxwriter.Workbook(__output_excel__)
+    excel_file = __output_excel__.format(db.__my_name__)
+    __workbook__ = xlsxwriter.Workbook(excel_file)
+    output_covert_sheet()
     __worksheet__ = __workbook__.add_worksheet(SHEET_NAME)
 
     for cell in headers_cell_setting:
@@ -457,3 +478,11 @@ def strfdate(date):
 def sorted_records(records, fields, order_desc=False):
     recs = sorted(records, key=operator.itemgetter(fields), reverse=order_desc)
     return recs
+
+def output_covert_sheet():
+    worksheet = __workbook__.add_worksheet('填写说明')
+    for cell in covert_cell_settings:
+        cell_format = __workbook__.add_format(cell['format'])
+        cell_id = cell['cell']
+        worksheet.write(cell['cell'], cell['text'], cell_format)
+        worksheet.set_column('{0}:{0}'.format(cell_id), cell['width'])

@@ -46,6 +46,7 @@ DATA_KEY_JOB = 'Jobs'
 DATA_KEY_DOC = 'Docs'
 DATA_KEY_CODE = 'Codes'
 
+MEMBERS = ['AAA', 'BBB']
 
 __data_mapping__ = [
     {
@@ -196,43 +197,25 @@ def __strtofloat__(val):
 
 
 def run(excel_file, my_name=None, args=None):
-    global __excel_file__, __db_bugs_records__ , __db_jobs_records__, __db_docs_records__, __db_codes_records__
+    global __excel_file__, __db_bugs_records__, __db_jobs_records__, __db_docs_records__, __db_codes_records__
     global __start_date__, __end_date__ , __my_name__
+
+    if not my_name:
+        names = [r for r in MEMBERS if excel_file.find(r) > 0]
+        if len(names) > 0:
+            my_name = names[0]
 
     if my_name:
         __my_name__ = my_name
         __db_users__.append(my_name)
+    else:
+        raise ValueError('my_name 为空.')
+
 
     if not os.path.exists(excel_file):
-        print('File not found')
+        print('File:{0} not found'.format(excel_file))
         return
     __excel_file__ = excel_file
-
-    args_date = None
-    if args:
-        for opt, arg in args:
-            if opt in '--date':
-                args_date = arg
-
-        if args_date:
-            dates = args_date.split(',')
-            if len(dates) > 1:
-                __start_date__ = dates[0]
-                __end_date__ = dates[1]
-            else:
-                __start_date__ = dates[0]
-                __end_date__ = time.strftime('%Y-%m-%d', time.localtime())
-
-            try:
-                if __start_date__ and __end_date__:
-                    d1 = Timestamp(__start_date__)
-                    d2 = Timestamp(__end_date__)
-                else:
-                    raise ValueError
-            except ValueError as e:
-                raise ValueError('参数: --date 格式错误,不是有效的日期格式, 格式:yyyy-mm-dd , [{0}, {1}]'.format(
-                    __start_date__, __end_date__
-                ))
 
     __db_bugs_records__.extend(setup_data(DATA_KEY_BUG))
     __db_docs_records__.extend(setup_data(DATA_KEY_DOC))

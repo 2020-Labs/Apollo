@@ -19,20 +19,47 @@ import sys
 import excel_data
 import daily_kpi_report
 import week_kpi_report
+import app_config
 
-__args_opts__ = None
 
 import team_work_report
 
+cmd = None
+
+cmds_team_report = ['team-work-report']
+
+cmds_personal_report = ['daily-kpi-report','weekly-kpi-report']
+
+CMDS = {
+    'team-work-report': team_work_report.output_report,
+    'daily-kpi-report': daily_kpi_report.output_report,
+    'weekly-kpi-report': week_kpi_report.output_report,
+}
 
 def main():
-    excel_data.run('//work2//git-source//Apollo//Book.xlsx', my_name='AAAA', args= __args_opts__)
+    #excel_data.run('//work2//git-source//Apollo//Book.xlsx', my_name='AAAA', args= app_config.__args_opts__)
     #excel_data.run('//work2//git-source//Apollo//BookB.xlsx', my_name='BBB', args=__args_opts__)
-    #daily_kpi_report.output_report(__args_opts__)
-    week_kpi_report.output_report(__args_opts__)
+    #daily_kpi_report.output_report()
+    #week_kpi_report.output_report()
     #team_work_report.output_report(__args_opts__)
 
+    cmd = 'daily-kpi-report'
+    cmd = 'weekly-kpi-report'
+    cmd = 'team-work-report'
 
+    # 只输出个人
+
+    # 允许输出多个报表
+    if cmd in cmds_personal_report:
+        for name, file in app_config.__excel_files__.items():
+            excel_data.run(file, name, args=app_config.__args_opts__)
+            CMDS[cmd](app_config.__args_opts__)
+
+    # 团队报表
+    elif cmd in cmds_team_report:
+        for name , file in app_config.__excel_files__.items():
+           excel_data.run(file, name, args = app_config.__args_opts__)
+        team_work_report.output_report(app_config.__args_opts__)
 
 
 def logging_initialize():
@@ -50,6 +77,8 @@ def logging_initialize():
     logging.info('logging configuration done.')
 
 
+
+
 if __name__ == '__main__':
     # kpi.py --help
     #   --excel=xxx.xlsx
@@ -59,10 +88,7 @@ if __name__ == '__main__':
     #   --platform=
     #   --
 
-
-    opts, args = getopt.getopt(sys.argv[1:], "h", ["help", "excel=", 'daily-kpi-report','weekly-kpi-report', 'output=', 'date='])
-    __args_opts__ = opts
     logging_initialize()
-
-
+    opts, args = getopt.getopt(sys.argv[1:], "h", ["help", "excel=", 'daily-kpi-report','weekly-kpi-report', 'output=', 'date='])
+    app_config.parse_opts(opts)
     main()

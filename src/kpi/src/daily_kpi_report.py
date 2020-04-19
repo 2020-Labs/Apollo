@@ -17,7 +17,7 @@ import operator
 
 import excel_data as db
 
-__output_excel__ = '/work2//git-source//Apollo//src//kpi//docs//daily_kpi_report.xlsx'
+__output_excel__ = '/work2//git-source//Apollo//src//kpi//docs//daily_kpi_report_{0}.xlsx'
 
 import pandas as pd
 import xlsxwriter
@@ -85,8 +85,44 @@ headers_cell_setting = [
     }
 ]
 
-def output_header(workbook,worksheet):
-    pass
+
+covert_cell_format_text = {
+    'font_size': 10,
+    'font_name': '微软雅黑',
+    'text_wrap': True,
+    'valign': 'vcenter',  # 垂直对齐方式
+    'align': 'left',  # 水平对齐方式
+}
+
+covert_cell_settings = [
+    {
+        'cell': 'A1',
+        'text': '',  'width': 10,   'format': covert_cell_format_text
+    },
+    {
+        'cell': 'B1',
+        'text': '填写说明',  'width': 100,   'format': covert_cell_format_text
+    },
+    {
+        'cell': 'B2','width': 100, 'format': covert_cell_format_text,
+        'text': '1........',
+    },
+    {
+        'cell': 'B3', 'width': 100, 'format': covert_cell_format_text,
+        'text': '2........',
+    },
+]
+
+__work_book__ = None
+
+
+def output_covert_sheet():
+    worksheet = __work_book__.add_worksheet('填写说明')
+    for cell in covert_cell_settings:
+        cell_format = __work_book__.add_format(cell['format'])
+        cell_id = cell['cell']
+        worksheet.write(cell['cell'], cell['text'], cell_format)
+        worksheet.set_column('{0}:{0}'.format(cell_id), cell['width'])
 
 def output_report(args):
     logging.info('args: '.format(args))
@@ -137,11 +173,15 @@ def output_report(args):
 
 
 def output_excel_report(records):
-    workbook = xlsxwriter.Workbook(__output_excel__)
-    worksheet = workbook.add_worksheet()
+    global __work_book__
+    excel_file = __output_excel__.format(db.__my_name__)
+    __work_book__ = xlsxwriter.Workbook(excel_file)
+    output_covert_sheet()
+
+    worksheet = __work_book__.add_worksheet()
 
     for cell in headers_cell_setting:
-        cell_format = workbook.add_format(cell['format'])
+        cell_format = __work_book__.add_format(cell['format'])
         cell_id = cell['cell']
         if cell_id.find(':') > 0:
             worksheet.merge_range(cell['cell'], cell['text'], cell_format)
@@ -153,8 +193,8 @@ def output_excel_report(records):
     worksheet.set_row(0, 20)
 
     _row = 1
-    default_cell_format = workbook.add_format(cell_default_format_text)
-    center_cell_format = workbook.add_format(center_cell_format_text)
+    default_cell_format = __work_book__.add_format(cell_default_format_text)
+    center_cell_format = __work_book__.add_format(center_cell_format_text)
 
     for day, report_text in records.items():
         worksheet.write(_row, 0, str(_row), center_cell_format)
@@ -166,7 +206,8 @@ def output_excel_report(records):
 
         _row += 1
 
-    workbook.close()
+    worksheet.activate()
+    __work_book__.close()
 
 def output_report_by_day(records):
     output_text = []

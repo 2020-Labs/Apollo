@@ -52,7 +52,7 @@ def main():
     # 允许输出多个报表
     if cmd in cmds_personal_report:
         for name, file in app_config.__excel_files__.items():
-            excel_data.run(file, name, args=app_config.__args_opts__)
+            excel_data.run(file)
             CMDS[cmd](app_config.__args_opts__)
 
     # 团队报表

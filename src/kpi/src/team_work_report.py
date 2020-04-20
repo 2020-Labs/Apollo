@@ -12,13 +12,14 @@
     2020-04-12 : 0.1 Create
 """
 import logging
+import os
 
 import excel_data as db
 import xlsxwriter
 
 import app_config
 
-OUTOUT_EXCEL = '/work2//git-source//Apollo//src//kpi//docs//{0}_平台投入度统计.xlsx'
+OUTOUT_EXCEL = '{0}_平台投入度统计.xlsx'
 
 header_center_format = {
     'valign': 'vcenter',
@@ -45,10 +46,6 @@ CELL_FORMAT = {
 }
 
 headers_cell_setting = [
-    {
-        'cell': 'A1:F1',
-        'text': '', 'width': 9, 'format': header_center_format
-    },
     {
         'cell': 'A2:A3',
         'text': '姓名',  'width': 9,   'format': header_center_format
@@ -77,8 +74,9 @@ def output_report(args):
 
     report_data = get_report_data()
 
-    suffix = '{0}_{1} 各平台投入度'.format(app_config.__start_date__, app_config.__end_date__)
+    suffix = '{0}_{1}'.format(app_config.__start_date__, app_config.__end_date__)
     excel_file = OUTOUT_EXCEL.format(suffix)
+    excel_file = os.path.join(app_config.__output__, excel_file)
     __workbook__ = xlsxwriter.Workbook(excel_file)
     __worksheet__ = __workbook__.add_worksheet(SHEET_NAME)
 
@@ -95,17 +93,25 @@ def output_report(args):
     __worksheet__.set_row(0, 20)
     __worksheet__.set_row(1, 20)
 
-    # 将统计日期 写入表头
-    __worksheet__.write('A1', '{0} ~ {1} 各平台投入度'.format(app_config.__start_date__, app_config.__end_date__), header_cell_format)
+
 
     platforms = get_all_platforms()
 
     platforms_cols = {}
 
+    # 将统计日期 写入表头
+    # D的assic码是68
+    _col_name_assic = 68
+    end_col = chr(_col_name_assic + len(platforms) - 1)
+    cell_id = 'A1:{0}1'.format(end_col)
+    logging.debug('第一行 ' + cell_id)
+    __worksheet__.merge_range(cell_id, '{0} ~ {1} 各平台投入度'.format(app_config.__start_date__, app_config.__end_date__), header_cell_format)
+
    # 各平台 数据列
     col = 3
+    row = 2
     for p in platforms:
-        __worksheet__.write(1, col, p , header_cell_format)
+        __worksheet__.write(row, col, p, header_cell_format)
         platforms_cols[p] = col
         col += 1
 
@@ -113,7 +119,7 @@ def output_report(args):
     _col_name_assic = 68
     start_col = chr(_col_name_assic)
     end_col = chr(_col_name_assic + len(platforms) -1)
-    cell_id = '{0}2:{1}3'.format(start_col, end_col)
+    cell_id = '{0}2:{1}2'.format(start_col, end_col)
     __worksheet__.merge_range(cell_id, '各平台投入度', header_cell_format)
 
     #logging.debug(chr(68))

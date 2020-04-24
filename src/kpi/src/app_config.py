@@ -37,6 +37,7 @@ __excel_files__ = {}
 
 __my_name__ = ''
 
+__output__ = ''
 
 def parse_opts(opts):
     global __excel_files__, __output__, __start_date__, __end_date__, __args_opts__, __my_name__, __config_file__

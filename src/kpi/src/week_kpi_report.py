@@ -12,11 +12,12 @@
     2020-03-29 : 0.1 Create
 """
 
-__output_excel__ = '/work2//git-source//Apollo//src//kpi//docs//weekly_kpi_report_{0}.xlsx'
+__output_excel__ = 'weekly_kpi_report_{0}.xlsx'
 
 import datetime
 import logging
 import operator
+import os
 import time
 
 import pandas as pd
@@ -191,6 +192,8 @@ def output_report(args=None):
         __end_date__ = days[-1]
 
     excel_file = __output_excel__.format(db.__my_name__)
+
+    excel_file = os.path.join(app_config.__output__, excel_file)
     __workbook__ = xlsxwriter.Workbook(excel_file)
     output_covert_sheet()
     __worksheet__ = __workbook__.add_worksheet(SHEET_NAME)

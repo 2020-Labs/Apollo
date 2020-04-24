@@ -23,17 +23,18 @@ import app_config
 
 
 import team_work_report
-
+import checkdata
 cmd = None
 
 cmds_team_report = ['team-work-report']
 
-cmds_personal_report = ['daily-kpi-report','weekly-kpi-report']
+cmds_personal_report = ['daily-kpi-report','weekly-kpi-report', 'check-data']
 
 CMDS = {
     'team-work-report': team_work_report.output_report,
     'daily-kpi-report': daily_kpi_report.output_report,
     'weekly-kpi-report': week_kpi_report.output_report,
+    'check-data': checkdata.output_report,
 }
 
 def main():
@@ -45,8 +46,9 @@ def main():
 
     cmd = 'daily-kpi-report'
     cmd = 'weekly-kpi-report'
-    cmd = 'team-work-report'
-
+    #cmd = 'team-work-report'
+    #cmd = 'team-weekly-report'
+    cmd = 'check-data'
     # 只输出个人
 
     # 允许输出多个报表

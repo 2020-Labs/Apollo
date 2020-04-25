@@ -24,9 +24,12 @@ import app_config
 
 import team_work_report
 import checkdata
+
+import team_weekly_kpi_report
+
 cmd = None
 
-cmds_team_report = ['team-work-report']
+cmds_team_report = ['team-work-report', 'team-weekly-kpi-report']
 
 cmds_personal_report = ['daily-kpi-report','weekly-kpi-report', 'check-data']
 
@@ -35,6 +38,7 @@ CMDS = {
     'daily-kpi-report': daily_kpi_report.output_report,
     'weekly-kpi-report': week_kpi_report.output_report,
     'check-data': checkdata.output_report,
+    'team-weekly-kpi-report': team_weekly_kpi_report.output_report,
 }
 
 def main():
@@ -49,6 +53,7 @@ def main():
     #cmd = 'team-work-report'
     #cmd = 'team-weekly-report'
     cmd = 'check-data'
+    cmd = 'team-weekly-kpi-report'
     # 只输出个人
 
     # 允许输出多个报表
@@ -61,7 +66,8 @@ def main():
     elif cmd in cmds_team_report:
         for name , file in app_config.__excel_files__.items():
            excel_data.run(file, name, args = app_config.__args_opts__)
-        team_work_report.output_report(app_config.__args_opts__)
+        #team_work_report.output_report(app_config.__args_opts__)
+        CMDS[cmd](app_config.__args_opts__)
 
 
 def logging_initialize():

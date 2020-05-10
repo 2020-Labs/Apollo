@@ -93,8 +93,6 @@ def output_report(args):
     __worksheet__.set_row(0, 20)
     __worksheet__.set_row(1, 20)
 
-
-
     platforms = get_all_platforms()
 
     platforms_cols = {}
@@ -134,7 +132,7 @@ def output_report(args):
 
         for p, col in platforms_cols.items():
             if r.get(p):
-                __worksheet__.write(row, col, r[p] , numeric_cell_format)
+                __worksheet__.write(row, col, '{0} ({1:.2f}天)'.format(r[p], r[p+'_day'], numeric_cell_format))
 
         row += 1
 
@@ -168,16 +166,32 @@ def get_report_data():
             hours = sum(
                 [r[db.FIELD_HOUR] for k, recs in records_by_u.items() for r in recs if r.get(db.FIELD_HOUR) and r.get(db.FIELD_PLATFORM) == p]
             )
+            report[p] = format(float(hours / total_hours), '0.00%')
 
-            report[p] = hours
+            days = {r[db.FIELD_UPDATE_DATE] for k, recs in records_by_u.items() for r in recs if r.get(db.FIELD_PLATFORM) == p}
 
+            l = 0.0
+            for d in days:
+                l1 = get_work_rate(d, records_by_u, p)
+                logging.debug('{0} --> {1}'.format(d, l1))
+                l += l1
+            report[p+'_day'] = l
         report_data.append(report)
-
         logging.debug(report_data)
 
     return report_data
 
 
+def get_work_rate(day, records_by_u, p):
+    hours = sum([r[db.FIELD_HOUR] for k, recs in records_by_u.items() for r in recs if r.get(db.FIELD_HOUR) and r.get(db.FIELD_UPDATE_DATE) == day])
+
+    hours_by_day = sum([r[db.FIELD_HOUR] for k, recs in records_by_u.items() for r in recs if r.get(db.FIELD_HOUR) and r.get(db.FIELD_PLATFORM) == p
+                        and r.get(db.FIELD_UPDATE_DATE) == day])
+
+    if (hours > 0):
+        return float(hours_by_day / hours)
+    else:
+        return 0.00
 
 def get_all_platforms():
     all_records = {}

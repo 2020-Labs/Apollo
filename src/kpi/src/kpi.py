@@ -31,7 +31,7 @@ cmd = None
 
 cmds_team_report = ['team-work-report', 'team-weekly-kpi-report']
 
-cmds_personal_report = ['daily-kpi-report','weekly-kpi-report', 'check-data']
+cmds_personal_report = ['daily-kpi-report', 'weekly-kpi-report', 'check-data']
 
 CMDS = {
     'team-work-report': team_work_report.output_report,
@@ -50,10 +50,10 @@ def main():
 
     cmd = 'daily-kpi-report'
     cmd = 'weekly-kpi-report'
-    #cmd = 'team-work-report'
+    cmd = 'team-work-report'
     #cmd = 'team-weekly-report'
-    cmd = 'check-data'
-    cmd = 'team-weekly-kpi-report'
+    #cmd = 'check-data'
+    #cmd = 'team-weekly-kpi-report'
     # 只输出个人
 
     # 允许输出多个报表
@@ -73,7 +73,7 @@ def main():
 def logging_initialize():
     LOG_FILE = os.path.join(os.getcwd(), 'log.txt')
     LOG_FMT = '%(asctime)s  %(filename)s %(funcName)s: %(levelname)s  %(message)s'
-    logging.basicConfig(format=LOG_FMT,filename=LOG_FILE, level=logging.DEBUG)
+    logging.basicConfig(format=LOG_FMT, filename=LOG_FILE, level=logging.DEBUG)
 
     # Output the log for console
     console = logging.StreamHandler()
